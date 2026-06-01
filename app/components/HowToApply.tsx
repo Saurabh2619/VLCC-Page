@@ -23,7 +23,7 @@ export default function HowToApply() {
   ];
 
   return (
-    <section id="apply" className="py-[100px] md:py-[70px] bg-transparent">
+    <section id="apply" className="py-10 md:py-[70px] bg-transparent">
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="text-center mb-[60px]">
           <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Process</span>

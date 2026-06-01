@@ -34,7 +34,7 @@ export default function Testimonials() {
   }, [testimonials.length]);
 
   return (
-    <section id="testimonials" className="py-[100px] md:py-[70px] bg-white/50 backdrop-blur-md relative">
+    <section id="testimonials" className="py-10 md:py-[70px] bg-white/50 backdrop-blur-md relative">
       <div className="max-w-[1000px] mx-auto px-5 text-center">
         <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Success Stories</span>
         <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[50px] font-heading font-bold">What Our Students Say</h2>

@@ -32,7 +32,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-[100px] md:py-[70px] bg-transparent">
+    <section id="faq" className="py-10 md:py-[70px] bg-transparent">
       <div className="max-w-[800px] mx-auto px-5">
         <div className="text-center mb-[50px]">
           <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Got Questions?</span>

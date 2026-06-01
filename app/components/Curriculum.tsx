@@ -1,111 +1,203 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function Curriculum() {
   const modules = [
     {
-      id: '01',
-      title: 'Fundamentals of Makeup',
-      content: 'Learn about skin types, skin care routines, color theory, product knowledge, and hygiene practices essential for professional makeup artistry.'
+      id: "01",
+      title: "Base Makeup & Contouring",
+      description: "Master the art of flawless foundation application, concealing, highlighting, and advanced contouring techniques for different face shapes.",
+      image: "/images/curr-base.png"
     },
     {
-      id: '02',
-      title: 'Base Makeup & Contouring',
-      content: 'Master the art of flawless foundation application, concealing, highlighting, and advanced contouring techniques for different face shapes.'
+      id: "02",
+      title: "Eye Makeup",
+      description: "From classic smokey eyes to creative cut-crease and glitter application. Learn color theory and blending techniques.",
+      image: "/images/curr-eye.png"
     },
     {
-      id: '03',
-      title: 'Eye Makeup Techniques',
-      content: 'Explore various eye looks including classic smokey eyes, cut crease, halo eyes, winged eyeliner, and false lash application.'
+      id: "03",
+      title: "Bridal Makeup",
+      description: "Specialized training in traditional Indian and contemporary bridal looks, including long-lasting makeup techniques.",
+      image: "/images/curr-bridal.png"
     },
     {
-      id: '04',
-      title: 'Bridal Makeup (Advanced)',
-      content: 'Specialized training in creating stunning bridal looks for different cultures, handling heavy jewelry, and ensuring long-lasting makeup.'
-    },
-    {
-      id: '05',
-      title: 'Airbrush & HD Makeup',
-      content: 'Hands-on practice with airbrush machines and HD products to create seamless, camera-ready finishes for fashion and film.'
-    },
-    {
-      id: '06',
-      title: 'Hair Styling Basics',
-      content: 'Introduction to hair tools, blow-drying techniques, basic braids, and classic updos to complement makeup looks.'
+      id: "04",
+      title: "Airbrush & Fantasy Makeup",
+      description: "Advanced skills in high-definition airbrush techniques for film, television, and high-fashion fantasy looks.",
+      image: "/images/curr-airbrush.png"
     }
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [mobileActiveIndex, setMobileActiveIndex] = useState(0);
+  const [activeModule, setActiveModule] = useState(modules[0].id);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // Auto-switch for desktop
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveModule((prev) => {
+        const currentIndex = modules.findIndex(m => m.id === prev);
+        const nextIndex = (currentIndex + 1) % modules.length;
+        return modules[nextIndex].id;
+      });
+    }, 2000); // 2 seconds
+
+    return () => clearInterval(interval);
+  }, [modules]);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe && mobileActiveIndex < modules.length - 1) {
+      setMobileActiveIndex(prev => prev + 1);
+    }
+    if (isRightSwipe && mobileActiveIndex > 0) {
+      setMobileActiveIndex(prev => prev - 1);
+    }
+    
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = mobileActiveIndex * scrollContainerRef.current.offsetWidth;
+      scrollContainerRef.current.scrollTo({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  }, [mobileActiveIndex]);
 
   return (
-    <section id="curriculum" className="py-[100px] md:py-[70px] bg-white/60 backdrop-blur-xl relative">
+    <section id="curriculum" className="py-10 md:py-[70px] bg-white/60 backdrop-blur-xl relative">
       <div className="max-w-[1200px] mx-auto px-5">
-        <div className="text-center mb-[60px]">
+        <div className="text-center mb-[40px] md:mb-[60px]">
           <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">What You Will Learn</span>
           <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Course Curriculum</h2>
           <p className="text-[#666] text-base max-w-[600px] mx-auto font-body">Our comprehensive curriculum is designed by industry experts to take you from a beginner to a professional makeup artist.</p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center lg:items-stretch">
-          
-          {/* Left Side: Interactive Module List */}
-          <div className="w-full lg:w-5/12 flex flex-col gap-4 relative z-10">
-            {/* Vertical Connecting Line (Desktop) */}
-            <div className="hidden lg:block absolute left-[31px] top-8 bottom-8 w-1 bg-gray-200 rounded-full -z-10"></div>
-            
-            {modules.map((mod, index) => {
-              const isActive = activeIndex === index;
-              return (
-                <button
-                  key={index}
-                  onClick={() => setActiveIndex(index)}
-                  className={`group flex items-center text-left gap-5 p-4 rounded-xl transition-all duration-300 focus:outline-none ${isActive ? 'bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] scale-[1.02]' : 'hover:bg-white/50'}`}
-                >
-                  <div className={`w-[60px] h-[60px] shrink-0 rounded-full flex items-center justify-center font-heading font-bold text-xl transition-all duration-300 ${isActive ? 'bg-vlcc-orange text-white shadow-[0_0_20px_rgba(242,101,34,0.4)] ring-4 ring-vlcc-orange/20' : 'bg-white text-gray-400 border border-gray-200 group-hover:border-vlcc-orange group-hover:text-vlcc-orange'}`}>
-                    {mod.id}
-                  </div>
-                  <div>
-                    <h3 className={`font-heading font-bold transition-colors duration-300 ${isActive ? 'text-[1.15rem] text-vlcc-orange' : 'text-lg text-gray-600 group-hover:text-gray-900'}`}>
-                      {mod.title}
-                    </h3>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Right Side: Dynamic Content Display */}
-          <div className="w-full lg:w-7/12 relative">
-            <div className="absolute inset-0 bg-gradient-to-tr from-vlcc-orange/20 to-transparent rounded-[30px] blur-3xl -z-10 animate-pulse" style={{ animationDuration: '4s' }}></div>
-            
+        {/* Mobile View - Horizontal Swiper */}
+        <div className="block md:hidden">
+          <div 
+            className="overflow-hidden relative"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <div 
-              key={activeIndex} 
-              className="bg-white p-10 md:p-14 rounded-[30px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 h-full flex flex-col justify-center relative overflow-hidden animate-slide-up"
+              ref={scrollContainerRef}
+              className="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-5 no-scrollbar scroll-smooth"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
-              {/* Decorative Background Elements */}
-              <div className="absolute -top-20 -right-20 w-64 h-64 bg-vlcc-orange/5 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-vlcc-orange/5 rounded-full blur-3xl"></div>
-              
-              <div className="relative z-10">
-                <span className="inline-block py-1.5 px-4 rounded-full bg-vlcc-orange/10 text-vlcc-orange font-semibold tracking-wider text-sm mb-6 uppercase">
-                  Module {(modules[activeIndex] || modules[0]).id}
-                </span>
-                <h3 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-[#1a1a1a] leading-tight">
-                  {(modules[activeIndex] || modules[0]).title}
-                </h3>
-                <p className="text-gray-600 text-lg leading-relaxed font-body">
-                  {(modules[activeIndex] || modules[0]).content}
-                </p>
-                
-                <div className="mt-10 flex gap-4 items-center">
-                  <div className="w-12 h-1 bg-vlcc-orange rounded-full"></div>
-                  <div className="w-4 h-1 bg-vlcc-orange/50 rounded-full"></div>
-                  <div className="w-2 h-1 bg-vlcc-orange/30 rounded-full"></div>
+              {modules.map((module) => (
+                <div 
+                  key={module.id}
+                  className="min-w-full flex-[0_0_100%] snap-center"
+                >
+                  <div className="bg-[#fcfaf8] rounded-2xl p-[30px] shadow-sm border border-[#eaeaea] h-full relative overflow-hidden flex flex-col justify-center min-h-[300px]">
+                    <div 
+                      className="absolute inset-0 bg-cover bg-center opacity-[0.05] mix-blend-multiply z-0 pointer-events-none"
+                      style={{ backgroundImage: `url('${module.image}')` }}
+                    />
+                    <div className="relative z-10">
+                      <span className="inline-block bg-vlcc-orange/10 text-vlcc-orange px-3 py-1 rounded-full text-xs font-semibold tracking-wider mb-[20px]">
+                        MODULE {module.id}
+                      </span>
+                      <h3 className="text-2xl text-[#1a1a1a] mb-[15px] font-heading font-bold leading-tight">{module.title}</h3>
+                      <p className="text-[#666] text-[15px] leading-relaxed font-body">{module.description}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
+          
+          {/* Pagination Dots */}
+          <div className="flex justify-center gap-2 mt-2">
+            {modules.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setMobileActiveIndex(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === mobileActiveIndex ? 'w-4 bg-vlcc-orange' : 'w-2 bg-gray-300'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
 
+        {/* Desktop View - Tabs and Box */}
+        <div className="hidden md:grid grid-cols-1 lg:grid-cols-12 gap-[40px] lg:gap-[60px] min-h-[400px]">
+          <div className="lg:col-span-5 flex flex-col justify-center gap-3">
+            {modules.map((module) => (
+              <button
+                key={module.id}
+                onClick={() => setActiveModule(module.id)}
+                className={`text-left p-[20px_25px] rounded-xl transition-all duration-300 border-l-4 ${
+                  activeModule === module.id
+                    ? 'bg-white shadow-md border-vlcc-orange scale-[1.02]'
+                    : 'bg-transparent border-transparent hover:bg-white/50'
+                }`}
+              >
+                <div className="flex items-center gap-[20px]">
+                  <span className={`font-heading font-bold text-lg ${
+                    activeModule === module.id ? 'text-vlcc-orange' : 'text-[#888]'
+                  }`}>
+                    {module.id}
+                  </span>
+                  <span className={`font-heading font-semibold text-lg transition-colors ${
+                    activeModule === module.id ? 'text-[#1a1a1a]' : 'text-[#555]'
+                  }`}>
+                    {module.title}
+                  </span>
+                </div>
+              </button>
+            ))}
+          </div>
+
+          <div className="lg:col-span-7 relative">
+            {modules.map((module) => (
+              <div
+                key={`content-${module.id}`}
+                className={`absolute top-0 left-0 w-full h-full transition-all duration-500 ${
+                  activeModule === module.id
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 translate-y-4 pointer-events-none'
+                }`}
+              >
+                <div className="bg-[#fcfaf8] rounded-2xl p-[40px] lg:p-[60px] shadow-sm border border-[#eaeaea] h-full flex flex-col justify-center relative overflow-hidden">
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center opacity-[0.05] mix-blend-multiply z-0 pointer-events-none transition-opacity duration-700"
+                    style={{ backgroundImage: `url('${module.image}')` }}
+                  />
+                  <div className="relative z-10">
+                    <span className="inline-block bg-vlcc-orange/10 text-vlcc-orange px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider mb-[30px]">
+                      MODULE {module.id}
+                    </span>
+                    <h3 className="text-3xl lg:text-4xl text-[#1a1a1a] mb-[20px] font-heading font-bold">{module.title}</h3>
+                    <p className="text-[#666] text-lg leading-relaxed font-body">{module.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

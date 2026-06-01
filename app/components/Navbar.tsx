@@ -26,16 +26,23 @@ export default function Navbar() {
           <Image src="/vlcc-logo.png" alt="VLCC Logo" width={140} height={50} priority className="h-auto max-h-[50px] w-auto" />
         </a>
         
-        <div className="md:hidden flex flex-col justify-between w-[30px] h-[21px] cursor-pointer z-[1001]" onClick={toggleMenu}>
-          <div className={`h-[3px] w-full bg-vlcc-orange rounded-sm transition-all duration-300 ${isMobileMenuOpen ? 'translate-y-[9px] rotate-45' : ''}`}></div>
-          <div className={`h-[3px] w-full bg-vlcc-orange rounded-sm transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></div>
-          <div className={`h-[3px] w-full bg-vlcc-orange rounded-sm transition-all duration-300 ${isMobileMenuOpen ? '-translate-y-[9px] -rotate-45' : ''}`}></div>
+        <div className="md:hidden flex flex-col justify-between w-[30px] h-[21px] cursor-pointer z-[60]" onClick={toggleMenu}>
+          <div className={`h-[3px] w-full rounded-sm transition-all duration-300 ${isMobileMenuOpen ? 'translate-y-[9px] rotate-45 bg-[#333]' : 'bg-vlcc-orange'}`}></div>
+          <div className={`h-[3px] w-full rounded-sm transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0 bg-[#333]' : 'bg-vlcc-orange'}`}></div>
+          <div className={`h-[3px] w-full rounded-sm transition-all duration-300 ${isMobileMenuOpen ? '-translate-y-[9px] -rotate-45 bg-[#333]' : 'bg-vlcc-orange'}`}></div>
         </div>
 
-        <ul className={`flex flex-col md:flex-row md:items-center gap-5 md:gap-[30px] fixed md:relative top-0 md:right-0 w-[70%] md:w-auto h-screen md:h-auto bg-white md:bg-transparent justify-center md:justify-end transition-all duration-400 ease-in-out shadow-[-5px_0_15px_rgba(0,0,0,0.1)] md:shadow-none z-50 ${isMobileMenuOpen ? 'right-0' : 'right-[-100%]'}`}>
-          <li className="md:my-0 my-5"><a href="#about" onClick={closeMenu} className={`font-heading font-medium text-xl md:text-base relative transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-5px] after:left-0 after:bg-vlcc-orange after:transition-all after:duration-300 hover:after:w-full ${isScrolled || isMobileMenuOpen ? 'text-[#333]' : 'text-white drop-shadow-md'}`}>About Us</a></li>
-          <li className="md:my-0 my-5"><a href="#apply" onClick={closeMenu} className={`font-heading font-medium text-xl md:text-base relative transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-5px] after:left-0 after:bg-vlcc-orange after:transition-all after:duration-300 hover:after:w-full ${isScrolled || isMobileMenuOpen ? 'text-[#333]' : 'text-white drop-shadow-md'}`}>How to Apply</a></li>
-          <li className="md:my-0 my-5"><a href="#contact" onClick={closeMenu} className={`font-heading font-medium text-xl md:text-base relative transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-5px] after:left-0 after:bg-vlcc-orange after:transition-all after:duration-300 hover:after:w-full ${isScrolled || isMobileMenuOpen ? 'text-[#333]' : 'text-white drop-shadow-md'}`}>Contact Us</a></li>
+        {/* Mobile Menu Backdrop Overlay */}
+        <div 
+          className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-[40] md:hidden transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          onClick={closeMenu}
+        ></div>
+
+        {/* Navigation Links (Sidebar on Mobile) */}
+        <ul className={`flex flex-col md:flex-row md:items-center gap-8 md:gap-[30px] fixed md:relative top-0 right-0 w-[75%] max-w-[300px] md:w-auto h-[100dvh] md:h-auto bg-white/95 backdrop-blur-xl md:bg-transparent pt-[100px] px-10 md:pt-0 md:px-0 transition-transform duration-400 ease-out shadow-2xl md:shadow-none z-[50] ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-[100%] md:translate-x-0'}`}>
+          <li><a href="#about" onClick={closeMenu} className={`font-heading font-semibold text-2xl md:font-medium md:text-base relative whitespace-nowrap transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-5px] after:left-0 after:bg-vlcc-orange after:transition-all after:duration-300 hover:after:w-full ${isScrolled || isMobileMenuOpen ? 'text-[#333]' : 'text-white drop-shadow-md'}`}>About Us</a></li>
+          <li><a href="#apply" onClick={closeMenu} className={`font-heading font-semibold text-2xl md:font-medium md:text-base relative whitespace-nowrap transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-5px] after:left-0 after:bg-vlcc-orange after:transition-all after:duration-300 hover:after:w-full ${isScrolled || isMobileMenuOpen ? 'text-[#333]' : 'text-white drop-shadow-md'}`}>How to Apply</a></li>
+          <li><a href="#contact" onClick={closeMenu} className={`font-heading font-semibold text-2xl md:font-medium md:text-base relative whitespace-nowrap transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-5px] after:left-0 after:bg-vlcc-orange after:transition-all after:duration-300 hover:after:w-full ${isScrolled || isMobileMenuOpen ? 'text-[#333]' : 'text-white drop-shadow-md'}`}>Contact Us</a></li>
         </ul>
       </div>
     </nav>

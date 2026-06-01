@@ -12,6 +12,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import MobileCTA from './components/MobileCTA';
 import ScrollReveal from './components/ScrollReveal';
+import WhyChooseUs from './components/WhyChooseUs';
+import CareerCTA from './components/CareerCTA';
 
 export const metadata = {
   title: 'VLCC School of Beauty | Diploma in Makeup & Styling',
@@ -33,11 +35,13 @@ export default function Home() {
       <ScrollReveal><About /></ScrollReveal>
       <ScrollReveal><Curriculum /></ScrollReveal>
       <ScrollReveal><Courses /></ScrollReveal>
+      <ScrollReveal><WhyChooseUs /></ScrollReveal>
       <ScrollReveal><HowToApply /></ScrollReveal>
       <ScrollReveal><Gallery /></ScrollReveal>
       <ScrollReveal><Recruiters /></ScrollReveal>
       <ScrollReveal><Testimonials /></ScrollReveal>
       <ScrollReveal><FAQ /></ScrollReveal>
+      <ScrollReveal><CareerCTA /></ScrollReveal>
       <ScrollReveal><Contact /></ScrollReveal>
       <ScrollReveal><Footer /></ScrollReveal>
       

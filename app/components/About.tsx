@@ -2,17 +2,15 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section id="about" className="py-[100px] md:py-[70px] bg-white/70 backdrop-blur-xl relative overflow-hidden z-0">
-      {/* Giant Live Moving Background Text */}
-      <div className="absolute top-1/2 -translate-y-1/2 left-0 w-full overflow-hidden -z-10 pointer-events-none opacity-[0.08]">
-        <div className="flex animate-marquee whitespace-nowrap">
-          <span className="text-[15rem] font-heading font-extrabold text-[#1a1a1a]">
-            MAKEUP • HAIR • AESTHETICS • STYLING • 
-          </span>
-          <span className="text-[15rem] font-heading font-extrabold text-[#1a1a1a]">
-            MAKEUP • HAIR • AESTHETICS • STYLING • 
-          </span>
-        </div>
+    <section id="about" className="py-10 md:py-[70px] bg-white/70 backdrop-blur-xl relative overflow-hidden z-0">
+      {/* Background Moving Text (Slower) */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full overflow-hidden pointer-events-none opacity-[0.03] flex whitespace-nowrap z-0">
+        <span className="text-[15vw] font-heading font-black tracking-tighter uppercase inline-block animate-[marquee_40s_linear_infinite]">
+          VLCC INSTITUTE • VLCC INSTITUTE • VLCC INSTITUTE • 
+        </span>
+        <span className="text-[15vw] font-heading font-black tracking-tighter uppercase inline-block animate-[marquee_40s_linear_infinite]">
+          VLCC INSTITUTE • VLCC INSTITUTE • VLCC INSTITUTE • 
+        </span>
       </div>
 
       <div className="max-w-[1200px] mx-auto px-5 relative z-10">

@@ -2,7 +2,7 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-[100px] md:py-[70px] bg-[#121212] text-white relative bg-[url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center bg-fixed">
+    <section id="contact" className="py-10 md:py-[70px] bg-[#121212] text-white relative bg-[url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center bg-fixed">
       <div className="absolute top-0 left-0 w-full h-full bg-[#121212]/90 z-[1]"></div>
       <div className="max-w-[1200px] mx-auto px-5 relative z-[2]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[60px] align-items-center">

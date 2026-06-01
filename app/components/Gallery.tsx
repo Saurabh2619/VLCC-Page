@@ -1,96 +1,87 @@
 'use client';
-import Image from 'next/image';
-import { useRef, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Gallery() {
   const images = [
-    { src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=1999&auto=format&fit=crop', alt: 'Makeup Artistry 1' },
-    { src: 'https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=2070&auto=format&fit=crop', alt: 'Makeup Class' },
-    { src: 'https://images.unsplash.com/photo-1512496015851-a90890f588c2?q=80&w=2070&auto=format&fit=crop', alt: 'Bridal Makeup' },
-    { src: 'https://images.unsplash.com/photo-1503236823255-94609f598e71?q=80&w=2069&auto=format&fit=crop', alt: 'Eye Makeup' },
-    { src: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=2071&auto=format&fit=crop', alt: 'Fashion Makeup' },
-    { src: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2000&auto=format&fit=crop', alt: 'Hair Styling' }
+    { src: 'https://images.unsplash.com/photo-1516975080661-41dd0e04d436?q=80&w=1964&auto=format&fit=crop', alt: 'Student practicing makeup' },
+    { src: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop', alt: 'Academy Campus' },
+    { src: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop', alt: 'Hair styling class' },
+    { src: 'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=2036&auto=format&fit=crop', alt: 'Student Portfolio Work' },
+    { src: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2069&auto=format&fit=crop', alt: 'Aesthetics lab' },
   ];
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % images.length);
+    }, 3000); // loop every 3 seconds
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
-    <section id="gallery" className="py-[100px] md:py-[70px] bg-[#121212] text-white">
-      <div className="max-w-[1200px] mx-auto px-5">
-        <div className="text-center mb-[60px]">
+    <section id="gallery" className="py-[70px] bg-white relative">
+      <div className="max-w-[1200px] mx-auto px-5 relative z-10">
+        <div className="text-center mb-[50px]">
           <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Portfolio</span>
-          <h2 className="text-[2rem] md:text-[2.5rem] mb-[15px] font-heading font-bold text-white">Student Work & Campus</h2>
-          <p className="text-[#bbb] text-base max-w-[600px] mx-auto font-body">Explore the exceptional artistry of our students and the world-class facilities at VLCC.</p>
+          <h2 className="text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Student Work & Campus</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{ perspective: '1000px' }}>
-          {images.map((img, index) => {
-            // eslint-disable-next-line react-hooks/rules-of-hooks
-            const cardRef = useRef<HTMLDivElement>(null);
-            // eslint-disable-next-line react-hooks/rules-of-hooks
-            const [transform, setTransform] = useState('');
-
-            const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-              if (!cardRef.current) return;
-              const rect = cardRef.current.getBoundingClientRect();
-              const x = e.clientX - rect.left;
-              const y = e.clientY - rect.top;
-              
-              const centerX = rect.width / 2;
-              const centerY = rect.height / 2;
-              
-              const rotateX = ((y - centerY) / centerY) * -10;
-              const rotateY = ((x - centerX) / centerX) * 10;
-              
-              setTransform(`rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`);
-            };
-
-            const handleMouseLeave = () => {
-              setTransform('rotateX(0) rotateY(0) scale3d(1, 1, 1)');
-            };
-
-            return (
-              <div 
-                key={index} 
-                ref={cardRef}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-                className="relative overflow-hidden rounded-xl group aspect-square"
-                style={{ 
-                  transformStyle: 'preserve-3d',
-                  transform,
-                  transition: transform === 'rotateX(0) rotateY(0) scale3d(1, 1, 1)' ? 'transform 0.5s ease-out' : 'transform 0.1s linear'
-                }}
-              >
-                {/* Image scales slightly but main transform is on parent */}
-                <Image 
-                  src={img.src} 
-                  alt={img.alt} 
-                  fill
-                  className="object-cover transition-transform duration-700"
-                />
-                
-                {/* Glare effect */}
-                <div 
-                  className="absolute inset-0 z-20 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-300"
-                  style={{
-                    background: 'linear-gradient(105deg, transparent 20%, rgba(255,255,255,0.8) 25%, transparent 30%)',
-                    backgroundSize: '200% 200%',
-                    backgroundPosition: transform !== 'rotateX(0) rotateY(0) scale3d(1, 1, 1)' ? '0% 0%' : '100% 100%'
-                  }}
-                ></div>
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8 z-10">
-                  <h4 
-                    className="text-white font-heading font-semibold text-xl transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 delay-100"
-                    style={{ transform: 'translateZ(50px)' }}
-                  >
-                    {img.alt}
-                  </h4>
+        {/* Carousel Container */}
+        <div className="relative overflow-hidden py-4">
+          <div className="flex -mx-3 px-3">
+            <div 
+              className="flex transition-transform duration-700 ease-in-out gap-6"
+              style={{ transform: `translateX(-${activeIndex * (100 / 3)}%)`, width: `${(images.length * 100) / 3}%` }}
+            >
+              {images.map((img, idx) => (
+                <div key={idx} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 group">
+                  <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-500 group-hover:-translate-y-2">
+                    <img 
+                      src={img.src} 
+                      alt={img.alt}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                      <span className="text-white font-heading font-semibold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        {img.alt}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              ))}
+            </div>
+          </div>
+          
+          {/* Pagination Dots */}
+          <div className="flex justify-center gap-2 mt-10">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveIndex(index)}
+                className={`h-2 rounded-full transition-all duration-500 ${
+                  activeIndex === index ? 'w-6 bg-vlcc-orange' : 'w-2 bg-gray-300 hover:bg-gray-400'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
+
+      {/* CSS to handle mobile and tablet responsive widths for the carousel logic */}
+      <style dangerouslySetInnerHTML={{__html: `
+        @media (max-width: 1023px) and (min-width: 768px) {
+          .flex[style*="transform"] {
+            transform: translateX(calc(-${activeIndex * 50}% - ${activeIndex * 12}px)) !important;
+          }
+        }
+        @media (max-width: 767px) {
+          .flex[style*="transform"] {
+            transform: translateX(calc(-${activeIndex * 100}% - ${activeIndex * 24}px)) !important;
+          }
+        }
+      `}} />
     </section>
   );
 }
