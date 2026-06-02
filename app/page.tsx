@@ -1,8 +1,8 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Curriculum from './components/Curriculum';
 import Courses from './components/Courses';
+import Facilities from './components/Facilities';
 import HowToApply from './components/HowToApply';
 import Gallery from './components/Gallery';
 import Recruiters from './components/Recruiters';
@@ -34,8 +34,8 @@ export default function Home() {
       <Hero />
       
       <ScrollReveal><About /></ScrollReveal>
-      <ScrollReveal><Curriculum /></ScrollReveal>
       <ScrollReveal><Courses /></ScrollReveal>
+      <ScrollReveal><Facilities /></ScrollReveal>
       <ScrollReveal><WhyChooseUs /></ScrollReveal>
       <ScrollReveal><HowToApply /></ScrollReveal>
       <ScrollReveal><Gallery /></ScrollReveal>

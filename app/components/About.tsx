@@ -27,17 +27,6 @@ export default function About() {
                   className="rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-[1] w-full max-w-[500px] h-auto object-cover"
                 />
                 <div className="absolute -bottom-5 -right-5 w-full h-full border-2 border-vlcc-orange rounded-2xl z-0 hidden lg:block"></div>
-                
-                {/* 100% Placement Floating Badge */}
-                <div className="absolute -bottom-8 lg:bottom-10 -left-4 lg:-left-12 bg-white p-5 rounded-xl shadow-lg z-10 animate-float flex items-center gap-4">
-                  <div className="w-12 h-12 bg-vlcc-orange/10 rounded-full flex items-center justify-center text-vlcc-orange">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  </div>
-                  <div className="text-left">
-                    <p className="font-heading font-bold text-xl text-[#1a1a1a]">100%</p>
-                    <p className="text-sm text-gray-500 font-body uppercase tracking-wide">Placement</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

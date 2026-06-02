@@ -16,21 +16,21 @@ export default function Contact() {
                 <div className="w-[50px] h-[50px] bg-white/10 rounded-full flex items-center justify-center text-[20px] border border-white/20 shrink-0">📞</div>
                 <div>
                   <h4 className="text-[16px] text-vlcc-orange mb-1 font-heading font-semibold">Phone</h4>
-                  <p className="text-[#ddd] text-[15px] font-body">+91 9560554693</p>
+                  <p className="text-[#ddd] text-[15px] font-body">+91 74282 38777</p>
                 </div>
               </div>
               <div className="flex items-center gap-5">
                 <div className="w-[50px] h-[50px] bg-white/10 rounded-full flex items-center justify-center text-[20px] border border-white/20 shrink-0">✉️</div>
                 <div>
                   <h4 className="text-[16px] text-vlcc-orange mb-1 font-heading font-semibold">Email</h4>
-                  <p className="text-[#ddd] text-[15px] font-body">contact@vlccinstitute.com</p>
+                  <p className="text-[#ddd] text-[15px] font-body">institute2.gurugram@vlcceducation.com</p>
                 </div>
               </div>
-              <div className="flex items-center gap-5">
+              <div className="flex items-start gap-5">
                 <div className="w-[50px] h-[50px] bg-white/10 rounded-full flex items-center justify-center text-[20px] border border-white/20 shrink-0">📍</div>
                 <div>
                   <h4 className="text-[16px] text-vlcc-orange mb-1 font-heading font-semibold">Location</h4>
-                  <p className="text-[#ddd] text-[15px] font-body">Multiple centers across India</p>
+                  <p className="text-[#ddd] text-[15px] font-body">Third Floor, Sapphire Mall, Block S, Uppal Southend, Opposite Orchid Petal, Sector 49, Gurugram, haryana - 122018</p>
                 </div>
               </div>
             </div>
@@ -48,9 +48,6 @@ export default function Contact() {
                 </div>
                 <div>
                   <input type="tel" placeholder="Your Phone Number" required className="w-full bg-white/5 border border-white/15 rounded-lg p-[15px_20px] text-white font-body text-[15px] transition-all duration-300 focus:outline-none focus:border-vlcc-orange focus:bg-white/10 placeholder:text-gray-300 placeholder:opacity-100" />
-                </div>
-                <div>
-                  <textarea placeholder="Your Message or Enquiry" rows={4} required className="w-full bg-white/5 border border-white/15 rounded-lg p-[15px_20px] text-white font-body text-[15px] transition-all duration-300 focus:outline-none focus:border-vlcc-orange focus:bg-white/10 placeholder:text-gray-300 placeholder:opacity-100 resize-y min-h-[120px]"></textarea>
                 </div>
                 <button type="submit" className="btn-primary w-full mt-2.5">
                   Submit Enquiry

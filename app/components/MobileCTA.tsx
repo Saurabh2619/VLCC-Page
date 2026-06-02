@@ -2,7 +2,7 @@ export default function MobileCTA() {
   return (
     <div className="fixed bottom-0 left-0 w-full z-50 md:hidden flex shadow-[0_-5px_20px_rgba(0,0,0,0.15)] bg-white">
       <a 
-        href="tel:+919560554693" 
+        href="tel:+917428238777" 
         className="flex-1 py-4 flex items-center justify-center gap-2 bg-white text-vlcc-orange font-heading font-bold text-[15px] active:bg-gray-50 transition-colors"
       >
         <span className="text-xl">📞</span> Call Now
