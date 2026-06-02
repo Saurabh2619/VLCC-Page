@@ -95,40 +95,41 @@ export default function Curriculum() {
         {/* Mobile View - Horizontal Swiper */}
         <div className="block md:hidden">
           <div 
-            className="overflow-hidden relative cursor-grab active:cursor-grabbing"
+            className="overflow-hidden relative cursor-grab active:cursor-grabbing w-full min-h-[330px]"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            <div 
-              className="flex transition-transform duration-700 ease-in-out gap-5 pb-5"
-              style={{ transform: `translateX(calc(-${mobileActiveIndex * 100}% - ${mobileActiveIndex * 20}px))`, width: '100%' }}
-            >
-              {modules.map((module) => (
-                <div 
-                  key={module.id}
-                  className="min-w-full flex-shrink-0"
-                >
-                  <div className="bg-[#fcfaf8] rounded-2xl p-[30px] shadow-sm border border-[#eaeaea] h-full relative overflow-hidden flex flex-col justify-center min-h-[300px]">
-                    <div 
-                      className="absolute inset-0 bg-cover bg-center opacity-[0.05] mix-blend-multiply z-0 pointer-events-none"
-                      style={{ backgroundImage: `url('${module.image}')` }}
-                    />
-                    <div className="relative z-10">
-                      <span className="inline-block bg-vlcc-orange/10 text-vlcc-orange px-3 py-1 rounded-full text-xs font-semibold tracking-wider mb-[20px]">
-                        MODULE {module.id}
-                      </span>
-                      <h3 className="text-2xl text-[#1a1a1a] mb-[15px] font-heading font-bold leading-tight">{module.title}</h3>
-                      <p className="text-[#666] text-[15px] leading-relaxed font-body">{module.description}</p>
-                    </div>
+            {modules.map((module, index) => (
+              <div 
+                key={module.id}
+                className={`absolute top-0 left-0 w-full transition-all duration-500 ease-out ${
+                  index === mobileActiveIndex 
+                    ? 'opacity-100 translate-x-0 pointer-events-auto z-10' 
+                    : index < mobileActiveIndex
+                      ? 'opacity-0 -translate-x-full pointer-events-none z-0'
+                      : 'opacity-0 translate-x-full pointer-events-none z-0'
+                }`}
+              >
+                <div className="bg-[#fcfaf8] rounded-2xl p-[30px] shadow-sm border border-[#eaeaea] w-full relative overflow-hidden flex flex-col justify-center min-h-[300px]">
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center opacity-[0.05] mix-blend-multiply z-0 pointer-events-none"
+                    style={{ backgroundImage: `url('${module.image}')` }}
+                  />
+                  <div className="relative z-10">
+                    <span className="inline-block bg-vlcc-orange/10 text-vlcc-orange px-3 py-1 rounded-full text-xs font-semibold tracking-wider mb-[20px]">
+                      MODULE {module.id}
+                    </span>
+                    <h3 className="text-2xl text-[#1a1a1a] mb-[15px] font-heading font-bold leading-tight">{module.title}</h3>
+                    <p className="text-[#666] text-[15px] leading-relaxed font-body">{module.description}</p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
           
           {/* Pagination Dots */}
-          <div className="flex justify-center gap-2 mt-2">
+          <div className="flex justify-center gap-2 mt-4">
             {modules.map((_, index) => (
               <button
                 key={index}
