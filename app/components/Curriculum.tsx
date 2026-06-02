@@ -62,11 +62,11 @@ export default function Curriculum() {
     const isLeftSwipe = distance > 50;
     const isRightSwipe = distance < -50;
 
-    if (isLeftSwipe && mobileActiveIndex < modules.length - 1) {
-      setMobileActiveIndex(prev => prev + 1);
+    if (isLeftSwipe) {
+      setMobileActiveIndex((prev) => (prev + 1) % modules.length);
     }
-    if (isRightSwipe && mobileActiveIndex > 0) {
-      setMobileActiveIndex(prev => prev - 1);
+    if (isRightSwipe) {
+      setMobileActiveIndex((prev) => (prev === 0 ? modules.length - 1 : prev - 1));
     }
     
     setTouchStart(null);
@@ -95,20 +95,19 @@ export default function Curriculum() {
         {/* Mobile View - Horizontal Swiper */}
         <div className="block md:hidden">
           <div 
-            className="overflow-hidden relative"
+            className="overflow-hidden relative cursor-grab active:cursor-grabbing"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
             <div 
-              ref={scrollContainerRef}
-              className="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-5 no-scrollbar scroll-smooth"
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              className="flex transition-transform duration-700 ease-in-out gap-5 pb-5"
+              style={{ transform: `translateX(calc(-${mobileActiveIndex * 100}% - ${mobileActiveIndex * 20}px))`, width: '100%' }}
             >
               {modules.map((module) => (
                 <div 
                   key={module.id}
-                  className="min-w-full flex-[0_0_100%] snap-center"
+                  className="min-w-full flex-shrink-0"
                 >
                   <div className="bg-[#fcfaf8] rounded-2xl p-[30px] shadow-sm border border-[#eaeaea] h-full relative overflow-hidden flex flex-col justify-center min-h-[300px]">
                     <div 
