@@ -52,8 +52,8 @@ export default function Courses() {
     <section id="courses" className="py-10 md:py-[70px] bg-white/40 backdrop-blur-md relative">
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="text-center mb-[40px] md:mb-[60px]">
-          <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Discover Our Classes</span>
-          <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Find Your Path</h2>
+          <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Courses</span>
+          <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">We Offer</h2>
         </div>
 
         {/* Courses Grid */}

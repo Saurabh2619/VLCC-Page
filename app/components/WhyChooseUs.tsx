@@ -42,8 +42,8 @@ export default function WhyChooseUs() {
 
       <div className="max-w-[1200px] mx-auto px-5 relative z-20">
         <div className="text-center mb-[50px] md:mb-[70px]">
-          <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">The VLCC Advantage</span>
-          <h2 className="text-[2rem] md:text-[2.5rem] font-heading font-bold mb-[15px]">Why Choose VLCC School of Beauty?</h2>
+          <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Brilliance Starts Here</span>
+          <h2 className="text-[2rem] md:text-[2.5rem] font-heading font-bold mb-[15px]">Why Choose VLCC School of Beauty</h2>
           <p className="text-[#bbb] text-base max-w-[700px] mx-auto font-body">
             Equip yourself with world-class education, hands-on training, and the industry connections needed to thrive in the beauty and wellness sector.
           </p>

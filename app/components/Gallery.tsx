@@ -3,14 +3,40 @@ import { useState, useEffect } from 'react';
 
 export default function Gallery() {
   const images = [
-    { src: 'https://images.unsplash.com/photo-1516975080661-41dd0e04d436?q=80&w=1964&auto=format&fit=crop', alt: 'Student practicing makeup' },
-    { src: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop', alt: 'Academy Campus' },
-    { src: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop', alt: 'Hair styling class' },
-    { src: 'https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=2036&auto=format&fit=crop', alt: 'Student Portfolio Work' },
-    { src: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2069&auto=format&fit=crop', alt: 'Aesthetics lab' },
+    { src: '/images/curr-bridal.png', alt: 'Bridal Makeup' },
+    { src: '/images/course-eye.png', alt: 'Eye Makeup' },
+    { src: '/images/curr-base.png', alt: 'Airbrush Makeup' },
+    { src: '/images/course-hair.png', alt: 'Hair Styling' },
+    { src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=1999&auto=format&fit=crop', alt: 'Editorial Makeup' },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  // the required distance between touchStart and touchEnd to be detected as a swipe
+  const minSwipeDistance = 50; 
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null); // otherwise the swipe is fired even with usual touch events
+    setTouchStart(e.targetTouches[0].clientX);
+  }
+
+  const onTouchMove = (e: React.TouchEvent) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    
+    if (isLeftSwipe) {
+      setActiveIndex((current) => (current + 1) % images.length);
+    }
+    if (isRightSwipe) {
+      setActiveIndex((current) => (current === 0 ? images.length - 1 : current - 1));
+    }
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,11 +50,16 @@ export default function Gallery() {
       <div className="max-w-[1200px] mx-auto px-5 relative z-10">
         <div className="text-center mb-[50px]">
           <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Portfolio</span>
-          <h2 className="text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Student Work & Campus</h2>
+          <h2 className="text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Be Beautiful</h2>
         </div>
 
         {/* Carousel Container */}
-        <div className="relative overflow-hidden py-4">
+        <div 
+          className="relative overflow-hidden py-4 cursor-grab active:cursor-grabbing"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
           <div className="flex -mx-3 px-3">
             <div 
               className="flex transition-transform duration-700 ease-in-out gap-6"

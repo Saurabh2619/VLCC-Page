@@ -44,11 +44,12 @@ export default function About() {
 
           <div className="w-full lg:w-1/2 mt-[40px] lg:mt-0 text-center lg:text-left">
             <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">About VLCC Institute</span>
-            <h2 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#1a1a1a] mb-5 leading-[1.2] font-heading font-bold">
-              Empowering Your <span className="text-vlcc-orange">Beauty Career</span>
+            <h2 className="text-[2.5rem] md:text-[3.5rem] text-[#1a1a1a] mb-6 font-heading font-bold leading-[1.1] tracking-tight">
+              30+ Years of Shaping <span className="text-vlcc-orange">Beauty Professionals</span> Across India
             </h2>
-            <p className="text-[#666] text-lg leading-relaxed mb-6 font-body">
-              With over 20 years of excellence in beauty and wellness education, VLCC School of Beauty is Asia's largest chain of vocational education academies.
+            
+            <p className="text-[#666] text-lg leading-relaxed mb-8 font-body">
+              With over 30 years of excellence in beauty and wellness education, VLCC School of Beauty is your ultimate destination for industry-leading certification. Our holistic approach combines technical mastery with business acumen.
             </p>
             <p className="text-[#666] text-lg leading-relaxed mb-10 font-body">
               Our NSDC-approved diploma courses are meticulously designed by industry experts to provide you with the most advanced, hands-on training, ensuring you are industry-ready from day one.

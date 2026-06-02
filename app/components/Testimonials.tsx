@@ -25,6 +25,31 @@ export default function Testimonials() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  }
+
+  const onTouchMove = (e: React.TouchEvent) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    
+    if (isLeftSwipe) {
+      setCurrentIndex((current) => (current + 1) % testimonials.length);
+    }
+    if (isRightSwipe) {
+      setCurrentIndex((current) => (current === 0 ? testimonials.length - 1 : current - 1));
+    }
+  }
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -39,7 +64,12 @@ export default function Testimonials() {
         <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Success Stories</span>
         <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[50px] font-heading font-bold">What Our Students Say</h2>
         
-        <div className="relative bg-white/50 backdrop-blur-md rounded-2xl p-10 md:p-14 shadow-lg border border-gray-100 max-w-[800px] mx-auto overflow-hidden">
+        <div 
+          className="relative bg-white/50 backdrop-blur-md rounded-2xl p-10 md:p-14 shadow-lg border border-gray-100 max-w-[800px] mx-auto overflow-hidden cursor-grab active:cursor-grabbing"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
           <div className="text-5xl text-vlcc-orange/20 absolute top-5 left-10 font-heading">"</div>
           
           <div className="relative h-[250px] md:h-[200px] flex items-center justify-center">

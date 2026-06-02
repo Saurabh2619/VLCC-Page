@@ -22,9 +22,17 @@ export default function CareerCTA() {
             <h2 className="text-[2.2rem] md:text-[3.5rem] font-heading font-bold mb-6 leading-[1.1]">
               Your Beauty Career Starts Here
             </h2>
-            <p className="text-white/90 text-base md:text-lg mb-8 font-body max-w-[500px]">
-              Turn your passion into a high-paying profession. Enroll in our industry-leading courses and get guaranteed placement assistance today.
+            <p className="text-white/90 text-base md:text-lg mb-6 font-body max-w-[500px]">
+              Turn your passion into a high-paying profession. Get guaranteed placement assistance for roles such as:
             </p>
+            
+            <div className="flex flex-wrap gap-3 mb-8 max-w-[600px]">
+              {['Beauty Therapist', 'Hair Stylist', 'Aesthetic Skin Therapist', 'Salon Manager', 'Clinical Nutritionist', 'Spa Therapist', 'Nail Artist', 'Beauty Educator'].map((role, idx) => (
+                <span key={idx} className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-colors hover:bg-white/20 cursor-default">
+                  {role}
+                </span>
+              ))}
+            </div>
             
             <div className="flex flex-wrap items-center gap-6 mt-[40px]">
               <MagneticButton>

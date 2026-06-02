@@ -12,7 +12,11 @@ export default function Hero() {
         <div className="flex justify-between items-center flex-wrap gap-6 md:gap-10 md:text-left text-center flex-col md:flex-row">
           <div className="flex-1 min-w-[300px] animate-slide-up w-full mt-4 md:mt-0">
             <span className="inline-block bg-vlcc-orange/20 text-vlcc-orange px-4 py-1.5 md:px-[15px] md:py-[5px] rounded-full font-semibold text-xs md:text-sm mb-4 md:mb-5 border border-vlcc-orange tracking-wide uppercase">Admissions Open</span>
-            <h1 className="text-[2.1rem] md:text-[3.5rem] font-bold leading-[1.15] mb-4 md:mb-5 font-heading">Diploma in Makeup & Styling<br /><span className="text-vlcc-orange italic">VLCC Institute</span></h1>
+            <h1 className="text-[3.5rem] md:text-[5.5rem] leading-[1.1] font-heading font-black text-white mb-6 tracking-tight">
+              Find Your Perfect <br />
+              <span className="text-vlcc-orange italic pr-2 font-serif font-light tracking-normal">Beauty Course</span> <br />
+              Today
+            </h1>
             
             <p className="text-base md:text-lg text-[#d1d1d1] mb-6 md:mb-[30px] max-w-[500px] mx-auto md:mx-0 font-body">Enroll for the Upcoming Batch</p>
             
