@@ -26,13 +26,13 @@ export default function Gallery() {
           <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Student Portfolio</h2>
         </div>
 
-        <div className="mx-auto w-full">
+        <div className="max-w-[1200px] mx-auto pb-10">
           <InfiniteSlider 
             images={portfolioImages} 
             visibleDesktop={4} 
             visibleMobile={1} 
             aspectRatio="aspect-[3/4]" 
-            autoPlayInterval={3000} 
+            autoPlayInterval={2500} 
           />
         </div>
       </div>

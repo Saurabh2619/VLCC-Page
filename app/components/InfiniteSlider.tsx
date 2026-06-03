@@ -130,7 +130,7 @@ export default function InfiniteSlider({
 
   return (
     <div 
-      className="relative w-full overflow-hidden cursor-grab active:cursor-grabbing px-2 py-4"
+      className="relative w-full overflow-hidden cursor-grab active:cursor-grabbing py-4"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -168,7 +168,7 @@ export default function InfiniteSlider({
       
       {/* Navigation Controls */}
       {useDots ? (
-        <div className="flex justify-center items-center gap-3 mt-8">
+        <div className="flex justify-center items-center gap-1.5 md:gap-2 mt-8">
           {images.map((_, idx) => {
             const activeDotIdx = currentIndex % images.length;
             const isActive = idx === activeDotIdx;
@@ -184,7 +184,7 @@ export default function InfiniteSlider({
                     setCurrentIndex(currentIndex + delta);
                   }
                 }}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${isActive ? 'bg-vlcc-orange scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
+                className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${isActive ? 'bg-vlcc-orange scale-110' : 'bg-gray-300 hover:bg-gray-400'}`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             );
