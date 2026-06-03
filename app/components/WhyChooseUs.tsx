@@ -4,7 +4,7 @@ export default function WhyChooseUs() {
   const features = [
     {
       id: 1,
-      icon: "🎓",
+      icon: <img src="/nsdc_logo.png" alt="NSDC Logo" className="w-10 h-10 object-contain" />,
       title: "NSDC Approved",
       description: "Our certifications are government-recognized, adding massive value to your professional portfolio."
     },
@@ -55,9 +55,15 @@ export default function WhyChooseUs() {
               key={feature.id} 
               className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 group"
             >
-              <div className="w-[60px] h-[60px] bg-vlcc-orange/20 rounded-full flex items-center justify-center text-3xl mb-6 border border-vlcc-orange/30 group-hover:scale-110 transition-transform duration-300">
-                {feature.icon}
-              </div>
+              {feature.id === 1 ? (
+                <div className="w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center mb-6 border border-vlcc-orange/30 overflow-hidden shadow-[0_0_15px_rgba(255,255,255,0.1)] group-hover:scale-110 transition-transform duration-300 shrink-0">
+                  <img src="/nsdc_logo.png" alt="NSDC Logo" className="w-[75%] h-[75%] object-contain" />
+                </div>
+              ) : (
+                <div className="w-[60px] h-[60px] bg-vlcc-orange/20 rounded-full flex items-center justify-center text-3xl mb-6 border border-vlcc-orange/30 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                  {feature.icon}
+                </div>
+              )}
               <h3 className="text-xl font-heading font-semibold mb-3">{feature.title}</h3>
               <p className="text-[#aaa] text-sm leading-relaxed font-body">
                 {feature.description}

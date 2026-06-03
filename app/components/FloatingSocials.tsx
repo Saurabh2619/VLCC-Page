@@ -38,7 +38,7 @@ export default function FloatingSocials() {
   ];
 
   return (
-    <div className="fixed right-0 bottom-[10%] z-[100] flex flex-col gap-1">
+    <div className="fixed right-0 bottom-[15%] md:bottom-[10%] z-[100] flex flex-col gap-1">
       {socials.map((social) => (
         <a 
           key={social.name}
