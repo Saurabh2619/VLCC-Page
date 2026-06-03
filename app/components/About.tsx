@@ -37,11 +37,14 @@ export default function About() {
               30+ Years of Shaping <span className="text-vlcc-orange">Beauty Professionals</span> Across India
             </h2>
             
-            <p className="text-[#666] text-lg leading-relaxed mb-8 font-body">
-              With over 30 years of excellence in beauty and wellness education, VLCC School of Beauty is your ultimate destination for industry-leading certification. Our holistic approach combines technical mastery with business acumen.
+            <p className="text-[#666] text-[15px] md:text-base leading-relaxed mb-5 font-body">
+              Founded under the legacy of the VLCC Group, VLCC School of Beauty is one of India's most recognised beauty training institutes, dedicated to building the next generation of skilled beauty and wellness professionals.
             </p>
-            <p className="text-[#666] text-lg leading-relaxed mb-10 font-body">
-              Our NSDC-approved diploma courses are meticulously designed by industry experts to provide you with the most advanced, hands-on training, ensuring you are industry-ready from day one.
+            <p className="text-[#666] text-[15px] md:text-base leading-relaxed mb-5 font-body">
+              With over 30 years of industry expertise behind every program, we offer a powerful combination of scientific learning, practical training, and career-focused outcomes. Our beauty and wellness courses span makeup artistry, hair dressing, skincare, aesthetics, cosmetology, nutrition, spa therapies, nail artistry, and more. Each course is designed to meet the demands of a fast-growing global industry.
+            </p>
+            <p className="text-[#666] text-[15px] md:text-base leading-relaxed mb-10 font-body">
+              What sets us apart is not just the breadth of courses we offer, but the depth of training our students receive. Every program at our certified beauty academy is built around hands-on learning, expert-led instruction, and real-world industry exposure, so graduates are job-ready from day one.
             </p>
             
             <a href="#courses" className="btn-primary">

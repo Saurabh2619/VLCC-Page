@@ -4,24 +4,24 @@ import { useState } from 'react';
 export default function FAQ() {
   const faqs = [
     {
-      question: 'What is the duration of the makeup courses?',
-      answer: 'Course durations vary depending on the level. A short-term certificate course can take 1-2 months, while a comprehensive professional diploma can take up to 6 months to complete.'
+      question: 'Q: What beauty and wellness courses does VLCC School of Beauty offer?',
+      answer: 'VLCC offers 100+ professional beauty courses covering makeup artistry, hair dressing, cosmetology, aesthetics, skincare, spa therapies, nutrition, and nail artistry. Courses are available at beginner, professional, and advanced levels.'
     },
     {
-      question: 'Do you provide placement assistance?',
-      answer: 'Yes! We offer 100% placement assistance. Our dedicated placement cell regularly organizes interviews with top beauty brands, salons, and media houses.'
+      question: 'Q: Are VLCC beauty courses certified?',
+      answer: 'Yes. All VLCC programs are certified beauty courses recognised by national and international bodies including NSDC. Many courses offer the option of internationally recognised certifications accepted in 30+ countries.'
     },
     {
-      question: 'Is the certification recognized?',
-      answer: 'Absolutely. Our courses are NSDC (National Skill Development Corporation) approved, making the certification highly recognized both in India and internationally.'
+      question: 'Q: Does VLCC provide placement assistance after completing a course?',
+      answer: 'Yes. VLCC provides 100% placement assistance through a dedicated placement cell and a network of 200+ hiring partners across India and internationally.'
     },
     {
-      question: 'Do I need prior experience to join?',
-      answer: 'No prior experience is necessary for our beginner and diploma courses. We teach everything from the absolute basics to advanced professional techniques.'
+      question: 'Q: What is the duration of beauty courses at VLCC?',
+      answer: 'Course duration varies from short certificate programs of 1 to 3 months to comprehensive diploma and advanced programs running 6 to 12 months. Specific duration details are available on each course page.'
     },
     {
-      question: 'Are makeup products provided during training?',
-      answer: 'Yes, we provide professional, high-quality makeup products and tools for all in-class practical sessions. Students do not need to buy their own kits for classroom practice.'
+      question: 'Q: How do I book a free demo class?',
+      answer: 'Fill out the enquiry form on this page or call our admissions helpline. A free demo class is available at your nearest VLCC institute in 75+ cities across India.'
     }
   ];
 
