@@ -6,42 +6,42 @@ export default function Courses() {
   const allCourses = [
     {
       id: 1,
-      title: "Advanced Diploma in Makeup",
+      title: "Makeup Artistry",
       duration: "6 Months",
       image: "/images/curr-base.png",
       description: "Comprehensive training from basics to advanced airbrush and bridal makeup."
     },
     {
       id: 2,
-      title: "Professional Hair Styling",
+      title: "Hair Dressing",
       duration: "4 Months",
       image: "/images/course-hair.png",
       description: "Master modern haircuts, coloring techniques, and advanced styling."
     },
     {
       id: 3,
-      title: "Advanced Skin Care (Esthiology)",
+      title: "Esthiology",
       duration: "3 Months",
       image: "/images/course-skin.png",
       description: "In-depth training in skin analysis, facial treatments, and modern aesthetics."
     },
     {
       id: 4,
-      title: "Master Nail Artistry",
+      title: "Nail Artistry",
       duration: "2 Months",
       image: "/images/course-nails.png",
       description: "Learn acrylic extensions, gel polish, and intricate 3D nail art designs."
     },
     {
       id: 5,
-      title: "Clinical Aesthetics",
+      title: "Aesthetics",
       duration: "5 Months",
       image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop",
       description: "Advanced cosmetic procedures and non-invasive aesthetic treatments."
     },
     {
       id: 6,
-      title: "Diploma in Nutrition",
+      title: "Nutrition",
       duration: "3 Months",
       image: "/images/course-nutrition.png",
       description: "Learn holistic wellness, meal planning, and clinical nutrition."
