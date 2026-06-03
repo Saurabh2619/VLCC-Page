@@ -8,35 +8,35 @@ export default function Courses() {
       id: 1,
       title: "Makeup Artistry",
       duration: "6 Months",
-      image: "/images/curr-base.png",
+      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508533/WhatsApp_Image_2026-06-02_at_22.30.08_uklh0e.jpg",
       description: "Comprehensive training from basics to advanced airbrush and bridal makeup."
     },
     {
       id: 2,
       title: "Hair Dressing",
       duration: "4 Months",
-      image: "/images/course-hair.png",
+      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508689/WhatsApp_Image_2026-06-02_at_22.37.09_iakueq.jpg",
       description: "Master modern haircuts, coloring techniques, and advanced styling."
     },
     {
       id: 3,
       title: "Esthiology",
       duration: "3 Months",
-      image: "/images/course-skin.png",
+      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508479/WhatsApp_Image_2026-06-02_at_22.34.16_mkfqyt.jpg",
       description: "In-depth training in skin analysis, facial treatments, and modern aesthetics."
     },
     {
       id: 4,
       title: "Nail Artistry",
       duration: "2 Months",
-      image: "/images/course-nails.png",
+      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508538/WhatsApp_Image_2026-06-02_at_22.40.31_sfaboy.jpg",
       description: "Learn acrylic extensions, gel polish, and intricate 3D nail art designs."
     },
     {
       id: 5,
       title: "Aesthetics",
       duration: "5 Months",
-      image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop",
+      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508432/WhatsApp_Image_2026-06-02_at_22.37.43_lx1cys.jpg",
       description: "Advanced cosmetic procedures and non-invasive aesthetic treatments."
     },
     {
@@ -52,7 +52,7 @@ export default function Courses() {
     <section id="courses" className="py-10 md:py-[70px] bg-white/40 backdrop-blur-md relative">
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="text-center mb-[40px] md:mb-[60px]">
-          <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Courses</span>
+          <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5">Courses</span>
           <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">We Offer</h2>
         </div>
 

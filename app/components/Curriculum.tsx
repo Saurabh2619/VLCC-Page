@@ -87,7 +87,7 @@ export default function Curriculum() {
     <section id="curriculum" className="py-10 md:py-[70px] bg-white/60 backdrop-blur-xl relative">
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="text-center mb-[40px] md:mb-[60px]">
-          <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">What You Will Learn</span>
+          <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5">What You Will Learn</span>
           <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Course Curriculum</h2>
           <p className="text-[#666] text-base max-w-[600px] mx-auto font-body">Our comprehensive curriculum is designed by industry experts to take you from a beginner to a professional makeup artist.</p>
         </div>

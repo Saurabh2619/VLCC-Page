@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="max-w-[1200px] mx-auto px-5 relative z-[2]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[60px] align-items-center">
           <div>
-            <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-[15px]">Get in Touch</span>
+            <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-[15px]">Get in Touch</span>
             <h2 className="text-[2rem] lg:text-[2.5rem] mb-[25px] text-white font-heading font-bold">Let's Start Your Journey</h2>
             <p className="text-[#bbb] text-base leading-[1.6] mb-[40px] font-body">Have questions about the courses? Our experts are here to help you navigate your career path in beauty and styling.</p>
             

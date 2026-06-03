@@ -1,4 +1,4 @@
-'use client';
+import InfiniteSlider from './InfiniteSlider';
 
 export default function Facilities() {
   const facilities = [
@@ -52,15 +52,25 @@ export default function Facilities() {
     }
   ];
 
+  const campusImages = [
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.27.57_k5sipg.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.28.29_mbpcgo.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.27.39_e7j3f3.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496222/WhatsApp_Image_2026-06-02_at_22.26.52_ysqecv.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.28.42_rzarcv.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496222/WhatsApp_Image_2026-06-02_at_22.27.31_ujjbk1.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496222/WhatsApp_Image_2026-06-02_at_22.27.50_qilsov.jpg'
+  ];
+
   return (
     <section className="py-10 md:py-[70px] bg-[#fdfaf7] relative overflow-hidden border-y border-gray-100">
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="text-center mb-[40px] md:mb-[60px]">
-          <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Why Train With Us</span>
+          <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5">Why Train With Us</span>
           <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Centre Facilities</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {facilities.map((item, index) => (
             <div 
               key={index} 
@@ -74,6 +84,20 @@ export default function Facilities() {
               </h3>
             </div>
           ))}
+        </div>
+
+        {/* Campus Tour Slider */}
+        <div className="text-center mb-[30px]">
+          <h3 className="text-[1.8rem] md:text-[2.2rem] text-[#1a1a1a] font-heading font-bold">Our Campus</h3>
+        </div>
+        <div className="max-w-[1200px] mx-auto">
+          <InfiniteSlider 
+            images={campusImages} 
+            visibleDesktop={4} 
+            visibleMobile={1} 
+            aspectRatio="aspect-[4/3]" 
+            autoPlayInterval={3500} 
+          />
         </div>
       </div>
     </section>

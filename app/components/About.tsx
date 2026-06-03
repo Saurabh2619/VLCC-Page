@@ -32,7 +32,7 @@ export default function About() {
           </div>
 
           <div className="w-full lg:w-1/2 mt-[40px] lg:mt-0 text-center lg:text-left">
-            <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">About VLCC Institute</span>
+            <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5">About VLCC Institute</span>
             <h2 className="text-[2.5rem] md:text-[3.5rem] text-[#1a1a1a] mb-6 font-heading font-bold leading-[1.1] tracking-tight">
               30+ Years of Shaping <span className="text-vlcc-orange">Beauty Professionals</span> Across India
             </h2>

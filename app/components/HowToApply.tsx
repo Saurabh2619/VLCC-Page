@@ -26,7 +26,7 @@ export default function HowToApply() {
     <section id="apply" className="py-10 md:py-[70px] bg-transparent">
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="text-center mb-[60px]">
-          <span className="block text-vlcc-orange font-semibold uppercase tracking-[1.5px] text-sm mb-2.5">Process</span>
+          <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5">Process</span>
           <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">How to Apply</h2>
           <p className="text-[#666] text-base max-w-[600px] mx-auto font-body">Join the leader in beauty education in 4 simple steps.</p>
         </div>
