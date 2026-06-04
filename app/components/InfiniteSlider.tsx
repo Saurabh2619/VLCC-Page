@@ -166,8 +166,8 @@ export default function InfiniteSlider({
         ))}
       </div>
       
-      {/* Navigation Controls */}
-      {useDots ? (
+      {/* Dots Navigation */}
+      {useDots && (
         <div className="flex justify-center items-center gap-1.5 md:gap-2 mt-8">
           {images.map((_, idx) => {
             const activeDotIdx = currentIndex % images.length;
@@ -190,24 +190,23 @@ export default function InfiniteSlider({
             );
           })}
         </div>
-      ) : (
-        <>
-          <button 
-            onClick={(e) => { e.stopPropagation(); prevSlide(); }}
-            className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white text-vlcc-orange rounded-full items-center justify-center shadow-lg transition-colors z-10"
-            aria-label="Previous slide"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button 
-            onClick={(e) => { e.stopPropagation(); nextSlide(); }}
-            className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white text-vlcc-orange rounded-full items-center justify-center shadow-lg transition-colors z-10"
-            aria-label="Next slide"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-        </>
       )}
+      
+      {/* Arrow Navigation */}
+      <button 
+        onClick={(e) => { e.stopPropagation(); prevSlide(); }}
+        className="flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 bg-white/80 hover:bg-white text-vlcc-orange rounded-full items-center justify-center shadow-lg transition-colors z-10"
+        aria-label="Previous slide"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button 
+        onClick={(e) => { e.stopPropagation(); nextSlide(); }}
+        className="flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 bg-white/80 hover:bg-white text-vlcc-orange rounded-full items-center justify-center shadow-lg transition-colors z-10"
+        aria-label="Next slide"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
     </div>
   );
 }

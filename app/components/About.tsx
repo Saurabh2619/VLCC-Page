@@ -20,11 +20,11 @@ export default function About() {
             <div className="relative text-center lg:text-left">
               <div className="relative inline-block w-full lg:w-auto">
                 <Image 
-                  src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=2071&auto=format&fit=crop"
+                  src="https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496054/WhatsApp_Image_2026-06-02_at_22.24.20_bvf5cd.jpg"
                   alt="Makeup Artistry"
                   width={500}
                   height={600}
-                  className="rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-[1] w-full max-w-[500px] h-auto object-cover"
+                  className="rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-[1] w-auto max-w-full h-auto max-h-[450px] md:max-h-[550px] object-contain mx-auto"
                 />
                 <div className="absolute -bottom-5 -right-5 w-full h-full border-2 border-vlcc-orange rounded-2xl z-0 hidden lg:block"></div>
               </div>

@@ -22,7 +22,7 @@ export default function Courses() {
       id: 3,
       title: "Esthiology",
       duration: "3 Months",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508479/WhatsApp_Image_2026-06-02_at_22.34.16_mkfqyt.jpg",
+      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587793/WhatsApp_Image_2026-06-04_at_12.41.15_sl4olz.jpg",
       description: "In-depth training in skin analysis, facial treatments, and modern aesthetics."
     },
     {
@@ -34,9 +34,9 @@ export default function Courses() {
     },
     {
       id: 5,
-      title: "Aesthetics",
+      title: "Aesthetic Laser Treatments",
       duration: "5 Months",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508432/WhatsApp_Image_2026-06-02_at_22.37.43_lx1cys.jpg",
+      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587755/WhatsApp_Image_2026-06-04_at_12.40.19_yhwssy.jpg",
       description: "Advanced cosmetic procedures and non-invasive aesthetic treatments."
     },
     {
@@ -68,9 +68,12 @@ export default function Courses() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              <div className="p-[30px] flex-1 flex flex-col relative bg-white">
-                <h3 className="text-2xl text-[#1a1a1a] font-heading font-bold mb-3">{course.title}</h3>
-                <p className="text-[#666] text-[15px] leading-relaxed mb-6 font-body flex-1">{course.description}</p>
+              <div className="p-[30px] flex-1 flex flex-col relative bg-white overflow-hidden">
+                {/* Orange Gradient Sweep on Hover (Text Section) */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-vlcc-orange/70 via-vlcc-orange/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"></div>
+                
+                <h3 className="text-2xl text-[#1a1a1a] font-heading font-bold mb-3 relative z-10">{course.title}</h3>
+                <p className="text-[#666] text-[15px] leading-relaxed mb-6 font-body flex-1 relative z-10">{course.description}</p>
               </div>
             </div>
           ))}

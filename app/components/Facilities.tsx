@@ -55,6 +55,7 @@ export default function Facilities() {
   const campusImages = [
     'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.27.57_k5sipg.jpg',
     'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.28.29_mbpcgo.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496458/WhatsApp_Image_2026-06-02_at_22.29.33_jvwast.jpg',
     'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.27.39_e7j3f3.jpg',
     'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496222/WhatsApp_Image_2026-06-02_at_22.26.52_ysqecv.jpg',
     'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.28.42_rzarcv.jpg',
@@ -70,16 +71,18 @@ export default function Facilities() {
           <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Centre Facilities</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mb-12">
           {facilities.map((item, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center group"
+              className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center group"
             >
-              <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center text-vlcc-orange mb-4 group-hover:bg-vlcc-orange group-hover:text-white transition-colors duration-300">
-                {item.icon}
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-orange-50 rounded-full flex items-center justify-center text-vlcc-orange mb-3 md:mb-4 group-hover:bg-vlcc-orange group-hover:text-white transition-colors duration-300">
+                <div className="scale-75 md:scale-100 flex items-center justify-center">
+                  {item.icon}
+                </div>
               </div>
-              <h3 className="font-heading font-semibold text-[#1a1a1a] text-lg">
+              <h3 className="font-heading font-semibold text-[#1a1a1a] text-base md:text-lg">
                 {item.title}
               </h3>
             </div>

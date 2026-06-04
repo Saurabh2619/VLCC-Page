@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="flex justify-between flex-wrap gap-[50px] mb-[60px] border-b border-[#333] pb-[60px] flex-col md:flex-row">
           <div className="flex-[2] min-w-[300px] w-full md:w-auto">
-            <Image src="/vlcc-logo.png" alt="VLCC Logo" width={140} height={50} className="mb-5 brightness-0 invert" />
+            <Image src="/vlcc-logo.png" alt="VLCC Logo" width={140} height={50} className="mb-5 bg-white p-2 rounded-lg" />
             <p className="text-[#999] text-sm leading-[1.8] max-w-[400px] font-body">Empowering individuals with world-class education in beauty, wellness, and nutrition. Join us to transform your passion into a profession.</p>
           </div>
           
@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="flex-1 min-w-[200px] w-full md:w-auto">
             <h4 className="text-white text-lg mb-5 font-heading font-semibold">Connect With Us</h4>
             <div className="flex gap-[15px]">
-              <a href="https://www.facebook.com/profile.php?id=61558740757328" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:bg-[#1877F2] hover:-translate-y-[3px]" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/1CzsfUbPqV/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:bg-[#1877F2] hover:-translate-y-[3px]" aria-label="Facebook">
                 <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
               </a>
               <a href="https://www.instagram.com/vlcc_schoolof_beautyggn49?igsh=a3RqNDUyZDV2eWQy" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:bg-[#bc1888] hover:-translate-y-[3px]" aria-label="Instagram">

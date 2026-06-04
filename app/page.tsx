@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import MobileCTA from './components/MobileCTA';
 import ScrollReveal from './components/ScrollReveal';
 import WhyChooseUs from './components/WhyChooseUs';
+import GoogleReviews from './components/GoogleReviews';
 import CareerCTA from './components/CareerCTA';
 import YoutubeSection from './components/YoutubeSection';
 
@@ -22,6 +23,8 @@ export const metadata = {
 };
 
 import GlobalSpotlight from './components/GlobalSpotlight';
+
+import EnquiryPopup from './components/EnquiryPopup';
 
 export default function Home() {
   return (
@@ -37,6 +40,7 @@ export default function Home() {
       <ScrollReveal><Courses /></ScrollReveal>
       <ScrollReveal><Facilities /></ScrollReveal>
       <ScrollReveal><WhyChooseUs /></ScrollReveal>
+      <ScrollReveal><GoogleReviews /></ScrollReveal>
       <ScrollReveal><HowToApply /></ScrollReveal>
       <ScrollReveal><Gallery /></ScrollReveal>
       <ScrollReveal><Recruiters /></ScrollReveal>
@@ -48,6 +52,7 @@ export default function Home() {
       <ScrollReveal><Footer /></ScrollReveal>
       
       <MobileCTA />
+      <EnquiryPopup />
     </main>
   );
 }

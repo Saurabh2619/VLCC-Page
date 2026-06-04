@@ -23,7 +23,7 @@ export default function Contact() {
                 <div className="w-[50px] h-[50px] bg-white/10 rounded-full flex items-center justify-center text-[20px] border border-white/20 shrink-0">✉️</div>
                 <div>
                   <h4 className="text-[16px] text-vlcc-orange mb-1 font-heading font-semibold">Email</h4>
-                  <p className="text-[#ddd] text-[15px] font-body">institute2.gurugram@vlcceducation.com</p>
+                  <p className="text-[#ddd] text-[15px] font-body break-all">institute2.gurugram@vlcceducation.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-5">
@@ -38,7 +38,10 @@ export default function Contact() {
           
           <div className="p-2.5 md:p-0">
             <div className="glass-panel bg-[#141414]/60 p-[30px] md:p-[40px] rounded-[20px]">
-              <h3 className="text-2xl mb-[25px] text-center font-heading font-semibold">Send us a Message</h3>
+              <h3 className="text-[28px] md:text-[32px] leading-tight font-heading font-bold text-center mb-6">
+                <span className="text-vlcc-orange block">Book a Free</span>
+                <span className="text-[#e0e0e0] block">Demo Class Now!</span>
+              </h3>
               <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
                 <div>
                   <input type="text" placeholder="Your Name" required className="w-full bg-white/5 border border-white/15 rounded-lg p-[15px_20px] text-white font-body text-[15px] transition-all duration-300 focus:outline-none focus:border-vlcc-orange focus:bg-white/10 placeholder:text-gray-300 placeholder:opacity-100" />
