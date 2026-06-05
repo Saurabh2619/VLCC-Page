@@ -21,7 +21,7 @@ export default function FAQ() {
     },
     {
       question: 'Q: How do I book a free demo class?',
-      answer: 'Fill out the enquiry form on this page or call our admissions helpline. A free demo class is available at your nearest VLCC institute in 75+ cities across India.'
+      answer: 'Fill out the enquiry form on this page or call our admissions helpline. Our team will connect with you to schedule a free demo session, where you can interact with expert trainers, explore course modules, and understand the learning experience before enrollment.'
     }
   ];
 

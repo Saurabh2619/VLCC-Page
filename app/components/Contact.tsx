@@ -1,5 +1,7 @@
 'use client';
 
+import EnquiryForm from './EnquiryForm';
+
 export default function Contact() {
   return (
     <section id="contact" className="py-10 md:py-[70px] bg-[#121212] text-white relative bg-[url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center bg-fixed">
@@ -42,20 +44,7 @@ export default function Contact() {
                 <span className="text-vlcc-orange block">Book a Free</span>
                 <span className="text-[#e0e0e0] block">Demo Class Now!</span>
               </h3>
-              <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
-                <div>
-                  <input type="text" placeholder="Your Name" required className="w-full bg-white/5 border border-white/15 rounded-lg p-[15px_20px] text-white font-body text-[15px] transition-all duration-300 focus:outline-none focus:border-vlcc-orange focus:bg-white/10 placeholder:text-gray-300 placeholder:opacity-100" />
-                </div>
-                <div>
-                  <input type="email" placeholder="Your Email" required className="w-full bg-white/5 border border-white/15 rounded-lg p-[15px_20px] text-white font-body text-[15px] transition-all duration-300 focus:outline-none focus:border-vlcc-orange focus:bg-white/10 placeholder:text-gray-300 placeholder:opacity-100" />
-                </div>
-                <div>
-                  <input type="tel" placeholder="Your Phone Number" required className="w-full bg-white/5 border border-white/15 rounded-lg p-[15px_20px] text-white font-body text-[15px] transition-all duration-300 focus:outline-none focus:border-vlcc-orange focus:bg-white/10 placeholder:text-gray-300 placeholder:opacity-100" />
-                </div>
-                <button type="submit" className="btn-primary w-full mt-2.5">
-                  Submit Enquiry
-                </button>
-              </form>
+              <EnquiryForm />
             </div>
           </div>
         </div>
