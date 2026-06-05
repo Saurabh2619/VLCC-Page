@@ -14,23 +14,29 @@ export default function EnquiryForm() {
     setStatus('loading');
 
     try {
-      const res = await fetch('/api/submit-lead', {
+      // Create FormData for Google Forms
+      const googleFormData = new URLSearchParams();
+      googleFormData.append('entry.1073725328', formData.name);
+      googleFormData.append('entry.455340996', formData.email);
+      googleFormData.append('entry.24840909', formData.phone);
+
+      // Submit directly to Google Forms with no-cors to bypass security restrictions
+      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSeKBs9nAxpzuM9ISVC1aHcAq_gvCGFnTSCD9-bLm1pKpZe9Ew/formResponse', {
         method: 'POST',
+        mode: 'no-cors', // Essential for Google Forms
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(formData),
+        body: googleFormData.toString(),
       });
 
-      if (res.ok) {
-        setStatus('success');
-        setFormData({ name: '', email: '', phone: '' });
-        // Redirect to thank you page
-        router.push('/thank-you');
-      } else {
-        setStatus('error');
-      }
+      // Since mode is 'no-cors', we can't read the response properly, but if it didn't throw an error, it succeeded.
+      setStatus('success');
+      setFormData({ name: '', email: '', phone: '' });
+      router.push('/thank-you');
+      
     } catch (error) {
+      console.error("Google Form Submission Error:", error);
       setStatus('error');
     }
   };

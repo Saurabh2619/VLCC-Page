@@ -4,23 +4,36 @@ export async function POST(request: Request) {
   try {
     const data = await request.json();
     
-    // CRM fields
-    const formData = new URLSearchParams();
-    formData.append('name', data.name || '');
-    formData.append('email', data.email || '');
-    formData.append('phone', data.phone || '');
-    formData.append('mobile', data.phone || ''); 
-    formData.append('source', 'Website');
-    formData.append('city', 'Gurugram');
-    formData.append('course', 'General Enquiry');
+    // Client provided the EXACT JSON format. It MUST be an array containing an object.
+    const payload = [
+      {
+        "name" : data.name || "",
+        "email" : data.email || "",
+        "gender" : "",
+        "center_code": "Inf187",
+        "course": "1",
+        "mobile" : data.phone || "",
+        "qualification" : "",
+        "source" : "81",
+        "af_tid" : "",
+        "af_pid" : "",
+        "publisher" : "",
+        "campaign_code" : "dMkBCPTm9rcBEIn3m5ID",
+        "motto" : "",
+        "gclcode": "",
+        "adw" : "",
+        "keyw" : "",
+        "url" : ""
+      }
+    ];
 
     // Proxy the request to the vPulse CRM API
     const response = await fetch('http://www.vlccinstitutelms.com/vpulse_website_lead_api.php', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
       },
-      body: formData.toString(),
+      body: JSON.stringify(payload),
     });
 
     const result = await response.text();
