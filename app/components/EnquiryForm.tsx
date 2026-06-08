@@ -14,29 +14,35 @@ export default function EnquiryForm() {
     setStatus('loading');
 
     try {
-      // Create FormData for Google Forms
+      // 1. Setup Google Forms Request
       const googleFormData = new URLSearchParams();
       googleFormData.append('entry.1073725328', formData.name);
       googleFormData.append('entry.455340996', formData.email);
       googleFormData.append('entry.24840909', formData.phone);
 
-      // Submit directly to Google Forms with no-cors to bypass security restrictions
-      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSeKBs9nAxpzuM9ISVC1aHcAq_gvCGFnTSCD9-bLm1pKpZe9Ew/formResponse', {
+      const googleFormPromise = fetch('https://docs.google.com/forms/d/e/1FAIpQLSeKBs9nAxpzuM9ISVC1aHcAq_gvCGFnTSCD9-bLm1pKpZe9Ew/formResponse', {
         method: 'POST',
-        mode: 'no-cors', // Essential for Google Forms
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: googleFormData.toString(),
       });
 
-      // Since mode is 'no-cors', we can't read the response properly, but if it didn't throw an error, it succeeded.
+      // 2. Setup vPulse CRM Request (via our backend route)
+      const vPulsePromise = fetch('/api/submit-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      // 3. Execute both requests concurrently
+      await Promise.allSettled([googleFormPromise, vPulsePromise]);
+
       setStatus('success');
       setFormData({ name: '', email: '', phone: '' });
       router.push('/thank-you');
       
     } catch (error) {
-      console.error("Google Form Submission Error:", error);
+      console.error("Submission Error:", error);
       setStatus('error');
     }
   };
