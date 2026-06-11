@@ -6,6 +6,7 @@ export default function Courses() {
   const allCourses = [
     {
       id: 1,
+      slug: "makeup-artistry",
       title: "Makeup Artistry",
       duration: "6 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508533/WhatsApp_Image_2026-06-02_at_22.30.08_uklh0e.jpg",
@@ -13,6 +14,7 @@ export default function Courses() {
     },
     {
       id: 2,
+      slug: "hair-dressing",
       title: "Hair Dressing",
       duration: "4 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508689/WhatsApp_Image_2026-06-02_at_22.37.09_iakueq.jpg",
@@ -20,6 +22,7 @@ export default function Courses() {
     },
     {
       id: 3,
+      slug: "esthiology",
       title: "Esthiology",
       duration: "3 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587793/WhatsApp_Image_2026-06-04_at_12.41.15_sl4olz.jpg",
@@ -27,6 +30,7 @@ export default function Courses() {
     },
     {
       id: 4,
+      slug: "nail-artistry",
       title: "Nail Artistry",
       duration: "2 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508538/WhatsApp_Image_2026-06-02_at_22.40.31_sfaboy.jpg",
@@ -34,6 +38,7 @@ export default function Courses() {
     },
     {
       id: 5,
+      slug: "aesthetic-laser-treatments",
       title: "Aesthetic Laser Treatments",
       duration: "5 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587755/WhatsApp_Image_2026-06-04_at_12.40.19_yhwssy.jpg",
@@ -41,6 +46,7 @@ export default function Courses() {
     },
     {
       id: 6,
+      slug: "nutrition",
       title: "Nutrition",
       duration: "3 Months",
       image: "/images/course-nutrition.png",
@@ -59,7 +65,7 @@ export default function Courses() {
         {/* Courses Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
           {allCourses.map((course) => (
-            <div key={course.id} className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col">
+            <Link key={course.id} href={`/courses/${course.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col">
               
               {/* Top Photo Section */}
               <div className="relative h-[240px] overflow-hidden shrink-0">
@@ -80,8 +86,9 @@ export default function Courses() {
                 <div className="relative z-10 flex flex-col flex-1">
                   
                   {/* Title (Turns Orange on Hover) */}
-                  <h3 className="text-[1.4rem] text-[#1a1a1a] group-hover:text-vlcc-orange transition-colors duration-300 font-heading font-bold mb-3">
+                  <h3 className="text-[1.4rem] text-[#1a1a1a] group-hover:text-vlcc-orange transition-colors duration-300 font-heading font-bold mb-3 flex justify-between items-center">
                     {course.title}
+                    <svg className="w-5 h-5 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-vlcc-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                   </h3>
                   
                   {/* Elegant Glowing Divider Line */}
@@ -93,7 +100,7 @@ export default function Courses() {
                 </div>
 
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
