@@ -9,10 +9,16 @@ import Recruiters from '@/app/components/Recruiters';
 import Testimonials from '@/app/components/Testimonials';
 import YoutubeSection from '@/app/components/YoutubeSection';
 import Contact from '@/app/components/Contact';
-import EnquiryPopup from '@/app/components/EnquiryPopup';
+import ControlledEnquiryPopup from '@/app/components/ControlledEnquiryPopup';
+import StatisticsBanner from '@/app/components/StatisticsBanner';
+import NailJobOpportunities from '@/app/components/NailJobOpportunities';
+import OtherCoursesCarousel from '@/app/components/OtherCoursesCarousel';
+
+import ScrollReveal from '../../components/ScrollReveal';
 
 export default function NailArtistryLandingPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const toggleFaq = (index: number) => {
     setActiveFaq(activeFaq === index ? null : index);
@@ -90,9 +96,9 @@ export default function NailArtistryLandingPage() {
         {/* Background Image */}
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2000&auto=format&fit=crop')" }}
+          style={{ backgroundImage: "url('https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=2000')" }}
         ></div>
-        <div className="absolute inset-0 bg-black/40 md:bg-gradient-to-r md:from-black/70 md:to-black/10"></div>
+        <div className="absolute inset-0 bg-black/40 md:bg-gradient-to-r md:from-black/60 md:to-black/10"></div>
 
         <div className="max-w-[1200px] mx-auto px-5 relative z-10 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -101,6 +107,9 @@ export default function NailArtistryLandingPage() {
               <span className="inline-block py-1 px-3 rounded-full bg-vlcc-orange/20 text-vlcc-orange border border-vlcc-orange/30 font-bold tracking-wider uppercase text-sm mb-5">
                 Professional Certification
               </span>
+              <p className="text-xl md:text-2xl font-bold text-vlcc-orange mb-2 uppercase tracking-wide font-heading">
+                Best Nail Artistry Course in Gurgaon
+              </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6 text-white drop-shadow-lg">
                 Master the Art of <span className="text-vlcc-orange">Nail Artistry</span>
               </h1>
@@ -108,23 +117,13 @@ export default function NailArtistryLandingPage() {
                 Turn your passion into a lucrative career. Learn acrylics, gel extensions, 3D nail art, and more from industry experts with 100% placement assistance.
               </p>
               
-              <div className="flex gap-4 md:gap-[30px] justify-center md:justify-start flex-wrap mt-8">
-                <a href="https://maps.app.goo.gl/jyLfZgQWZxhPdjLc7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 md:gap-[15px] group cursor-pointer">
-                  <div className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] bg-white/10 rounded-full flex items-center justify-center text-xl md:text-2xl border border-white/20 shadow-sm group-hover:bg-white/20 transition-colors">📍</div>
-                  <div className="text-left">
-                    <h4 className="text-sm md:text-base font-semibold font-heading mb-0 md:mb-1 group-hover:text-vlcc-orange transition-colors">On-Campus</h4>
-                    <p className="text-[11px] md:text-sm text-[#ccc] font-body transition-colors group-hover:text-white">Sector 49, Gurugram</p>
-                  </div>
-                </a>
-                <div className="flex items-center gap-3 md:gap-[15px]">
-                  <div className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] bg-white rounded-full flex items-center justify-center shadow-sm p-2 shrink-0 border border-white/20">
-                    <img src="/nsdc_logo.png" alt="NSDC Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <div className="text-left">
-                    <h4 className="text-[11px] md:text-sm text-[#ccc] font-body mb-0">Approved by</h4>
-                    <p className="text-sm md:text-base font-semibold font-heading text-white">NSDC</p>
-                  </div>
-                </div>
+              <div className="mt-8">
+                <button 
+                  onClick={() => setIsPopupOpen(true)}
+                  className="bg-vlcc-orange text-white px-8 py-4 rounded-md uppercase font-bold text-sm md:text-base tracking-widest hover:bg-[#e0651c] transition-colors shadow-lg hover:shadow-xl font-heading cursor-pointer"
+                >
+                  BOOK APPOINTMENT
+                </button>
               </div>
             </div>
 
@@ -192,44 +191,65 @@ export default function NailArtistryLandingPage() {
                 </li>
               </ul>
               
-              <a href="#enquiry-form" className="inline-block bg-vlcc-orange text-white px-8 py-3 rounded-md uppercase font-bold text-sm tracking-widest hover:bg-[#e0651c] transition-colors shadow-lg hover:shadow-xl font-heading">
+              <button 
+                onClick={() => setIsPopupOpen(true)}
+                className="inline-block bg-vlcc-orange text-white px-8 py-3 rounded-md uppercase font-bold text-sm tracking-widest hover:bg-[#e0651c] transition-colors shadow-lg hover:shadow-xl font-heading cursor-pointer"
+              >
                 BOOK APPOINTMENT
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Grid Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-[#fafafa] relative z-10">
         <div className="max-w-[1200px] mx-auto px-5">
-          <div className="flex flex-col items-center justify-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[800px] leading-tight text-center">
+          <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-10">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[600px] leading-tight text-center lg:text-left">
               Explore Our Specialized Nail Artistry Modules
             </h2>
+            <img 
+              src="/landing-page/fallen_nail.jpg" 
+              alt="Nail Artistry Polish" 
+              className="w-full lg:w-[400px] h-[250px] object-cover rounded-xl"
+            />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {services.map((service, idx) => (
-              <div key={idx} className="bg-[#fcfcfc] rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
-                <img src={service.img} alt={service.title} className="w-full h-[220px] object-cover" />
-                <div className="p-8 flex flex-col flex-grow text-center">
+          <ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {services.map((service, index) => (
+              <div 
+                key={index} 
+                className="bg-white p-8 rounded-2xl flex flex-col items-center text-center group border border-gray-100 transition-all duration-300 hover:-translate-y-2 shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)]"
+              >
+                <div className="overflow-hidden rounded-xl mb-6 w-full h-[200px]">
+                  <img src={service.img} alt={service.title} className="w-full h-full object-cover" />
+                </div>
+                <div className="flex flex-col flex-grow text-center">
                   <h3 className="text-xl font-bold font-heading text-[#1a1a1a] mb-3">{service.title}</h3>
                   <p className="text-gray-500 text-[15px] leading-relaxed mb-6 flex-grow font-body">{service.desc}</p>
-                  <a href="#enquiry-form" className="inline-block mx-auto text-sm text-[#111] border-b-2 border-black pb-1 hover:text-vlcc-orange hover:border-vlcc-orange transition-colors font-medium">
+                  <button 
+                    onClick={() => setIsPopupOpen(true)}
+                    className="inline-block mx-auto mt-auto text-sm text-white bg-[#111] px-8 py-2.5 rounded-full hover:bg-vlcc-orange transition-all duration-500 ease-out hover:-translate-y-1 font-medium cursor-pointer shadow-md hover:shadow-xl"
+                  >
                     Lets Connect
-                  </a>
+                  </button>
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
+      <NailJobOpportunities />
       <Facilities />
+      <StatisticsBanner />
       <WhyChooseUs />
+      <OtherCoursesCarousel />
+      <Gallery /> {/* "Our Campus" */}
       <GoogleReviews />
-      <Gallery />
       <Recruiters />
       <Testimonials />
       
@@ -295,7 +315,7 @@ export default function NailArtistryLandingPage() {
       </footer>
 
       {/* Global popup for extra conversion chances */}
-      <EnquiryPopup />
+      <ControlledEnquiryPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </main>
   );
 }
