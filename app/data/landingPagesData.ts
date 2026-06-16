@@ -63,10 +63,10 @@ export const landingPagesData: Record<string, LandingPageData> = {
       ]
     },
     aboutImages: [
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603323/WhatsApp_Image_2026-06-16_at_14.12.45_2_hquaoq.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.47_1_btwtn8.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.49_2_xlqnko.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.52_dqtw6x.jpg'
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609127/WhatsApp_Image_2026-06-16_at_4.15.30_PM_1_ghzfwi.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609282/WhatsApp_Image_2026-06-16_at_4.15.30_PM_3_rxnis1.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609125/WhatsApp_Image_2026-06-16_at_4.15.25_PM_2_p5gscp.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609126/WhatsApp_Image_2026-06-16_at_4.15.29_PM_2_klfdnz.jpg'
     ],
     statisticsImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603323/WhatsApp_Image_2026-06-16_at_14.12.45_2_hquaoq.jpg',
     modules: {
@@ -81,7 +81,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Nail Removal',
           desc: 'Master safe nail removal methods, proper tools, and hygiene practices to protect natural nails and provide a comfortable client experience.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.49_2_xlqnko.jpg'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609413/WhatsApp_Image_2026-06-16_at_4.15.26_PM_1_rw1wyu.jpg'
         },
         {
           title: 'Nail Art & Accessories',
@@ -91,7 +91,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Advanced Nail Techniques',
           desc: 'Learn advanced shaping, finishing, and salon-ready techniques through hands-on practice to build confidence and become a professional nail artist.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781607569/c4fe08defd544b8fb5b4411b0c639f95_h2peyo.png'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609470/WhatsApp_Image_2026-06-16_at_4.15.27_PM_3_j5j0hm.jpg'
         },
         {
           title: 'Professional Nail Care',
@@ -101,13 +101,13 @@ export const landingPagesData: Record<string, LandingPageData> = {
       ]
     },
     portfolioMedia: [
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603323/WhatsApp_Image_2026-06-16_at_14.12.45_2_hquaoq.jpg' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609413/WhatsApp_Image_2026-06-16_at_4.15.26_PM_1_rw1wyu.jpg' },
       { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.47_1_btwtn8.jpg' },
       { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1781603352/WhatsApp_Video_2026-06-16_at_14.12.50_oam3pw.mp4' },
       { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.49_2_xlqnko.jpg' },
       { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1781603354/WhatsApp_Video_2026-06-16_at_14.12.51_1_ifhcng.mp4' },
       { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1781603364/WhatsApp_Video_2026-06-16_at_15.06.21_zamdrd.mp4' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.52_dqtw6x.jpg' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609926/WhatsApp_Image_2026-06-16_at_4.15.27_PM_2_aswfux.jpg' },
       { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1781603366/WhatsApp_Video_2026-06-16_at_15.06.20_1_diiabf.mp4' },
       { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.49_1_kg8aec.jpg' }
     ],

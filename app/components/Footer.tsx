@@ -1,22 +1,34 @@
+'use client';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useLandingContext } from '@/app/context/LandingContext';
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  const { isLockedMode } = useLandingContext();
+
   return (
-    <footer className="bg-[#111] text-[#ddd] pt-[80px] pb-5">
-      <div className="max-w-[1200px] mx-auto px-5">
-        <div className="flex justify-between flex-wrap gap-[50px] mb-[60px] border-b border-[#333] pb-[60px] flex-col md:flex-row">
-          <div className="flex-[2] min-w-[300px] w-full md:w-auto">
-            <Image src="/vlcc-logo.png" alt="VLCC Logo" width={140} height={50} className="mb-5 bg-white p-2 rounded-lg" />
-            <p className="text-[#999] text-sm leading-[1.8] max-w-[400px] font-body">Empowering individuals with world-class education in beauty, wellness, and nutrition. Join us to transform your passion into a profession.</p>
-          </div>
+    <footer className="bg-[#111] text-white pt-20 pb-10 font-body relative overflow-hidden">
+      {/* Abstract Background Design */}
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-vlcc-orange/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div className="max-w-[1200px] mx-auto px-5 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           
-          <div className="flex-1 min-w-[200px] w-full md:w-auto">
-            <h4 className="text-white text-lg mb-5 font-heading font-semibold">Quick Links</h4>
-            <ul className="list-none p-0">
-              <li className="mb-3"><a href="#hero" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Home</a></li>
-              <li className="mb-3"><a href="#about" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">About Us</a></li>
-              <li className="mb-3"><a href="#apply" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">How to Apply</a></li>
-              <li className="mb-3"><a href="#contact" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Contact Us</a></li>
+          {/* Column 1: Brand */}
+          <div className="flex flex-col items-start">
+            <img src="/vlcc-logo.png" alt="VLCC Logo" className="h-[45px] object-contain mb-6 brightness-0 invert opacity-90" />
+            <p className="text-[#999] text-sm leading-relaxed mb-6">Empowering aspiring beauty professionals with world-class education, practical training, and 100% placement assistance in the wellness industry.</p>
+          </div>
+
+          {/* Column 2: Quick Links */}
+          <div>
+            <h4 className="text-lg font-heading font-bold mb-6 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-1/2 after:h-[2px] after:bg-vlcc-orange">Quick Links</h4>
+            <ul>
+              <li className="mb-3"><Link href={isLockedMode ? '#hero' : '/#hero'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Home</Link></li>
+              <li className="mb-3"><Link href={isLockedMode ? '#about' : '/#about'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">About Us</Link></li>
+              <li className="mb-3"><Link href={isLockedMode ? '#apply' : '/#apply'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">How to Apply</Link></li>
+              <li className="mb-3"><Link href={isLockedMode ? '#contact' : '/#contact'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Contact Us</Link></li>
             </ul>
           </div>
           
