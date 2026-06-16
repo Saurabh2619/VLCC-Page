@@ -14,7 +14,7 @@ import StatisticsBanner from '@/app/components/StatisticsBanner';
 import NailJobOpportunities from '@/app/components/NailJobOpportunities';
 import OtherCoursesCarousel from '@/app/components/OtherCoursesCarousel';
 
-import ScrollReveal from '../../components/ScrollReveal';
+import ScrollReveal from '@/app/components/ScrollReveal';
 
 export default function NailArtistryLandingPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
@@ -49,39 +49,34 @@ export default function NailArtistryLandingPage() {
 
   const services = [
     {
-      title: 'Manicure',
-      desc: 'Experience the perfect blend of care and style with our luxurious manicures. From classic to trendy, we ensure your hands look and feel their absolute best.',
-      img: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=600&auto=format&fit=crop'
-    },
-    {
-      title: 'Nail Polish',
-      desc: 'Enhance your nails with our high-quality nail polish range. Stunning colors and lasting shine for a flawless finish every time.',
-      img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop'
-    },
-    {
-      title: 'Pedicure',
-      desc: 'Treat your feet to a luxurious pedicure experience. Relax, refresh, and leave with soft, smooth feet and perfectly polished toes.',
-      img: 'https://images.pexels.com/photos/8533355/pexels-photo-8533355.jpeg?auto=compress&cs=tinysrgb&w=600'
-    },
-    {
       title: 'Nail Extension',
-      desc: 'Achieve flawless, longer nails with our expert nail extension services. Strong, durable, and beautifully shaped nails to suit your style.',
+      desc: 'Learn gel, acrylic, and extension techniques through practical training to create beautiful, durable nails and become a skilled nail artist.',
       img: 'https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       title: 'Nail Removal',
-      desc: 'Our gentle nail removal service ensures your nails are safely treated, leaving them healthy and free from damage.',
+      desc: 'Master safe nail removal methods, proper tools, and hygiene practices to protect natural nails and provide a comfortable client experience.',
       img: 'https://images.pexels.com/photos/4154199/pexels-photo-4154199.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       title: 'Nail Art & Accessories',
-      desc: 'Express your unique style with our creative nail art and accessories. From intricate designs to sparkling embellishments, we bring your nail vision to life.',
+      desc: 'Explore creative nail art, trendy designs, 3D art, and stylish accessories to express creativity and stay ahead in the beauty industry.',
       img: 'https://images.pexels.com/photos/4038676/pexels-photo-4038676.jpeg?auto=compress&cs=tinysrgb&w=600'
+    },
+    {
+      title: 'Advanced Nail Techniques',
+      desc: 'Learn advanced shaping, finishing, and salon-ready techniques through hands-on practice to build confidence and become a professional nail artist.',
+      img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop'
+    },
+    {
+      title: 'Professional Nail Care',
+      desc: 'Understand nail care, hygiene, and client consultation skills to provide quality services and build a successful career in the beauty industry.',
+      img: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=600&auto=format&fit=crop'
     }
   ];
 
   return (
-    <main className="min-h-screen font-body bg-white">
+    <main className="min-h-screen font-body bg-white overflow-x-hidden">
       {/* Standalone Header (No Navigation) */}
       <header className="w-full bg-white py-2 px-6 md:px-10 shadow-md sticky top-0 z-50 flex items-center justify-center md:justify-start">
         <img 
@@ -108,13 +103,13 @@ export default function NailArtistryLandingPage() {
                 Professional Certification
               </span>
               <p className="text-xl md:text-2xl font-bold text-vlcc-orange mb-2 uppercase tracking-wide font-heading">
-                Best Nail Artistry Course in Gurgaon
+                Best Nail Extension Course in Gurgaon
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6 text-white drop-shadow-lg">
-                Master the Art of <span className="text-vlcc-orange">Nail Artistry</span>
+                Master the Art of <span className="text-vlcc-orange">Nail Extensions</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-[600px] font-body mx-auto md:mx-0 drop-shadow-md">
-                Turn your passion into a lucrative career. Learn acrylics, gel extensions, 3D nail art, and more from industry experts with 100% placement assistance.
+                Become a certified nail artist with hands-on training in nail extensions, gel nails, acrylic nails, and creative nail art techniques.
               </p>
               
               <div className="mt-8">
@@ -163,33 +158,34 @@ export default function NailArtistryLandingPage() {
             
             {/* Right Content */}
             <div className="w-full lg:w-1/2 text-[#333]">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-[#1a1a1a]">About VLCC Nail Artistry</h2>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-[#1a1a1a]">About VLCC Nail Artistry Course</h2>
               <p className="mb-4 text-gray-600 leading-relaxed text-sm md:text-base font-body">
-                VLCC School of Beauty offers a luxurious and modern learning ambiance with the latest nail trends. Our highly skilled and friendly staff ensure top-notch training in a relaxing atmosphere.
+                Located in Sector 49, Gurgaon, VLCC School of Beauty is an Authorized Franchise of VLCC offering professional nail training for aspiring beauty experts. If you are looking for the Best Nail Extension Course in Gurgaon, our Nail Artistry Course is the perfect place to start.
               </p>
               <p className="mb-8 text-gray-600 leading-relaxed text-sm md:text-base font-body">
-                Founded with a commitment to world-class service, our institute reflects passion and dedication towards empowering aspiring nail technicians to reach their full potential.
+                Students learn nail extensions, gel nails, acrylic nails, nail art designs, and salon hygiene through practical sessions guided by industry expert trainers. Recognized as one of the choices for the Best Nail Art Course in Gurgaon, we focus on hands-on learning, professional certification, and career growth. With modern facilities, placement assistance, and small batch sizes, VLCC helps students gain the skills and confidence to succeed in the beauty industry.
               </p>
               
-              <h3 className="text-xl font-bold mb-5 text-[#1a1a1a] font-heading">VLCC ensures fabulous nails through:</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-vlcc-orange mt-2 shrink-0"></span>
-                  <span className="text-gray-600 text-sm md:text-base font-body"><strong>Customization :</strong> Tailoring services and training to individual preferences.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-vlcc-orange mt-2 shrink-0"></span>
-                  <span className="text-gray-600 text-sm md:text-base font-body"><strong>Trained Technicians :</strong> Employing only those who pass a stringent recruitment process.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-vlcc-orange mt-2 shrink-0"></span>
-                  <span className="text-gray-600 text-sm md:text-base font-body"><strong>Hygiene :</strong> Adhering to strict sanitation protocols.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-vlcc-orange mt-2 shrink-0"></span>
-                  <span className="text-gray-600 text-sm md:text-base font-body"><strong>Trendy Art Designs :</strong> Staying ahead with fresh and stylish designs.</span>
-                </li>
-              </ul>
+              <h3 className="text-xl font-bold mb-5 text-[#1a1a1a] font-heading">Why Choose VLCC?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                {[
+                  "Authorized Franchise of VLCC",
+                  "Industry Expert Trainers",
+                  "Practical Hands-on Training",
+                  "Latest Nail Art & Extension Techniques",
+                  "Professional Certification",
+                  "Placement Assistance",
+                  "Modern Learning Environment",
+                  "Small Batch Size"
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="text-green-600 text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-gray-700 text-sm md:text-[15px] font-body font-semibold">{item}</span>
+                  </div>
+                ))}
+              </div>
               
               <button 
                 onClick={() => setIsPopupOpen(true)}
@@ -207,7 +203,7 @@ export default function NailArtistryLandingPage() {
         <div className="max-w-[1200px] mx-auto px-5">
           <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[600px] leading-tight text-center lg:text-left">
-              Explore Our Specialized Nail Artistry Modules
+              Professional Nail Art Training Modules
             </h2>
             <img 
               src="/landing-page/fallen_nail.jpg" 
