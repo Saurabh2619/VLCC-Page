@@ -1,7 +1,11 @@
 import InfiniteSlider from './InfiniteSlider';
 
-export default function Gallery() {
-  const portfolioImages = [
+interface GalleryProps {
+  images?: string[];
+}
+
+export default function Gallery({ images }: GalleryProps) {
+  const defaultImages = [
     // Before/Afters
     'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496582/WhatsApp_Image_2026-06-02_at_22.31.08_zw7ywr.jpg',
     'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496581/WhatsApp_Image_2026-06-02_at_22.30.58_wznec6.jpg',
@@ -28,7 +32,7 @@ export default function Gallery() {
 
         <div className="max-w-[1200px] mx-auto pb-10">
           <InfiniteSlider 
-            images={portfolioImages} 
+            images={images || defaultImages} 
             visibleDesktop={4} 
             visibleMobile={1} 
             aspectRatio="aspect-[3/4]" 

@@ -33,7 +33,7 @@ function Counter({ end, duration = 2000, suffix = '' }: { end: number, duration?
   return <div ref={ref} className="text-4xl md:text-5xl font-heading font-bold text-[#1a1a1a] mb-2">{count.toLocaleString()}{suffix}</div>;
 }
 
-export default function StatisticsBanner() {
+export default function StatisticsBanner({ imageSrc = "https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=800" }: { imageSrc?: string }) {
   return (
     <section className="py-16 md:py-24 bg-[#eaddce] relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-5 relative z-10">
@@ -59,7 +59,7 @@ export default function StatisticsBanner() {
           </div>
           <div className="relative mt-8 lg:mt-0">
             <img 
-              src="https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              src={imageSrc} 
               alt="Beautiful Nail Artistry" 
               className="w-full h-[400px] md:h-[500px] object-cover rounded-xl shadow-xl"
             />

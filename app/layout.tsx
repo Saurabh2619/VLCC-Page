@@ -29,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
-      <body className="bg-white text-[#1a1a1a] font-body overflow-x-hidden">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className="bg-white text-[#1a1a1a] font-body">
         <FloatingSocials />
         {children}
       </body>

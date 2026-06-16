@@ -2,7 +2,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-export default function OtherCoursesCarousel() {
+interface OtherCoursesCarouselProps {
+  currentCourseSlug?: string;
+}
+
+export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCoursesCarouselProps) {
   const courses = [
     {
       id: 1,
@@ -41,6 +45,18 @@ export default function OtherCoursesCarousel() {
     }
   ];
 
+  const displayedCourses = currentCourseSlug 
+    ? courses.filter(course => {
+        if (currentCourseSlug.includes('nail') && course.slug.includes('nail')) return false;
+        if (currentCourseSlug.includes('makeup') && course.slug.includes('makeup')) return false;
+        if (currentCourseSlug.includes('hair') && course.slug.includes('hair')) return false;
+        if (currentCourseSlug.includes('esthilogy') && course.slug.includes('esthiology')) return false;
+        if (currentCourseSlug.includes('laser') && course.slug.includes('laser')) return false;
+        if (currentCourseSlug.includes('nutrition') && course.slug.includes('nutrition')) return false;
+        return true;
+      })
+    : courses;
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -57,12 +73,12 @@ export default function OtherCoursesCarousel() {
   };
 
   const scrollNext = () => {
-    const nextIndex = (activeIndex + 1) % courses.length;
+    const nextIndex = (activeIndex + 1) % displayedCourses.length;
     scrollToIndex(nextIndex);
   };
 
   const scrollPrev = () => {
-    const prevIndex = activeIndex === 0 ? courses.length - 1 : activeIndex - 1;
+    const prevIndex = activeIndex === 0 ? displayedCourses.length - 1 : activeIndex - 1;
     scrollToIndex(prevIndex);
   };
 
@@ -134,7 +150,7 @@ export default function OtherCoursesCarousel() {
             className="flex overflow-x-auto snap-x snap-mandatory gap-6 md:gap-[30px] pb-12 pt-4 px-4 -mx-4 hide-scrollbar scroll-smooth"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {courses.map((course) => (
+            {displayedCourses.map((course) => (
               <Link key={course.id} href={`/courses/${course.slug}`} className="w-[85vw] md:w-[calc(50%-15px)] lg:w-[calc(33.333%-20px)] shrink-0 snap-center group bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col">
                 
                 {/* Top Photo Section */}
@@ -172,7 +188,7 @@ export default function OtherCoursesCarousel() {
 
           {/* Dots Pagination */}
           <div className="flex justify-center items-center gap-3 mt-2">
-            {courses.map((_, idx) => (
+            {displayedCourses.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => scrollToIndex(idx)}

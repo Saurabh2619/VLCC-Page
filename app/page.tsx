@@ -28,7 +28,7 @@ import EnquiryPopup from './components/EnquiryPopup';
 
 export default function Home() {
   return (
-    <main className="min-h-screen font-body pb-[50px] md:pb-0">
+    <main className="min-h-screen font-body pb-[50px] md:pb-0 relative">
       <Navbar />
       
       {/* Global Cursor Tracking Spotlight */}

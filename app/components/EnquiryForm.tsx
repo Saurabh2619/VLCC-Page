@@ -8,16 +8,6 @@ export default function EnquiryForm() {
   const router = useRouter();
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [isAlreadySubmitted, setIsAlreadySubmitted] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const submitted = localStorage.getItem('vlcc_enquiry_submitted');
-      if (submitted) {
-        setIsAlreadySubmitted(true);
-      }
-    }
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -49,10 +39,6 @@ export default function EnquiryForm() {
 
       setStatus('success');
       setFormData({ name: '', email: '', phone: '' });
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('vlcc_enquiry_submitted', 'true');
-      }
-      setIsAlreadySubmitted(true);
       router.push('/thank-you');
       
     } catch (error) {
@@ -63,17 +49,7 @@ export default function EnquiryForm() {
 
   return (
     <form className="flex flex-col gap-3.5 md:gap-[15px]" onSubmit={handleSubmit}>
-      {isAlreadySubmitted ? (
-        <div className="py-8 text-center animate-fade-in">
-          <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4caf50" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <p className="text-[#4caf50] text-lg font-bold font-heading mb-2">Enquiry Submitted</p>
-          <p className="text-gray-300 text-sm font-body">Thank you! Your enquiry is already submitted. Our team will contact you shortly.</p>
-        </div>
-      ) : (
-        <>
-          <div>
+      <div>
         <input 
           type="text" 
           placeholder="Name*" 
@@ -115,14 +91,12 @@ export default function EnquiryForm() {
       <MagneticButton className="w-full mt-1 md:mt-2">
         <button 
           type="submit" 
-          disabled={status === 'loading' || status === 'success'} 
+          disabled={status === 'loading'} 
           className="btn-primary w-full h-[50px] md:h-auto text-[15px] disabled:opacity-70 disabled:cursor-not-allowed transition-all"
         >
           {status === 'loading' ? 'Submitting...' : 'Enquire Now'}
         </button>
       </MagneticButton>
-        </>
-      )}
     </form>
   );
 }

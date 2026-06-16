@@ -17,7 +17,7 @@ export default function ThankYou() {
       {/* Spacer for fixed navbar */}
       <div className="h-[80px] md:h-[95px] bg-[#141414]"></div>
 
-      <div className="flex-1 flex items-start md:items-center justify-center p-5 py-[30px] md:py-[40px] relative overflow-x-hidden">
+      <div className="flex-1 flex items-start md:items-center justify-center p-5 py-[30px] md:py-[40px] relative">
         {/* Decorative background elements */}
         <div className="absolute top-1/4 left-1/4 w-[300px] h-[300px] bg-vlcc-orange/10 rounded-full blur-[80px] pointer-events-none"></div>
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-vlcc-orange/5 rounded-full blur-[100px] pointer-events-none"></div>
