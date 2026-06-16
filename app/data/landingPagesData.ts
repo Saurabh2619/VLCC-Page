@@ -52,7 +52,6 @@ export const landingPagesData: Record<string, LandingPageData> = {
       paragraph2: 'Students learn nail extensions, gel nails, acrylic nails, nail art designs, and salon hygiene through practical sessions guided by industry expert trainers. Recognized as one of the choices for the Best Nail Art Course in Gurgaon, we focus on hands-on learning, professional certification, and career growth. With modern facilities, placement assistance, and small batch sizes, VLCC helps students gain the skills and confidence to succeed in the beauty industry.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
-        'Authorized Franchise of VLCC',
         'Industry Expert Trainers',
         'Practical Hands-on Training',
         'Latest Nail Art & Extension Techniques',
@@ -149,7 +148,6 @@ export const landingPagesData: Record<string, LandingPageData> = {
       paragraph2: 'Students learn advanced HD makeup, airbrush techniques, bridal makeup, and color theory through practical sessions guided by expert trainers. Recognized as one of the choices for the Best Makeup Academy in Gurgaon, we focus on hands-on learning, professional certification, and career growth.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
-        'Authorized Franchise of VLCC',
         'Industry Expert Trainers',
         'Practical Hands-on Training',
         'Latest HD & Airbrush Techniques',
@@ -226,7 +224,6 @@ export const landingPagesData: Record<string, LandingPageData> = {
       paragraph2: 'Students learn precision haircuts, global coloring, highlights, rebonding, and keratin treatments through practical sessions guided by expert trainers. We focus on hands-on learning, professional certification, and career growth to help you succeed in top salons.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
-        'Authorized Franchise of VLCC',
         'Industry Expert Trainers',
         'Practical Hands-on Training',
         'Latest Chemical & Cutting Techniques',
@@ -303,7 +300,6 @@ export const landingPagesData: Record<string, LandingPageData> = {
       paragraph2: 'Students learn skin anatomy, facial treatments, acne management, and anti-aging therapies through practical sessions. We focus on hands-on learning, professional certification, and career growth. With modern facilities and placement assistance, VLCC helps you become a sought-after esthetician.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
-        'Authorized Franchise of VLCC',
         'Industry Expert Trainers',
         'Practical Hands-on Training',
         'Advanced Facial & Skin Tech',
@@ -380,7 +376,6 @@ export const landingPagesData: Record<string, LandingPageData> = {
       paragraph2: 'Students learn Laser Hair Reduction (LHR), intense pulsed light (IPL), chemical peels, and advanced derma treatments. We focus on clinical safety, hands-on learning with real machines, and professional certification to ensure your success in dermatological clinics.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
-        'Authorized Franchise of VLCC',
         'Clinical Expert Trainers',
         'Practical Hands-on Training',
         'Latest Laser & Medispa Tech',
@@ -457,7 +452,6 @@ export const landingPagesData: Record<string, LandingPageData> = {
       paragraph2: 'Students learn macronutrients, therapeutic diets, sports nutrition, and weight management strategies guided by expert dietitians. We focus on practical diet planning, professional certification, and career growth. VLCC helps you become a trusted health consultant for hospitals, gyms, or private practice.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
-        'Authorized Franchise of VLCC',
         'Certified Dietitian Trainers',
         'Practical Diet Planning',
         'Latest Clinical Guidelines',
