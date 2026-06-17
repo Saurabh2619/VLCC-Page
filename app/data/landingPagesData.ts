@@ -193,7 +193,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
           desc: 'Techniques for High-Definition cameras using specialized products for a seamless, natural appearance.',
           img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693475/WhatsApp_Image_2026-06-17_at_15.40.49_2_mahpxh.jpg',
           objectPosition: 'center 50%'
-        },
+        }, 
         {
           title: 'Airbrush Makeup',
           desc: 'Learn the art of airbrushing for a lightweight, long-lasting, and picture-perfect makeup application.',
