@@ -42,6 +42,13 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
       title: "Nutrition",
       description: "Learn holistic wellness, meal planning, and clinical nutrition.",
       image: "/images/course-nutrition.png"
+    },
+    {
+      id: 6,
+      slug: "best-nail-extension-course-in-gurgaon",
+      title: "Nail Extension & Art",
+      description: "Master professional nail extensions, gel polish, and creative nail art designs.",
+      image: "https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=800"
     }
   ];
 

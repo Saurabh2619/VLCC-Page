@@ -14,6 +14,7 @@ import StatisticsBanner from '@/app/components/StatisticsBanner';
 import NailJobOpportunities from '@/app/components/NailJobOpportunities';
 import OtherCoursesCarousel from '@/app/components/OtherCoursesCarousel';
 import ScrollReveal from '@/app/components/ScrollReveal';
+import MakeupFeatureBanner from '@/app/components/MakeupFeatureBanner';
 import { LandingPageData } from '@/app/data/landingPagesData';
 
 export default function LandingPageTemplate({ data }: { data: LandingPageData }) {
@@ -39,7 +40,10 @@ export default function LandingPageTemplate({ data }: { data: LandingPageData })
       <section className="relative min-h-[80vh] flex items-center pt-10 pb-20 md:py-20">
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url('${data.hero.bgImage}')` }}
+          style={{ 
+            backgroundImage: `url('${data.hero.bgImage}')`,
+            filter: 'grayscale(70%)'
+          }}
         ></div>
         <div className="absolute inset-0 bg-black/40 md:bg-gradient-to-r md:from-black/60 md:to-black/10"></div>
 
@@ -197,7 +201,13 @@ export default function LandingPageTemplate({ data }: { data: LandingPageData })
       {data.slug.includes('nail') && <NailJobOpportunities />}
       
       <Facilities />
-      <StatisticsBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
+      
+      {data.slug.includes('makeup') ? (
+        <MakeupFeatureBanner imageSrc="https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781680810/makeup_section_a19yre.png" />
+      ) : (
+        <StatisticsBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
+      )}
+      
       <WhyChooseUs />
       
       {/* Pass the slug to carousel so it knows what to exclude */}

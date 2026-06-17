@@ -135,64 +135,82 @@ export const landingPagesData: Record<string, LandingPageData> = {
   },
   'best-makeup-course-in-gurgaon': {
     slug: 'best-makeup-course-in-gurgaon',
+    aboutImages: [
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685454/WhatsApp_Image_2026-06-16_at_4.15.32_PM_3_qd9loc.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685457/WhatsApp_Image_2026-06-16_at_4.15.32_PM_2_wr9hld.jpg'
+    ],
     hero: {
-      preHeading: 'Best Makeup Course in Gurgaon',
-      headingPrefix: 'Master the Art of ',
-      headingHighlight: 'Professional Makeup',
-      paragraph: 'Kickstart your career as a professional makeup artist. Learn bridal, party, and HD makeup techniques from industry veterans with 100% placement assistance.',
-      bgImage: 'https://images.pexels.com/photos/13733057/pexels-photo-13733057.jpeg?auto=compress&cs=tinysrgb&w=2000'
+      preHeading: 'PROFESSIONAL CERTIFICATION | MAKEUP ARTIST CLASSES IN GURGAON',
+      headingPrefix: 'Best Makeup Academy',
+      headingHighlight: 'in Gurgaon',
+      paragraph: 'Learn bridal, HD, airbrush, and professional makeup techniques with hands-on training from industry experts.',
+      bgImage: '/images/hero_makeup_vlcc.png'
     },
     about: {
-      heading: 'About VLCC Makeup Artistry Course',
-      paragraph1: 'Located in Sector 49, Gurgaon, VLCC School of Beauty is an Authorized Franchise of VLCC offering professional makeup training for aspiring artists. If you are looking for the Best Makeup Course in Gurgaon, our Makeup Artistry Course is the perfect place to start.',
-      paragraph2: 'Students learn advanced HD makeup, airbrush techniques, bridal makeup, and color theory through practical sessions guided by expert trainers. Recognized as one of the choices for the Best Makeup Academy in Gurgaon, we focus on hands-on learning, professional certification, and career growth.',
+      heading: 'About VLCC Makeup Academy',
+      paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon, we believe makeup is more than a skill—it\'s an art that helps people express their confidence and creativity. If you are looking for the Best Makeup Academy in Gurgaon, our courses are designed to give you the right blend of creativity, practical learning, and industry exposure.',
+      paragraph2: 'Our Professional Makeup Training in Gurgaon covers everything from basic to advanced makeup techniques, including bridal, HD, and airbrush makeup. With industry expert trainers, hands-on practice, professional certification, and placement assistance, we help students turn their passion into a successful career in the beauty industry.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
         'Industry Expert Trainers',
         'Practical Hands-on Training',
-        'Latest HD & Airbrush Techniques',
         'Professional Certification',
         'Placement Assistance',
         'Modern Learning Environment',
-        'Small Batch Size'
+        'Small Batch Size',
+        'Latest Makeup Techniques',
+        'Live Demonstrations'
       ]
     },
     modules: {
       heading: 'Explore Our Professional Makeup Modules',
-      sideImage: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=600&auto=format&fit=crop',
+      sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685272/istockphoto-1161219638-612x612_vjyvrc.jpg',
       services: [
         {
-          title: 'Bridal Makeup',
-          desc: 'Master the art of creating flawless, long-lasting bridal looks tailored to different cultures and skin tones.',
-          img: 'https://images.pexels.com/photos/11181206/pexels-photo-11181206.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          title: 'HD & Airbrush Makeup',
-          desc: 'Learn advanced techniques for high-definition photography and seamless airbrush application for a flawless finish.',
+          title: 'Basic Makeup',
+          desc: 'Learn makeup fundamentals, skin preparation, colour correction, and everyday looks through practical training designed for beginners starting their beauty journey.',
           img: 'https://images.pexels.com/photos/3373725/pexels-photo-3373725.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Party & Evening Makeup',
-          desc: 'Explore creative evening looks, bold eye makeup, and glamorous styles for parties and special occasions.',
-          img: 'https://images.pexels.com/photos/2080536/pexels-photo-2080536.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          title: 'Color Theory & Contouring',
-          desc: 'Understand color correction, precise contouring, and highlighting to enhance facial features beautifully.',
+          title: 'Professional Makeup',
+          desc: 'Build professional skills with advanced techniques, product knowledge, and hands-on practice to create flawless looks for different occasions and clients.',
           img: 'https://images.unsplash.com/photo-1512496115851-a1c8524d36f1?q=80&w=600&auto=format&fit=crop'
         },
         {
-          title: 'Product Knowledge',
-          desc: 'Gain deep insights into various makeup brands, tools, skin prep, and hygiene standards required for professionals.',
+          title: 'Bridal Makeup',
+          desc: 'Master bridal makeup techniques, from natural to glamorous looks, and learn how to create long-lasting makeup for weddings and special occasions.',
+          img: 'https://images.pexels.com/photos/11181206/pexels-photo-11181206.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          title: 'HD Makeup',
+          desc: 'Learn HD makeup techniques using premium products and modern methods to create smooth, camera-ready looks for photoshoots and events.',
           img: 'https://images.unsplash.com/photo-1590156546946-ce55a12a6a5d?q=80&w=600&auto=format&fit=crop'
+        },
+        {
+          title: 'Airbrush Makeup',
+          desc: 'Get hands-on training in airbrush makeup and learn to achieve lightweight, flawless, and long-lasting finishes loved by brides and professionals.',
+          img: 'https://images.pexels.com/photos/2080536/pexels-photo-2080536.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          title: 'Party Makeup',
+          desc: 'Create trendy and glamorous party looks by learning the latest makeup styles, blending techniques, and finishing touches for every celebration.',
+          img: 'https://images.pexels.com/photos/457701/pexels-photo-457701.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          title: 'Skin Preparation & Client Consultation',
+          desc: 'Understand skin analysis, product selection, and client consultation techniques to deliver personalised makeup services and build lasting client relationships.',
+          img: 'https://images.pexels.com/photos/3762402/pexels-photo-3762402.jpeg?auto=compress&cs=tinysrgb&w=600'
         }
       ]
     },
     portfolioMedia: [
-      { type: 'image', src: 'https://images.unsplash.com/photo-1516975080661-46bfa2c281c7?w=600&auto=format&fit=crop' },
-      { type: 'image', src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&auto=format&fit=crop' },
-      { type: 'image', src: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&auto=format&fit=crop' },
-      { type: 'image', src: 'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=600&auto=format&fit=crop' }
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496054/WhatsApp_Image_2026-06-02_at_22.24.20_bvf5cd.jpg' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496580/WhatsApp_Image_2026-06-02_at_22.31.55_ibmxp1.jpg' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496054/WhatsApp_Image_2026-06-02_at_22.33.19_ktmsou.jpg' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496060/WhatsApp_Image_2026-06-02_at_22.30.18_kikdgr.jpg' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496580/WhatsApp_Image_2026-06-02_at_22.30.52_qxsf0s.jpg' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781684704/WhatsApp_Image_2026-06-02_at_22.24.01_nyyc7r.jpg' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781684705/WhatsApp_Image_2026-06-02_at_22.23.51_frcqiw.jpg' }
     ],
     faqs: [
       {
