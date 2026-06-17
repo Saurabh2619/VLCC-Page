@@ -1,13 +1,12 @@
-import { Metadata } from 'next';
-import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 import { landingPagesData } from '@/app/data/landingPagesData';
+import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 
-export const metadata: Metadata = {
-  title: "Best Nail Extension Course in Gurgaon | VLCC Institute",
-  description: "Become a certified nail artist with hands-on training in nail extensions, gel nails, acrylic nails, and creative nail art techniques."
+export const metadata = {
+  title: 'VLCC Institute - best-nail-extension-course-in-gurgaon',
+  description: 'Join VLCC Institute for the best courses in Gurgaon.',
 };
 
-export default function NailArtistryLandingPage() {
+export default function CoursePage() {
   const data = landingPagesData['best-nail-extension-course-in-gurgaon'];
-  return <LandingPageTemplate data={data} />;
+  return <LandingPageTemplate data={data} isWebsiteMode={true} />;
 }

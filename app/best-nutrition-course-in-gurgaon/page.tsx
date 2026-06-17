@@ -1,13 +1,12 @@
-import { Metadata } from 'next';
-import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 import { landingPagesData } from '@/app/data/landingPagesData';
+import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 
-export const metadata: Metadata = {
-  title: "Best Nutrition Course in Gurgaon | Dietetics Training",
-  description: "Promote health and wellness globally. Learn clinical nutrition, weight management, and diet planning from certified dietitians."
+export const metadata = {
+  title: 'VLCC Institute - best-nutrition-course-in-gurgaon',
+  description: 'Join VLCC Institute for the best courses in Gurgaon.',
 };
 
-export default function NutritionLandingPage() {
+export default function CoursePage() {
   const data = landingPagesData['best-nutrition-course-in-gurgaon'];
-  return <LandingPageTemplate data={data} />;
+  return <LandingPageTemplate data={data} isWebsiteMode={true} />;
 }

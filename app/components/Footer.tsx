@@ -13,11 +13,11 @@ export default function Footer() {
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-vlcc-orange/10 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div className="max-w-[1200px] mx-auto px-5 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
           
           {/* Column 1: Brand */}
           <div className="flex flex-col items-start">
-            <img src="/vlcc-logo.png" alt="VLCC Logo" className="h-[45px] object-contain mb-6 brightness-0 invert opacity-90" />
+            <img src="/vlcc-logo.png" alt="VLCC Logo" className="h-[55px] object-contain mb-6 bg-white p-2 rounded-lg shadow-sm" />
             <p className="text-[#999] text-sm leading-relaxed mb-6">Empowering aspiring beauty professionals with world-class education, practical training, and 100% placement assistance in the wellness industry.</p>
           </div>
 
@@ -29,6 +29,19 @@ export default function Footer() {
               <li className="mb-3"><Link href={isLockedMode ? '#about' : '/#about'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">About Us</Link></li>
               <li className="mb-3"><Link href={isLockedMode ? '#apply' : '/#apply'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">How to Apply</Link></li>
               <li className="mb-3"><Link href={isLockedMode ? '#contact' : '/#contact'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Contact Us</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 3: Our Courses */}
+          <div>
+            <h4 className="text-lg font-heading font-bold mb-6 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-1/2 after:h-[2px] after:bg-vlcc-orange">Our Courses</h4>
+            <ul>
+              <li className="mb-3"><Link href="/best-makeup-academy-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Makeup Artistry</Link></li>
+              <li className="mb-3"><Link href="/best-hair-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Hair Dressing</Link></li>
+              <li className="mb-3"><Link href="/best-esthilogy-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Esthiology</Link></li>
+              <li className="mb-3"><Link href="/best-nail-extension-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Nail Artistry</Link></li>
+              <li className="mb-3"><Link href="/best-aesthetic-laser-treatment-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Aesthetic Laser</Link></li>
+              <li className="mb-3"><Link href="/best-nutrition-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Nutrition</Link></li>
             </ul>
           </div>
           

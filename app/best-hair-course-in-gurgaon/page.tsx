@@ -1,13 +1,12 @@
-import { Metadata } from 'next';
-import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 import { landingPagesData } from '@/app/data/landingPagesData';
+import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 
-export const metadata: Metadata = {
-  title: "Best Hair Styling Course in Gurgaon | Advanced Hair Design",
-  description: "Transform your passion for hair into a rewarding career. Learn advanced haircuts, coloring, keratin treatments, and styling from industry experts."
+export const metadata = {
+  title: 'VLCC Institute - best-hair-course-in-gurgaon',
+  description: 'Join VLCC Institute for the best courses in Gurgaon.',
 };
 
-export default function HairLandingPage() {
+export default function CoursePage() {
   const data = landingPagesData['best-hair-course-in-gurgaon'];
-  return <LandingPageTemplate data={data} />;
+  return <LandingPageTemplate data={data} isWebsiteMode={true} />;
 }

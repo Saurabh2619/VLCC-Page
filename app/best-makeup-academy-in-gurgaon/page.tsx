@@ -1,13 +1,12 @@
-import { Metadata } from 'next';
-import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 import { landingPagesData } from '@/app/data/landingPagesData';
+import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 
-export const metadata: Metadata = {
-  title: "Best Makeup Course in Gurgaon | Professional Makeup Artist Training",
-  description: "Kickstart your career as a professional makeup artist. Learn bridal, party, and HD makeup techniques from industry veterans with 100% placement assistance."
+export const metadata = {
+  title: 'VLCC Institute - best-makeup-academy-in-gurgaon',
+  description: 'Join VLCC Institute for the best courses in Gurgaon.',
 };
 
-export default function MakeupLandingPage() {
+export default function CoursePage() {
   const data = landingPagesData['best-makeup-academy-in-gurgaon'];
-  return <LandingPageTemplate data={data} />;
+  return <LandingPageTemplate data={data} isWebsiteMode={true} />;
 }

@@ -10,35 +10,35 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
   const courses = [
     {
       id: 1,
-      slug: "makeup-artistry",
+      slug: "best-makeup-academy-in-gurgaon",
       title: "Makeup Artistry",
       description: "Comprehensive training from basics to advanced airbrush and bridal makeup.",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508533/WhatsApp_Image_2026-06-02_at_22.30.08_uklh0e.jpg"
     },
     {
       id: 2,
-      slug: "hair-dressing",
+      slug: "best-hair-course-in-gurgaon",
       title: "Hair Dressing",
       description: "Master modern haircuts, coloring techniques, and advanced styling.",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508689/WhatsApp_Image_2026-06-02_at_22.37.09_iakueq.jpg"
     },
     {
       id: 3,
-      slug: "esthiology",
+      slug: "best-esthilogy-course-in-gurgaon",
       title: "Esthiology",
       description: "In-depth training in skin analysis, facial treatments, and modern aesthetics.",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587793/WhatsApp_Image_2026-06-04_at_12.41.15_sl4olz.jpg"
     },
     {
       id: 4,
-      slug: "aesthetic-laser-treatments",
+      slug: "best-aesthetic-laser-treatment-course-in-gurgaon",
       title: "Aesthetic Laser Treatments",
       description: "Advanced cosmetic procedures and non-invasive aesthetic treatments.",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587755/WhatsApp_Image_2026-06-04_at_12.40.19_yhwssy.jpg"
     },
     {
       id: 5,
-      slug: "nutrition",
+      slug: "best-nutrition-course-in-gurgaon",
       title: "Nutrition",
       description: "Learn holistic wellness, meal planning, and clinical nutrition.",
       image: "/images/course-nutrition.png"
@@ -158,7 +158,7 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {displayedCourses.map((course) => (
-              <Link key={course.id} href={`/courses/${course.slug}`} className="w-[85vw] md:w-[calc(50%-15px)] lg:w-[calc(33.333%-20px)] shrink-0 snap-center group bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col">
+              <Link key={course.id} href={`/${course.slug}`} className="group relative w-[280px] sm:w-[320px] md:w-[380px] shrink-0 snap-center bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col">
                 
                 {/* Top Photo Section */}
                 <div className="relative h-[220px] md:h-[260px] overflow-hidden shrink-0">

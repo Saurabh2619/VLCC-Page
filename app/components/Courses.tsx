@@ -7,7 +7,7 @@ export default function Courses() {
   const allCourses = [
     {
       id: 1,
-      slug: "makeup-artistry",
+      slug: "best-makeup-academy-in-gurgaon",
       title: "Makeup Artistry",
       duration: "6 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508533/WhatsApp_Image_2026-06-02_at_22.30.08_uklh0e.jpg",
@@ -15,7 +15,7 @@ export default function Courses() {
     },
     {
       id: 2,
-      slug: "hair-dressing",
+      slug: "best-hair-course-in-gurgaon",
       title: "Hair Dressing",
       duration: "4 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508689/WhatsApp_Image_2026-06-02_at_22.37.09_iakueq.jpg",
@@ -23,7 +23,7 @@ export default function Courses() {
     },
     {
       id: 3,
-      slug: "esthiology",
+      slug: "best-esthilogy-course-in-gurgaon",
       title: "Esthiology",
       duration: "3 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587793/WhatsApp_Image_2026-06-04_at_12.41.15_sl4olz.jpg",
@@ -31,7 +31,7 @@ export default function Courses() {
     },
     {
       id: 4,
-      slug: "nail-artistry",
+      slug: "best-nail-extension-course-in-gurgaon",
       title: "Nail Artistry",
       duration: "2 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508538/WhatsApp_Image_2026-06-02_at_22.40.31_sfaboy.jpg",
@@ -39,7 +39,7 @@ export default function Courses() {
     },
     {
       id: 5,
-      slug: "aesthetic-laser-treatments",
+      slug: "best-aesthetic-laser-treatment-course-in-gurgaon",
       title: "Aesthetic Laser Treatments",
       duration: "5 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587755/WhatsApp_Image_2026-06-04_at_12.40.19_yhwssy.jpg",
@@ -47,7 +47,7 @@ export default function Courses() {
     },
     {
       id: 6,
-      slug: "nutrition",
+      slug: "best-nutrition-course-in-gurgaon",
       title: "Nutrition",
       duration: "3 Months",
       image: "/images/course-nutrition.png",
@@ -75,7 +75,7 @@ export default function Courses() {
               },
               className: "group bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col cursor-pointer"
             } : {
-              href: `/courses/${course.slug}`,
+              href: `/${course.slug}`,
               className: "group bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col"
             };
 

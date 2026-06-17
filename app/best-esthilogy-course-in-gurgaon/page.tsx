@@ -1,13 +1,12 @@
-import { Metadata } from 'next';
-import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 import { landingPagesData } from '@/app/data/landingPagesData';
+import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 
-export const metadata: Metadata = {
-  title: "Best Esthiology Course in Gurgaon | Skin Care Training",
-  description: "Learn advanced skin care, facial therapies, and dermal aesthetics. Turn your passion for beauty into a professional skincare career with VLCC."
+export const metadata = {
+  title: 'VLCC Institute - best-esthilogy-course-in-gurgaon',
+  description: 'Join VLCC Institute for the best courses in Gurgaon.',
 };
 
-export default function EsthiologyLandingPage() {
+export default function CoursePage() {
   const data = landingPagesData['best-esthilogy-course-in-gurgaon'];
-  return <LandingPageTemplate data={data} />;
+  return <LandingPageTemplate data={data} isWebsiteMode={true} />;
 }

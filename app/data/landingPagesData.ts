@@ -39,8 +39,8 @@ export interface LandingPageData {
 }
 
 export const landingPagesData: Record<string, LandingPageData> = {
-  'best-nail-extension-course-in-gurgaon': {
-    slug: 'best-nail-extension-course-in-gurgaon',
+  'best-nail-extension-course-in-gurgaon-49': {
+    slug: 'best-nail-extension-course-in-gurgaon-49',
     hero: {
       preHeading: 'Best Nail Extension Course in Gurgaon',
       headingPrefix: 'Master the Art of ',
@@ -135,8 +135,8 @@ export const landingPagesData: Record<string, LandingPageData> = {
       }
     ]
   },
-  'best-makeup-academy-in-gurgaon': {
-    slug: 'best-makeup-academy-in-gurgaon',
+  'best-makeup-academy-in-gurgaon-49': {
+    slug: 'best-makeup-academy-in-gurgaon-49',
     aboutImages: [
       'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.05_hlhntu.jpg',
       'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685457/WhatsApp_Image_2026-06-16_at_4.15.32_PM_2_wr9hld.jpg',
@@ -547,4 +547,31 @@ export const landingPagesData: Record<string, LandingPageData> = {
       }
     ]
   }
+};
+
+landingPagesData['best-makeup-academy-in-gurgaon'] = { ...landingPagesData['best-makeup-academy-in-gurgaon-49'], slug: 'best-makeup-academy-in-gurgaon' };
+landingPagesData['best-nail-extension-course-in-gurgaon'] = { ...landingPagesData['best-nail-extension-course-in-gurgaon-49'], slug: 'best-nail-extension-course-in-gurgaon' };
+
+landingPagesData['best-hair-course-in-gurgaon'] = {
+  ...landingPagesData['best-makeup-academy-in-gurgaon-49'],
+  slug: 'best-hair-course-in-gurgaon',
+  hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST HAIR COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Hair Dressing' }
+};
+
+landingPagesData['best-esthilogy-course-in-gurgaon'] = {
+  ...landingPagesData['best-makeup-academy-in-gurgaon-49'],
+  slug: 'best-esthilogy-course-in-gurgaon',
+  hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST ESTHIOLOGY COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Esthiology' }
+};
+
+landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
+  ...landingPagesData['best-makeup-academy-in-gurgaon-49'],
+  slug: 'best-aesthetic-laser-treatment-course-in-gurgaon',
+  hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST AESTHETIC LASER COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Laser Treatments' }
+};
+
+landingPagesData['best-nutrition-course-in-gurgaon'] = {
+  ...landingPagesData['best-makeup-academy-in-gurgaon-49'],
+  slug: 'best-nutrition-course-in-gurgaon',
+  hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST NUTRITION COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Nutrition' }
 };
