@@ -135,8 +135,8 @@ export const landingPagesData: Record<string, LandingPageData> = {
       }
     ]
   },
-  'best-makeup-course-in-gurgaon': {
-    slug: 'best-makeup-course-in-gurgaon',
+  'best-makeup-academy-in-gurgaon': {
+    slug: 'best-makeup-academy-in-gurgaon',
     aboutImages: [
       'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.05_hlhntu.jpg',
       'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685457/WhatsApp_Image_2026-06-16_at_4.15.32_PM_2_wr9hld.jpg',

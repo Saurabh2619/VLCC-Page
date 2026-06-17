@@ -8,6 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function MakeupLandingPage() {
-  const data = landingPagesData['best-makeup-course-in-gurgaon'];
+  const data = landingPagesData['best-makeup-academy-in-gurgaon'];
   return <LandingPageTemplate data={data} />;
 }
