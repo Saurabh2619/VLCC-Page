@@ -8,8 +8,10 @@ import LandingPageGallery from '@/app/components/LandingPageGallery';
 import Recruiters from '@/app/components/Recruiters';
 import Testimonials from '@/app/components/Testimonials';
 import YoutubeSection from '@/app/components/YoutubeSection';
-import Contact from '@/app/components/Contact';
-import ControlledEnquiryPopup from '@/app/components/ControlledEnquiryPopup';
+import Contact from '../Contact';
+import Footer from '../Footer';
+import ControlledEnquiryPopup from '../ControlledEnquiryPopup';
+import MobileCTA from '../MobileCTA';
 import StatisticsBanner from '@/app/components/StatisticsBanner';
 import NailJobOpportunities from '@/app/components/NailJobOpportunities';
 import OtherCoursesCarousel from '@/app/components/OtherCoursesCarousel';
@@ -17,7 +19,6 @@ import ScrollReveal from '@/app/components/ScrollReveal';
 import MakeupFeatureBanner from '@/app/components/MakeupFeatureBanner';
 import { LandingPageData } from '@/app/data/landingPagesData';
 import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
 import GlobalSpotlight from '@/app/components/GlobalSpotlight';
 import HowToApply from '@/app/components/HowToApply';
 
@@ -279,6 +280,7 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
 
       <Footer />
 
+      <MobileCTA />
       <ControlledEnquiryPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </main>
   );

@@ -29,6 +29,7 @@ export default function Footer() {
               <li className="mb-3"><Link href={isLockedMode ? '#about' : '/#about'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">About Us</Link></li>
               <li className="mb-3"><Link href={isLockedMode ? '#apply' : '/#apply'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">How to Apply</Link></li>
               <li className="mb-3"><Link href={isLockedMode ? '#contact' : '/#contact'} className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Contact Us</Link></li>
+              <li className="mb-3"><Link href="#" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Blogs</Link></li>
             </ul>
           </div>
 

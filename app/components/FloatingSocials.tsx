@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function FloatingSocials() {
   return (
-    <div className="fixed bottom-6 right-6 z-[100] flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
+    <div className="fixed bottom-[85px] md:bottom-6 right-4 md:right-6 z-[100] flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
       <Link
         href="https://wa.me/919999999999" // TODO: Add real WhatsApp number
         target="_blank"
