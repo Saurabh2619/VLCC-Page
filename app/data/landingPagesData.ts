@@ -2,6 +2,8 @@ export interface CourseService {
   title: string;
   desc: string;
   img: string;
+  objectPosition?: string;
+  fit?: string;
 }
 
 export interface CourseFaq {
@@ -136,8 +138,10 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-makeup-course-in-gurgaon': {
     slug: 'best-makeup-course-in-gurgaon',
     aboutImages: [
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685454/WhatsApp_Image_2026-06-16_at_4.15.32_PM_3_qd9loc.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685457/WhatsApp_Image_2026-06-16_at_4.15.32_PM_2_wr9hld.jpg'
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.05_hlhntu.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685457/WhatsApp_Image_2026-06-16_at_4.15.32_PM_2_wr9hld.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.48_1_ktdgok.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_15.40.49_3_vmdibk.jpg'
     ],
     hero: {
       preHeading: 'PROFESSIONAL CERTIFICATION | MAKEUP ARTIST CLASSES IN GURGAON',
@@ -169,37 +173,44 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Basic Makeup',
           desc: 'Learn makeup fundamentals, skin preparation, colour correction, and everyday looks through practical training designed for beginners starting their beauty journey.',
-          img: 'https://images.pexels.com/photos/3373725/pexels-photo-3373725.jpeg?auto=compress&cs=tinysrgb&w=600'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781684705/WhatsApp_Image_2026-06-02_at_22.23.51_frcqiw.jpg',
+          objectPosition: 'center 15%'
         },
         {
           title: 'Professional Makeup',
-          desc: 'Build professional skills with advanced techniques, product knowledge, and hands-on practice to create flawless looks for different occasions and clients.',
-          img: 'https://images.unsplash.com/photo-1512496115851-a1c8524d36f1?q=80&w=600&auto=format&fit=crop'
+          desc: 'Master advanced contouring, highlighting, eye makeup, and looks for photography and events.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.05_hlhntu.jpg?q=80&w=600&auto=format&fit=crop',
+          objectPosition: 'center 20%'
         },
         {
           title: 'Bridal Makeup',
-          desc: 'Master bridal makeup techniques, from natural to glamorous looks, and learn how to create long-lasting makeup for weddings and special occasions.',
-          img: 'https://images.pexels.com/photos/11181206/pexels-photo-11181206.jpeg?auto=compress&cs=tinysrgb&w=600'
+          desc: 'Specialized training for traditional and modern bridal looks, focusing on longevity and flawless finish.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693701/WhatsApp_Image_2026-06-17_at_15.40.50_2_wqwuyj.jpg?auto=compress&cs=tinysrgb&w=600',
+          objectPosition: 'center 15%'
         },
         {
           title: 'HD Makeup',
-          desc: 'Learn HD makeup techniques using premium products and modern methods to create smooth, camera-ready looks for photoshoots and events.',
-          img: 'https://images.unsplash.com/photo-1590156546946-ce55a12a6a5d?q=80&w=600&auto=format&fit=crop'
+          desc: 'Techniques for High-Definition cameras using specialized products for a seamless, natural appearance.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693762/WhatsApp_Image_2026-06-17_at_3.29.15_PM_o2ilbl.jpg?q=80&w=600&auto=format&fit=crop',
+          objectPosition: 'center 20%'
         },
         {
           title: 'Airbrush Makeup',
-          desc: 'Get hands-on training in airbrush makeup and learn to achieve lightweight, flawless, and long-lasting finishes loved by brides and professionals.',
-          img: 'https://images.pexels.com/photos/2080536/pexels-photo-2080536.jpeg?auto=compress&cs=tinysrgb&w=600'
+          desc: 'Learn the art of airbrushing for a lightweight, long-lasting, and picture-perfect makeup application.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.48_1_ktdgok.jpg?auto=compress&cs=tinysrgb&w=600',
+          objectPosition: 'center 15%'
         },
         {
           title: 'Party Makeup',
           desc: 'Create trendy and glamorous party looks by learning the latest makeup styles, blending techniques, and finishing touches for every celebration.',
-          img: 'https://images.pexels.com/photos/457701/pexels-photo-457701.jpeg?auto=compress&cs=tinysrgb&w=600'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_15.40.49_3_vmdibk.jpg',
+          objectPosition: 'center 20%'
         },
         {
           title: 'Skin Preparation & Client Consultation',
           desc: 'Understand skin analysis, product selection, and client consultation techniques to deliver personalised makeup services and build lasting client relationships.',
-          img: 'https://images.pexels.com/photos/3762402/pexels-photo-3762402.jpeg?auto=compress&cs=tinysrgb&w=600'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508479/WhatsApp_Image_2026-06-02_at_22.34.16_mkfqyt.jpg',
+          fit: 'contain'
         }
       ]
     },
@@ -411,6 +422,11 @@ export const landingPagesData: Record<string, LandingPageData> = {
           title: 'Laser Hair Reduction (LHR)',
           desc: 'Master the operation of diode and Nd:YAG lasers for safe and effective hair reduction on different skin types.',
           img: 'https://images.pexels.com/photos/6532442/pexels-photo-6532442.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          title: 'Basic Makeup',
+          desc: 'Learn the fundamentals of skin types, color theory, product knowledge, and day-to-day makeup looks.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781684705/WhatsApp_Image_2026-06-02_at_22.23.51_frcqiw.jpg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           title: 'Chemical Peels',

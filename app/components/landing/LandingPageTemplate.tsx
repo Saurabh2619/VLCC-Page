@@ -175,8 +175,13 @@ export default function LandingPageTemplate({ data }: { data: LandingPageData })
                 key={index} 
                 className="bg-white p-8 rounded-2xl flex flex-col items-center text-center group border border-gray-100 transition-all duration-300 hover:-translate-y-2 shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)]"
               >
-                <div className="overflow-hidden rounded-xl mb-6 w-full h-[200px]">
-                  <img src={service.img} alt={service.title} className="w-full h-full object-cover" />
+                <div className="overflow-hidden rounded-xl mb-6 w-full h-[200px] flex items-center justify-center bg-gray-50">
+                  <img 
+                    src={service.img} 
+                    alt={service.title} 
+                    className={`w-full h-full ${(service as any).fit === 'contain' ? 'object-contain' : 'object-cover'}`}
+                    style={{ objectPosition: (service as any).objectPosition || 'center' }}
+                  />
                 </div>
                 <div className="flex flex-col flex-grow text-center">
                   <h3 className="text-xl font-bold font-heading text-[#1a1a1a] mb-3">{service.title}</h3>
