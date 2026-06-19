@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function GoogleReviews() {
+export default function GoogleReviews({ hideWriteReview = false }: { hideWriteReview?: boolean }) {
   const reviews = [
     {
       name: 'Ravinder Kaur',
@@ -78,14 +78,16 @@ export default function GoogleReviews() {
             
             <p className="text-gray-500 font-medium mt-2 text-sm">Based on 151 Reviews</p>
             
-            <a 
-              href="https://www.google.com/search?hl=en-IN&gl=in&q=Third+Floor,+VLCC+School+of+Beauty+Gurgaon+Sector+49,+Sapphire+Mall,+opposite+Orchid+Petal,+Orchid+Petals,+Block+S,+Uppal+Southend,+Sector+49,+Gurugram,+Haryana+122018&ludocid=11179806053362896601&lsig=AB86z5Xit0qaNaRbtjOdll4_ghyI#lrd="
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 border-2 border-[#ff7a59] text-[#ff7a59] font-bold rounded-lg px-6 py-3 w-full hover:bg-orange-50 transition-colors text-lg"
-            >
-              Write Reviews
-            </a>
+            {!hideWriteReview && (
+              <a 
+                href="https://www.google.com/search?hl=en-IN&gl=in&q=Third+Floor,+VLCC+School+of+Beauty+Gurgaon+Sector+49,+Sapphire+Mall,+opposite+Orchid+Petal,+Orchid+Petals,+Block+S,+Uppal+Southend,+Sector+49,+Gurugram,+Haryana+122018&ludocid=11179806053362896601&lsig=AB86z5Xit0qaNaRbtjOdll4_ghyI#lrd="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 border-2 border-[#ff7a59] text-[#ff7a59] font-bold rounded-lg px-6 py-3 w-full hover:bg-orange-50 transition-colors text-lg"
+              >
+                Write Reviews
+              </a>
+            )}
           </div>
 
           {/* Right Panel - Scrollable Reviews */}

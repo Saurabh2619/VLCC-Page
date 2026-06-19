@@ -40,7 +40,7 @@ export default function MakeupAcademy() {
         <ScrollReveal><Courses /></ScrollReveal>
         <ScrollReveal><Facilities /></ScrollReveal>
         <ScrollReveal><WhyChooseUs /></ScrollReveal>
-        <ScrollReveal><GoogleReviews /></ScrollReveal>
+        <ScrollReveal><GoogleReviews hideWriteReview={true} /></ScrollReveal>
         <ScrollReveal><HowToApply /></ScrollReveal>
         <ScrollReveal><Gallery /></ScrollReveal>
         <ScrollReveal><Recruiters /></ScrollReveal>
@@ -49,7 +49,6 @@ export default function MakeupAcademy() {
         <ScrollReveal><YoutubeSection /></ScrollReveal>
         <ScrollReveal><CareerCTA /></ScrollReveal>
         <ScrollReveal><Contact /></ScrollReveal>
-        <ScrollReveal><Footer /></ScrollReveal>
         
         <MobileCTA />
         <EnquiryPopup />
