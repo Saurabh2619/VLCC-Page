@@ -1,4 +1,8 @@
+'use client';
+import { useLandingContext } from '../context/LandingContext';
+
 export default function MobileCTA() {
+  const { isLockedMode } = useLandingContext();
   return (
     <div className="fixed bottom-0 left-0 w-full z-50 md:hidden flex justify-between items-center shadow-[0_-5px_20px_rgba(0,0,0,0.15)] bg-vlcc-orange pt-2 pb-2 px-2">
       <a 
@@ -11,16 +15,18 @@ export default function MobileCTA() {
         Call
       </a>
       
-      <a 
-        href="https://maps.app.goo.gl/jyLfZgQWZxhPdjLc7" 
-        target="_blank" rel="noopener noreferrer"
-        className="flex-1 flex flex-col items-center justify-center gap-1.5 text-white font-heading font-medium text-[13px] active:opacity-70 transition-opacity"
-      >
-        <div className="w-11 h-11 bg-white rounded-[14px] flex items-center justify-center text-vlcc-orange shadow-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 14 20 9 15 4"/><path d="M4 20v-7a4 4 0 0 1 4-4h12"/></svg>
-        </div>
-        Direction
-      </a>
+      {!isLockedMode && (
+        <a 
+          href="https://maps.app.goo.gl/jyLfZgQWZxhPdjLc7" 
+          target="_blank" rel="noopener noreferrer"
+          className="flex-1 flex flex-col items-center justify-center gap-1.5 text-white font-heading font-medium text-[13px] active:opacity-70 transition-opacity"
+        >
+          <div className="w-11 h-11 bg-white rounded-[14px] flex items-center justify-center text-vlcc-orange shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 14 20 9 15 4"/><path d="M4 20v-7a4 4 0 0 1 4-4h12"/></svg>
+          </div>
+          Direction
+        </a>
+      )}
       
       <a 
         href="#enquiry-form" 

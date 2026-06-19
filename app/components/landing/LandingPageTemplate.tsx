@@ -26,6 +26,12 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
+  React.useEffect(() => {
+    const handleOpenPopup = () => setIsPopupOpen(true);
+    window.addEventListener('openEnquiryPopup', handleOpenPopup);
+    return () => window.removeEventListener('openEnquiryPopup', handleOpenPopup);
+  }, []);
+
   const toggleFaq = (index: number) => {
     setActiveFaq(activeFaq === index ? null : index);
   };

@@ -21,13 +21,13 @@ export default function Hero() {
             <p className="text-base md:text-lg text-[#d1d1d1] mb-6 md:mb-[30px] max-w-[500px] mx-auto md:mx-0 font-body">Enroll for the Upcoming Batch</p>
             
             <div className="flex gap-4 md:gap-[30px] justify-center md:justify-start flex-wrap">
-              <a href="https://maps.app.goo.gl/jyLfZgQWZxhPdjLc7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 md:gap-[15px] group cursor-pointer">
-                <div className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] bg-white/10 rounded-full flex items-center justify-center text-xl md:text-2xl border border-white/20 shadow-sm group-hover:bg-white/20 transition-colors">📍</div>
+              <div className="flex items-center gap-3 md:gap-[15px] group">
+                <div className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] bg-white/10 rounded-full flex items-center justify-center text-xl md:text-2xl border border-white/20 shadow-sm transition-colors">📍</div>
                 <div className="text-left">
-                  <h4 className="text-sm md:text-base font-semibold font-heading mb-0 md:mb-1 group-hover:text-vlcc-orange transition-colors">On-Campus</h4>
-                  <p className="text-[11px] md:text-sm text-[#aaa] font-body transition-colors group-hover:text-white">Sector 49, Gurugram</p>
+                  <h4 className="text-sm md:text-base font-semibold font-heading mb-0 md:mb-1 transition-colors">On-Campus</h4>
+                  <p className="text-[11px] md:text-sm text-[#aaa] font-body transition-colors">Sector 49, Gurugram</p>
                 </div>
-              </a>
+              </div>
               <div className="flex items-center gap-3 md:gap-[15px]">
                 <div className="w-[45px] h-[45px] md:w-[50px] md:h-[50px] bg-white rounded-full flex items-center justify-center shadow-sm p-2 shrink-0 border border-white/20">
                   <img src="/nsdc_logo.png" alt="NSDC Logo" className="w-full h-full object-contain" />

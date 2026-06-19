@@ -36,9 +36,9 @@ export default function CareerCTA() {
             
             <div className="flex flex-wrap items-center gap-6 mt-[40px]">
               <MagneticButton>
-                <a href="#hero" className="bg-white text-vlcc-orange hover:bg-gray-100 px-8 py-3.5 rounded-xl font-bold text-sm tracking-[1px] uppercase transition-colors shadow-lg">
+                <button onClick={() => window.dispatchEvent(new Event('openEnquiryPopup'))} className="bg-white text-vlcc-orange hover:bg-gray-100 px-8 py-3.5 rounded-xl font-bold text-sm tracking-[1px] uppercase transition-colors shadow-lg">
                   ENROLL NOW
-                </a>
+                </button>
               </MagneticButton>
               <MagneticButton>
                 <a href="tel:+917428238777" className="px-8 py-3.5 rounded-xl border border-white text-white font-bold text-sm tracking-[1px] hover:bg-white/10 transition-all flex items-center gap-2">

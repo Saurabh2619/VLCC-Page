@@ -10,7 +10,13 @@ export default function EnquiryPopup() {
       setIsOpen(true);
     }, 15000); // 15 seconds
 
-    return () => clearTimeout(timer);
+    const handleOpenPopup = () => setIsOpen(true);
+    window.addEventListener('openEnquiryPopup', handleOpenPopup);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('openEnquiryPopup', handleOpenPopup);
+    };
   }, []);
 
   if (!isOpen) return null;

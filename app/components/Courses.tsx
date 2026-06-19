@@ -71,7 +71,7 @@ export default function Courses() {
             const CardWrapper = isLockedMode ? 'div' : Link;
             const cardProps = isLockedMode ? {
               onClick: () => {
-                document.getElementById('enquiry-form')?.scrollIntoView({ behavior: 'smooth' });
+                window.dispatchEvent(new Event('openEnquiryPopup'));
               },
               className: "group bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col cursor-pointer"
             } : {
