@@ -13,7 +13,9 @@ import Footer from '../Footer';
 import ControlledEnquiryPopup from '../ControlledEnquiryPopup';
 import MobileCTA from '../MobileCTA';
 import StatisticsBanner from '@/app/components/StatisticsBanner';
+import SkinFeatureBanner from '@/app/components/SkinFeatureBanner';
 import NailJobOpportunities from '@/app/components/NailJobOpportunities';
+import SkinJobOpportunities from '@/app/components/SkinJobOpportunities';
 import OtherCoursesCarousel from '@/app/components/OtherCoursesCarousel';
 import ScrollReveal from '@/app/components/ScrollReveal';
 import MakeupFeatureBanner from '@/app/components/MakeupFeatureBanner';
@@ -176,7 +178,7 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
       <section className="py-16 md:py-24 bg-[#fafafa] relative z-10">
         <div className="max-w-[1200px] mx-auto px-5">
           <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[600px] leading-tight text-center lg:text-left">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[600px] lg:max-w-[700px] leading-tight text-center lg:text-left">
               {data.modules.heading}
             </h2>
             <img 
@@ -222,11 +224,14 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
           Or maybe use NailJobOpportunities only if slug is nail, otherwise hide or make generic.
           For now, keep it conditionally. */}
       {data.slug.includes('nail') && <NailJobOpportunities />}
+      {data.slug.includes('skin-care') && <SkinJobOpportunities />}
       
       <Facilities />
       
       {data.slug.includes('makeup') ? (
         <MakeupFeatureBanner imageSrc="https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781680810/makeup_section_a19yre.png" />
+      ) : data.slug.includes('skin-care') ? (
+        <SkinFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       ) : (
         <StatisticsBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       )}

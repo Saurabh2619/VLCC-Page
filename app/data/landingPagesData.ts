@@ -314,58 +314,66 @@ export const landingPagesData: Record<string, LandingPageData> = {
       }
     ]
   },
-  'best-esthilogy-course-in-gurgaon': {
-    slug: 'best-esthilogy-course-in-gurgaon',
+  'skin-care-course-in-gurgaon': {
+    slug: 'skin-care-course-in-gurgaon',
     hero: {
-      preHeading: 'Best Esthiology & Skin Care Course in Gurgaon',
-      headingPrefix: 'Become a Certified ',
-      headingHighlight: 'Esthetician',
-      paragraph: 'Learn advanced skin care, facial therapies, and dermal aesthetics. Turn your passion for beauty into a professional skincare career with VLCC.',
+      preHeading: 'PROFESSIONAL CERTIFICATION',
+      headingPrefix: 'ADVANCED SKIN COURSE ',
+      headingHighlight: 'IN GURGAON',
+      paragraph: 'Learn advanced aesthetic treatments, laser technologies, and professional skin care techniques with hands-on training.',
       bgImage: 'https://images.pexels.com/photos/3985304/pexels-photo-3985304.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Esthiology Course',
-      paragraph1: 'Located in Sector 49, Gurgaon, VLCC School of Beauty is an Authorized Franchise offering professional skin care and esthiology training. If you are looking for the Best Skin Care Course in Gurgaon, our academy provides world-class education.',
-      paragraph2: 'Students learn skin anatomy, facial treatments, acne management, and anti-aging therapies through practical sessions. We focus on hands-on learning, professional certification, and career growth. With modern facilities and placement assistance, VLCC helps you become a sought-after esthetician.',
+      heading: 'About VLCC Skin & Aesthetics Academy',
+      paragraph1: 'At VLCC School of Beauty, Sector 49 Gurgaon, we believe healthy skin starts with the right knowledge and practical skills. Our Skin & Aesthetics Course is designed for students who want to build a successful career in professional skincare and advanced aesthetic treatments.',
+      paragraph2: 'With industry expert trainers, hands-on training, and modern aesthetic technology, students learn laser aesthetics, chemical peels, microdermabrasion, micro needling, and advanced facial treatments. We focus on Skin Science, Clinical Expertise, and Professional Skin Care to help students gain real-world experience. Professional certification and placement assistance further prepare students to work confidently in clinics, salons, and wellness centers.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
         'Industry Expert Trainers',
         'Practical Hands-on Training',
-        'Advanced Facial & Skin Tech',
         'Professional Certification',
         'Placement Assistance',
-        'Modern Learning Environment',
-        'Small Batch Size'
+        'Modern Learning Environment'
       ]
     },
     modules: {
-      heading: 'Advanced Skin Care & Esthiology Modules',
+      heading: 'Professional Skin & Aesthetics Modules',
       sideImage: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71c9?q=80&w=600&auto=format&fit=crop',
       services: [
         {
-          title: 'Skin Anatomy & Analysis',
-          desc: 'Deep dive into skin types, conditions, and disorders to provide accurate consultations and personalized treatments.',
-          img: 'https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Laser Hair Reduction (LHR)',
+          desc: 'Learn safe and effective laser hair reduction techniques to provide long-lasting hair removal treatments using advanced aesthetic technology.',
+          img: 'https://images.pexels.com/photos/6532442/pexels-photo-6532442.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Advanced Facials',
-          desc: 'Learn professional facial massage techniques, cleansing protocols, and targeted therapies for acne and pigmentation.',
-          img: 'https://images.pexels.com/photos/3985332/pexels-photo-3985332.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          title: 'Machine Treatments',
-          desc: 'Master the use of galvanic, high frequency, and ultrasonic machines for enhanced product penetration and skin rejuvenation.',
+          title: 'Photofacial - IPL',
+          desc: 'Master IPL Photofacial treatments to improve skin texture, reduce pigmentation, and achieve brighter, healthier, and more youthful-looking skin.',
           img: 'https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?q=80&w=600&auto=format&fit=crop'
         },
         {
-          title: 'Anti-Aging Therapies',
-          desc: 'Explore specialized treatments designed to reduce fine lines, firm skin, and promote youthful radiance.',
-          img: 'https://images.pexels.com/photos/5069411/pexels-photo-5069411.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Carbon Peel ND-YAG',
+          desc: 'Learn Carbon Peel using ND-YAG laser technology to reduce acne, control oil, and improve overall skin tone and texture.',
+          img: 'https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Spa & Body Therapies',
-          desc: 'Learn body polishing, wrapping, and relaxing spa therapies for a complete wellness experience.',
-          img: 'https://images.pexels.com/photos/6629910/pexels-photo-6629910.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Chemical Peels',
+          desc: 'Understand Lactic, Glycolic, Salicylic, Yellow, and TCA peels to treat pigmentation, acne, and signs of aging effectively.',
+          img: 'https://images.pexels.com/photos/3985334/pexels-photo-3985334.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          title: 'Microdermabrasion (MDA)',
+          desc: 'Learn Microdermabrasion techniques to exfoliate dead skin cells, improve texture, and achieve smoother, fresher, and more radiant skin.',
+          img: 'https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          title: 'Micro Needling',
+          desc: 'Master Micro Needling procedures to stimulate collagen production, reduce scars, and improve skin texture with safe and professional techniques.',
+          img: 'https://images.pexels.com/photos/3985332/pexels-photo-3985332.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          title: 'Advanced Facial Aesthetics',
+          desc: 'Gain hands-on experience in advanced facial treatments, including Jet Peel, Eye Peel, and Lip Peel for complete skin rejuvenation.',
+          img: 'https://images.pexels.com/photos/5069411/pexels-photo-5069411.jpeg?auto=compress&cs=tinysrgb&w=600'
         }
       ]
     },
@@ -377,8 +385,8 @@ export const landingPagesData: Record<string, LandingPageData> = {
     ],
     faqs: [
       {
-        question: 'Q: What is Esthiology?',
-        answer: 'Esthiology is the study of skincare, facial treatments, and body wellness to improve and maintain healthy skin.'
+        question: 'Q: What is Skin Care training?',
+        answer: 'Skin Care training is the study of facial treatments, dermal therapies, and body wellness to improve and maintain healthy skin.'
       },
       {
         question: 'Q: Do I get to practice with real machines?',
@@ -558,10 +566,10 @@ landingPagesData['best-hair-course-in-gurgaon'] = {
   hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST HAIR COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Hair Dressing' }
 };
 
-landingPagesData['best-esthilogy-course-in-gurgaon'] = {
-  ...landingPagesData['best-makeup-academy-in-gurgaon-49'],
-  slug: 'best-esthilogy-course-in-gurgaon',
-  hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST ESTHIOLOGY COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Esthiology' }
+landingPagesData['skin-care-course-in-gurgaon'] = {
+  ...landingPagesData['skin-care-course-in-gurgaon'],
+  slug: 'skin-care-course-in-gurgaon',
+  hero: { ...landingPagesData['skin-care-course-in-gurgaon'].hero, preHeading: 'BEST SKIN CARE COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Skin Care' }
 };
 
 landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {

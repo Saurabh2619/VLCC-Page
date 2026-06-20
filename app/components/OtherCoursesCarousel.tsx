@@ -24,8 +24,8 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
     },
     {
       id: 3,
-      slug: "best-esthilogy-course-in-gurgaon",
-      title: "Esthiology",
+      slug: "skin-care-course-in-gurgaon",
+      title: "Skin Care",
       description: "In-depth training in skin analysis, facial treatments, and modern aesthetics.",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587793/WhatsApp_Image_2026-06-04_at_12.41.15_sl4olz.jpg"
     },
@@ -57,7 +57,7 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
         if (currentCourseSlug.includes('nail') && course.slug.includes('nail')) return false;
         if (currentCourseSlug.includes('makeup') && course.slug.includes('makeup')) return false;
         if (currentCourseSlug.includes('hair') && course.slug.includes('hair')) return false;
-        if (currentCourseSlug.includes('esthilogy') && course.slug.includes('esthiology')) return false;
+        if (currentCourseSlug.includes('skin-care') && course.slug.includes('skin-care')) return false;
         if (currentCourseSlug.includes('laser') && course.slug.includes('laser')) return false;
         if (currentCourseSlug.includes('nutrition') && course.slug.includes('nutrition')) return false;
         return true;

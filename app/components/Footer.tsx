@@ -39,7 +39,7 @@ export default function Footer() {
             <ul>
               <li className="mb-3"><Link href="/best-makeup-academy-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Makeup Artistry</Link></li>
               <li className="mb-3"><Link href="/best-hair-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Hair Dressing</Link></li>
-              <li className="mb-3"><Link href="/best-esthilogy-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Esthiology</Link></li>
+              <li className="mb-3"><Link href="/skin-care-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Skin Care</Link></li>
               <li className="mb-3"><Link href="/best-nail-extension-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Nail Artistry</Link></li>
               <li className="mb-3"><Link href="/best-aesthetic-laser-treatment-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Aesthetic Laser</Link></li>
               <li className="mb-3"><Link href="/best-nutrition-course-in-gurgaon" className="text-[#999] text-sm transition-colors duration-300 hover:text-vlcc-orange font-body">Nutrition</Link></li>

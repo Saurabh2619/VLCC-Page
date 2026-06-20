@@ -65,8 +65,8 @@ export const courses: Course[] = [
     careerOpportunities: ['Hair Stylists', 'Freelancers', 'Faculties', 'Technical Trainers', 'Salon Owners', 'Media Houses']
   },
   {
-    id: 'best-esthilogy-course-in-gurgaon',
-    title: 'Esthiology',
+    id: 'skin-care-course-in-gurgaon',
+    title: 'Skin Care',
     shortDescription: 'A comprehensive program combining aesthetics, hair, makeup, and nail art.',
     fullDescription: 'The Advanced Diploma in Cosmetology is our flagship course designed to create all-rounder beauty experts. It combines the core modules of Skin Care (Aesthetics), Hair Dressing, Makeup Artistry, and Nail Extensions into one intensive program. This is the ultimate course for individuals aiming to open their own full-service salon or seeking top-level management roles in the beauty industry.',
     image: '/courses/cosmetology.jpg',

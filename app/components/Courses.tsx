@@ -23,8 +23,8 @@ export default function Courses() {
     },
     {
       id: 3,
-      slug: "best-esthilogy-course-in-gurgaon",
-      title: "Esthiology",
+      slug: "skin-care-course-in-gurgaon",
+      title: "Skin Care",
       duration: "3 Months",
       image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587793/WhatsApp_Image_2026-06-04_at_12.41.15_sl4olz.jpg",
       description: "In-depth training in skin analysis, facial treatments, and modern aesthetics."
