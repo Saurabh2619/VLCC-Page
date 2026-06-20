@@ -31,6 +31,7 @@ export interface LandingPageData {
   statisticsImage?: string;
   modules: {
     heading: string;
+    subheading?: string;
     sideImage: string;
     services: CourseService[];
   };
@@ -241,55 +242,82 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-hair-course-in-gurgaon': {
     slug: 'best-hair-course-in-gurgaon',
     hero: {
-      preHeading: 'Best Hair Styling & Chemical Course in Gurgaon',
-      headingPrefix: 'Master the Art of ',
-      headingHighlight: 'Hair Design',
-      paragraph: 'Transform your passion for hair into a rewarding career. Learn advanced haircuts, coloring, keratin treatments, and styling from industry experts.',
+      preHeading: 'HAIR DRESSING CLASSES IN GURGAON',
+      headingPrefix: 'Best Hair Training Academy ',
+      headingHighlight: 'in Gurgaon',
+      paragraph: 'Learn Hair cutting, Thermal styling, Various hair up styling, Rebounding, Cystin, Keratin, Highlights, Ombre, Balayage',
       bgImage: 'https://images.pexels.com/photos/3993320/pexels-photo-3993320.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Hair Artistry Course',
-      paragraph1: 'Located in Sector 49, Gurgaon, VLCC School of Beauty is an Authorized Franchise offering professional hair training. If you are looking for the Best Hair Design Course in Gurgaon, our Academy is the perfect place to start.',
-      paragraph2: 'Students learn precision haircuts, global coloring, highlights, rebonding, and keratin treatments through practical sessions guided by expert trainers. We focus on hands-on learning, professional certification, and career growth to help you succeed in top salons.',
-      whyChooseTitle: 'Why Choose VLCC?',
+      heading: 'About VLCC Hair Training Academy',
+      paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon,We offer variety of hair dressing programs ranging from beginner to advance and professional levels, focusing on technical skills, salon management and creative styling, we believe hair dressing is an art that helps people express their confidence and creativity as it is said “Good Hair Day”!!. If you are looking for the Best hair training Academy in Gurgaon, our courses are designed to give you the right blend of creativity, practical learning, and industry exposure.',
+      paragraph2: 'Our Professional hair Training Academy in Gurgaon covers everything from basic to advanced such as professional grooming, hair cutting, hair trichology, coloring, rebounding salon managemant and various advance treatments like Botox, ballayage, cycstine, keratine and hair extension With industry expert trainers, hands-on practice, professional certification, and placement assistance, we help students turn their passion into a successful career in the beauty/ salon industry.',
+      whyChooseTitle: 'Why Choose VLCC? (USP Cards)',
       whyChooseList: [
         'Industry Expert Trainers',
         'Practical Hands-on Training',
-        'Latest Chemical & Cutting Techniques',
         'Professional Certification',
         'Placement Assistance',
         'Modern Learning Environment',
-        'Small Batch Size'
+        'Small Batch Size',
+        'Latest Hairdressing Techniques',
+        'Live Demonstrations'
       ]
     },
     modules: {
-      heading: 'Professional Hair Design Modules',
+      heading: 'Everything You Need to Become a Hair Stylist',
+      subheading: 'From Hair cutting and styling and chemical job,\nGet hands-on training from industry experts',
       sideImage: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=600&auto=format&fit=crop',
       services: [
         {
-          title: 'Precision Haircuts',
-          desc: 'Learn classic and modern haircuts for men and women, mastering techniques for layers, bobs, and texturizing.',
+          title: 'Hair Terminology/Methodology',
+          desc: 'From basic concepts to professional techniques, our Hair Terminology & Methodology module helps you speak the language of the salon and work with confidence.',
           img: 'https://images.pexels.com/photos/3993311/pexels-photo-3993311.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Hair Coloring',
-          desc: 'Master global color, root touch-ups, highlights, balayage, and ombre techniques using professional color theory.',
+          title: 'Shampooing & Conditioning',
+          desc: 'Understand the fundamentals of hair cleansing and nourishment with expert shampooing and conditioning practices. Build the foundation for effective hair care services.',
           img: 'https://images.pexels.com/photos/14840842/pexels-photo-14840842.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Chemical Treatments',
-          desc: 'Gain expertise in keratin treatments, rebonding, smoothening, and perming while maintaining hair health.',
+          title: 'Blow Dry',
+          desc: 'Learn essential blow-dry techniques to achieve salon-quality finishes, from sleek looks to bouncy volume, with precision and control.',
           img: 'https://images.pexels.com/photos/973401/pexels-photo-973401.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Advanced Styling',
-          desc: 'Learn elegant updos, bridal hair styling, braiding, and thermal styling for events and fashion shoots.',
+          title: 'Hair Trichology',
+          desc: 'Explore the structure, growth cycle, and health of hair with essential trichology knowledge. Build expertise in diagnosing and addressing everyday hair and scalp issues',
           img: 'https://images.pexels.com/photos/2068800/pexels-photo-2068800.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Scalp & Hair Care',
-          desc: 'Understand hair anatomy, scalp disorders, spa treatments, and client consultation for customized care.',
+          title: 'Hair & Scalp Disorders',
+          desc: 'Understand the underlying factors behind hair and scalp disorders and explore professional approaches to assessment, care, and maintenance.',
           img: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=600&auto=format&fit=crop'
+        },
+        {
+          title: 'Hair Cuts',
+          desc: 'Master professional haircutting techniques with precision, creativity, and confidence. Learn classic and contemporary styles tailored to different face shapes and hair types',
+          img: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&auto=format&fit=crop'
+        },
+        {
+          title: 'Thermal Setting',
+          desc: 'Develop hands-on skills in thermal setting to craft smooth, curled, or voluminous styles with precision and care. Ensure beautiful results while maintaining hair health.',
+          img: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&auto=format&fit=crop'
+        },
+        {
+          title: 'Hair Coloring',
+          desc: 'Gain hands-on experience in professional hair coloring, from consultation to application, ensuring vibrant, long-lasting, and salon-quality finishes.',
+          img: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&auto=format&fit=crop'
+        },
+        {
+          title: 'Hair Chemical Texture services',
+          desc: 'Gain hands-on expertise in chemical hair treatments designed to transform texture, shape, and manageability while maintaining hair health and integrity.',
+          img: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&auto=format&fit=crop'
+        },
+        {
+          title: 'New fashion Up-styles',
+          desc: 'Learn to create elegant and trend-forward updos for weddings, parties, fashion events, and special occasions. Master modern techniques that combine creativity with precision.',
+          img: 'https://images.pexels.com/photos/3993320/pexels-photo-3993320.jpeg?auto=compress&cs=tinysrgb&w=600'
         }
       ]
     },
@@ -560,11 +588,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
 landingPagesData['best-makeup-academy-in-gurgaon'] = { ...landingPagesData['best-makeup-academy-in-gurgaon-49'], slug: 'best-makeup-academy-in-gurgaon' };
 landingPagesData['best-nail-extension-course-in-gurgaon'] = { ...landingPagesData['best-nail-extension-course-in-gurgaon-49'], slug: 'best-nail-extension-course-in-gurgaon' };
 
-landingPagesData['best-hair-course-in-gurgaon'] = {
-  ...landingPagesData['best-makeup-academy-in-gurgaon-49'],
-  slug: 'best-hair-course-in-gurgaon',
-  hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST HAIR COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Hair Dressing' }
-};
+
 
 landingPagesData['skin-care-course-in-gurgaon'] = {
   ...landingPagesData['skin-care-course-in-gurgaon'],

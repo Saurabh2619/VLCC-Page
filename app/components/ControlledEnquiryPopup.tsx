@@ -10,8 +10,8 @@ export default function ControlledEnquiryPopup({ isOpen, onClose }: Props) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-5 animate-fade-in">
-      <div className="bg-[#141414] rounded-2xl w-full max-w-[450px] relative animate-slide-up border border-white/10 shadow-2xl p-6 md:p-8">
+    <div className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 md:p-5 animate-fade-in overflow-y-auto">
+      <div className="bg-[#141414] rounded-2xl w-full max-w-[450px] relative animate-slide-up border border-white/10 shadow-2xl p-6 md:p-8 my-auto max-h-[90vh] overflow-y-auto">
         <button 
           onClick={onClose}
           className="absolute top-4 right-4 w-8 h-8 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"

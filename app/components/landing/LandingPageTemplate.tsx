@@ -14,6 +14,7 @@ import ControlledEnquiryPopup from '../ControlledEnquiryPopup';
 import MobileCTA from '../MobileCTA';
 import StatisticsBanner from '@/app/components/StatisticsBanner';
 import SkinFeatureBanner from '@/app/components/SkinFeatureBanner';
+import HairFeatureBanner from '@/app/components/HairFeatureBanner';
 import NailJobOpportunities from '@/app/components/NailJobOpportunities';
 import SkinJobOpportunities from '@/app/components/SkinJobOpportunities';
 import OtherCoursesCarousel from '@/app/components/OtherCoursesCarousel';
@@ -57,9 +58,9 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
       )}
 
       {/* Hero Section with Form */}
-      <section id="contact" className={`relative min-h-[80vh] flex items-center pb-20 md:pb-20 ${isWebsiteMode ? 'pt-[100px] md:pt-[120px]' : 'pt-10 md:pt-20'}`}>
+      <section id="contact" className={`relative min-h-[80vh] flex flex-col justify-center pb-32 md:pb-24 ${isWebsiteMode ? 'pt-[100px] md:pt-[120px]' : 'pt-[120px] md:pt-20'}`}>
         <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          className="absolute inset-0 w-full h-full bg-cover bg-[position:40%_center] md:bg-center"
           style={{ 
             backgroundImage: `url('${data.hero.bgImage}')`,
             filter: 'grayscale(70%)'
@@ -178,9 +179,16 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
       <section className="py-16 md:py-24 bg-[#fafafa] relative z-10">
         <div className="max-w-[1200px] mx-auto px-5">
           <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[600px] lg:max-w-[700px] leading-tight text-center lg:text-left">
-              {data.modules.heading}
-            </h2>
+            <div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[600px] lg:max-w-[700px] leading-tight text-center lg:text-left">
+                {data.modules.heading}
+              </h2>
+              {data.modules.subheading && (
+                <p className="mt-4 text-gray-600 font-body text-base md:text-lg max-w-[600px] text-center lg:text-left whitespace-pre-line">
+                  {data.modules.subheading}
+                </p>
+              )}
+            </div>
             <img 
               src={data.modules.sideImage} 
               alt="Course Modules" 
@@ -232,6 +240,8 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
         <MakeupFeatureBanner imageSrc="https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781680810/makeup_section_a19yre.png" />
       ) : data.slug.includes('skin-care') ? (
         <SkinFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
+      ) : data.slug.includes('hair') ? (
+        <HairFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       ) : (
         <StatisticsBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       )}
