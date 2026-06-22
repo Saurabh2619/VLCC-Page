@@ -65,9 +65,15 @@ export default function Navbar() {
       </div>
 
       <div className={`max-w-[1200px] w-full mx-auto px-6 md:px-10 transition-all duration-400 flex justify-between items-center ${isScrolled || isMobileMenuOpen || !isHomePage ? 'h-[70px]' : 'h-[80px]'}`}>
-        <Link href="/" className="transition-transform duration-300 hover:scale-105" onClick={closeMenu}>
-          <Image src="/vlcc-logo.png" alt="VLCC Logo" width={140} height={50} priority className="h-auto max-h-[50px] w-auto" />
-        </Link>
+        {isLockedMode ? (
+          <div className="transition-transform duration-300 cursor-default">
+            <Image src="/vlcc-logo.png" alt="VLCC Logo" width={140} height={50} priority className="h-auto max-h-[50px] w-auto" />
+          </div>
+        ) : (
+          <Link href="/" className="transition-transform duration-300 hover:scale-105" onClick={closeMenu}>
+            <Image src="/vlcc-logo.png" alt="VLCC Logo" width={140} height={50} priority className="h-auto max-h-[50px] w-auto" />
+          </Link>
+        )}
         
         {!isLockedMode && (
           <div className="md:hidden flex flex-col justify-between w-[30px] h-[21px] cursor-pointer z-[60]" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
