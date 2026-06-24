@@ -3,13 +3,13 @@ import React from 'react';
 export default function SkinJobOpportunities() {
   const opportunities = [
     { title: "Skin Therapist", icon: "💆‍♀️" },
-    { title: "Aesthetician", icon: "✨" },
-    { title: "Laser Technician", icon: "🔬" },
-    { title: "Clinical Skin Specialist", icon: "🩺" },
+    { title: "Beauty Therapist", icon: "✨" },
+    { title: "Facial Expert", icon: "🌸" },
+    { title: "Aesthetic Therapist", icon: "🔬" },
+    { title: "Spa Therapist", icon: "🌿" },
     { title: "Beauty Consultant", icon: "💬" },
-    { title: "Medi-Spa Expert", icon: "🏥" },
-    { title: "Wellness Center Professional", icon: "🌿" },
-    { title: "Entrepreneur or Clinic Owner", icon: "🏢" }
+    { title: "Clinic Executive", icon: "🏥" },
+    { title: "Freelance Skin Expert", icon: "💼" }
   ];
 
   return (

@@ -276,7 +276,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
     modules: {
       heading: 'Everything You Need to Become a Hair Stylist',
       subheading: 'From Hair cutting and styling and chemical job,\nGet hands-on training from industry experts',
-      sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229938/background-hairdresser-pr-salon-hair_1303-1315_b0acof.avif',
+      sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782295812/professional-hairdresser-tools-photo_dlupyv.jpg',
       services: [
         {
           title: 'Hair Terminology/Methodology',
@@ -364,65 +364,81 @@ export const landingPagesData: Record<string, LandingPageData> = {
     slug: 'skin-care-course-in-gurgaon',
     hero: {
       preHeading: 'PROFESSIONAL CERTIFICATION',
-      headingPrefix: 'ADVANCED SKIN COURSE ',
-      headingHighlight: 'IN GURGAON',
-      paragraph: 'Learn advanced aesthetic treatments, laser technologies, and professional skin care techniques with hands-on training.',
+      headingPrefix: 'Best Skin Care',
+      headingHighlight: 'Training Academy in Gurgaon',
+      paragraph: 'Learn Facials, Advanced Skin Treatments, Chemical Peels, Skin Analysis, Waxing, Bleaching, Manicure, Pedicure, Anti-Ageing Treatments & Aesthetic Therapies from industry experts.',
       bgImage: 'https://images.pexels.com/photos/3985304/pexels-photo-3985304.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Skin & Aesthetics Academy',
-      paragraph1: 'At VLCC School of Beauty, Sector 49 Gurgaon, we believe healthy skin starts with the right knowledge and practical skills. Our Skin & Aesthetics Course is designed for students who want to build a successful career in professional skincare and advanced aesthetic treatments.',
-      paragraph2: 'With industry expert trainers, hands-on training, and modern aesthetic technology, students learn laser aesthetics, chemical peels, microdermabrasion, micro needling, and advanced facial treatments. We focus on Skin Science, Clinical Expertise, and Professional Skin Care to help students gain real-world experience. Professional certification and placement assistance further prepare students to work confidently in clinics, salons, and wellness centers.',
+      heading: 'About VLCC Skin Care Training Academy',
+      paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon, we offer professional Skin Care Training Programs designed for beginners and beauty professionals who want to build a successful career in the beauty and wellness industry. Our courses focus on skin science, facial therapies, advanced skincare treatments, client consultation, hygiene standards, and practical hands-on learning.',
+      paragraph2: 'We believe skincare is both a science and an art that helps people achieve healthy, glowing skin while building confidence. If you are looking for the Best Skin Care Training Academy in Gurgaon, our courses provide the perfect combination of technical knowledge, practical experience, and industry exposure. With expert trainers, professional certification, and placement assistance, we help students transform their passion into a successful career.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
         'Industry Expert Trainers',
         'Practical Hands-on Training',
         'Professional Certification',
         'Placement Assistance',
-        'Modern Learning Environment'
+        'Modern Learning Environment',
+        'Small Batch Size',
+        'Latest Skin Care Techniques',
+        'Live Demonstrations'
       ]
     },
+    aboutImages: [
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290069/images_5_-_Copy_liuppb.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289046/images_10_q6koto.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290059/images_-_Copy_ssxjy9.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290079/WhatsApp_Image_2026-06-23_at_20.31.29_uurste.jpg'
+    ],
     modules: {
-      heading: 'Professional Skin & Aesthetics Modules',
-      sideImage: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71c9?q=80&w=600&auto=format&fit=crop',
+      heading: 'Everything You Need to Become a Skin Care Expert',
+      subheading: 'From basic skincare services to advanced aesthetic treatments, gain hands-on training from industry professionals and build a rewarding career in beauty and wellness.',
+      sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289206/BANNER-IMG-3-3_r4zszj.webp',
       services: [
         {
-          title: 'Laser Hair Reduction (LHR)',
-          desc: 'Learn safe and effective laser hair reduction techniques to provide long-lasting hair removal treatments using advanced aesthetic technology.',
-          img: 'https://images.pexels.com/photos/6532442/pexels-photo-6532442.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Skin Fundamentals & Consultation',
+          desc: 'Skin Analysis, Skin Types & Conditions, Client Consultation, Hygiene & Safety Standards.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289516/WhatsApp_Image_2026-06-23_at_20.31.28_f3lqcm.jpg'
         },
         {
-          title: 'Photofacial - IPL',
-          desc: 'Master IPL Photofacial treatments to improve skin texture, reduce pigmentation, and achieve brighter, healthier, and more youthful-looking skin.',
-          img: 'https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?q=80&w=600&auto=format&fit=crop'
+          title: 'Hair Removal & Bleaching',
+          desc: 'Threading, Tweezing, Protein Bleach, Cream Bleach, Lather Bleach, Full Body Waxing.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289660/images_8_g2txjl.jpg'
         },
         {
-          title: 'Carbon Peel ND-YAG',
-          desc: 'Learn Carbon Peel using ND-YAG laser technology to reduce acne, control oil, and improve overall skin tone and texture.',
-          img: 'https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Basic Facials',
+          desc: 'Face Clean-Up, Basic Facial, Deep Cleansing Facial, Thermal Facial, Biotic Facial, Metallic Facial.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289050/images_11_-_Copy_nyy0xg.jpg'
         },
         {
-          title: 'Chemical Peels',
-          desc: 'Understand Lactic, Glycolic, Salicylic, Yellow, and TCA peels to treat pigmentation, acne, and signs of aging effectively.',
-          img: 'https://images.pexels.com/photos/3985334/pexels-photo-3985334.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Advanced Facials',
+          desc: 'Intense Moisturizing Facial, Derma Lightening Facial, Aroma Facial Therapy, Hydrating Facial Treatment, Face Firming Treatment, Collagen Treatment Facial.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289055/WhatsApp_Image_2026-06-23_at_20.31.58_1_zpkox2.jpg'
         },
         {
-          title: 'Microdermabrasion (MDA)',
-          desc: 'Learn Microdermabrasion techniques to exfoliate dead skin cells, improve texture, and achieve smoother, fresher, and more radiant skin.',
-          img: 'https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Skin Treatments',
+          desc: 'D-Tan Treatment, Hyper Pigmentation Treatment, Skin Purifying Treatment, Anti-Ageing Treatment, Crust Removal Treatment, Paraffin Wax Mask Treatment.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289609/WhatsApp_Image_2026-06-23_at_20.31.27_gp1uta.jpg'
         },
         {
-          title: 'Micro Needling',
-          desc: 'Master Micro Needling procedures to stimulate collagen production, reduce scars, and improve skin texture with safe and professional techniques.',
-          img: 'https://images.pexels.com/photos/3985332/pexels-photo-3985332.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Advanced Aesthetic Treatments',
+          desc: 'Chemical Peels, Medi Facials, Enzyme Therapy, Radial Peel, Peri Orbital Treatment, MLD (Manual Lymphatic Drainage).',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289393/WhatsApp_Image_2026-06-23_at_20.31.29_2_xakcfg.jpg'
         },
         {
-          title: 'Advanced Facial Aesthetics',
-          desc: 'Gain hands-on experience in advanced facial treatments, including Jet Peel, Eye Peel, and Lip Peel for complete skin rejuvenation.',
-          img: 'https://images.pexels.com/photos/5069411/pexels-photo-5069411.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Beauty Enhancement Services',
+          desc: 'Eye Lash Lifting, Eye Lash & Brow Tinting, Professional Mask Application.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289080/WhatsApp_Image_2026-06-23_at_20.31.27_1_pc5iot.jpg'
+        },
+        {
+          title: 'Hand & Foot Care',
+          desc: 'Manicure, Pedicure, Dry Manicure, Nail Filing & Nail Paint.',
+          img: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=800&auto=format&fit=crop'
         }
       ]
     },
+    statisticsImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290269/images_13_vh4pkp.jpg',
     portfolioMedia: [
       { type: 'image', src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&auto=format&fit=crop' },
       { type: 'image', src: 'https://images.unsplash.com/photo-1570172619644-defd70cb36a7?w=600&auto=format&fit=crop' },
@@ -528,55 +544,72 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-nutrition-course-in-gurgaon': {
     slug: 'best-nutrition-course-in-gurgaon',
     hero: {
-      preHeading: 'Best Dietetics & Nutrition Course in Gurgaon',
-      headingPrefix: 'Become a Certified ',
-      headingHighlight: 'Nutritionist',
-      paragraph: 'Promote health and wellness globally. Learn clinical nutrition, weight management, and diet planning from certified dietitians.',
+      preHeading: 'PROFESSIONAL CERTIFICATION',
+      headingPrefix: 'Best Nutrition',
+      headingHighlight: 'Training Academy in Gurgaon',
+      paragraph: 'Learn Clinical Nutrition, Dietetics, Child Nutrition, Sports Nutrition, Weight Management, PCOS Nutrition, Diabetes Education, Geriatric Nutrition & Wellness Coaching from industry experts.',
       bgImage: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Nutrition & Dietetics Course',
-      paragraph1: 'Located in Sector 49, Gurgaon, VLCC School of Beauty & Wellness offers professional training in Nutrition and Dietetics. If you are looking for the Best Nutrition Course in Gurgaon, our program offers comprehensive scientific knowledge.',
-      paragraph2: 'Students learn macronutrients, therapeutic diets, sports nutrition, and weight management strategies guided by expert dietitians. We focus on practical diet planning, professional certification, and career growth. VLCC helps you become a trusted health consultant for hospitals, gyms, or private practice.',
+      heading: 'About VLCC Nutrition Training Academy',
+      paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon, we offer comprehensive Nutrition & Dietetics Programs designed for students, healthcare professionals, fitness enthusiasts, and aspiring nutritionists. Our courses focus on nutrition science, therapeutic diets, lifestyle management, disease-specific nutrition, wellness coaching, and practical diet planning.',
+      paragraph2: 'With a strong emphasis on evidence-based learning and real-world applications, we prepare students for rewarding careers in the health and wellness industry. If you are looking for the Best Nutrition Training Academy in Gurgaon, our programs provide the perfect blend of theoretical knowledge, practical learning, and industry exposure. Our Professional Nutrition Courses cover everything from basic nutrition principles to advanced clinical nutrition, sports nutrition, child nutrition, weight management, diabetes education, PCOS management, geriatric nutrition, and holistic wellness.',
       whyChooseTitle: 'Why Choose VLCC?',
       whyChooseList: [
-        'Certified Dietitian Trainers',
-        'Practical Diet Planning',
-        'Latest Clinical Guidelines',
+        'Industry Expert Faculty',
+        'Practical Case Study Based Learning',
         'Professional Certification',
         'Placement Assistance',
         'Modern Learning Environment',
-        'Interactive Case Studies'
+        'Small Batch Size',
+        'Latest Nutrition Science Curriculum',
+        'Live Projects & Assessments'
       ]
     },
     modules: {
-      heading: 'Professional Nutrition & Wellness Modules',
+      heading: 'Everything You Need to Become a Nutrition Expert',
+      subheading: 'From nutrition fundamentals to clinical diet planning and wellness coaching, gain hands-on knowledge and industry-relevant skills to build a successful career in nutrition and healthcare.',
       sideImage: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=600&auto=format&fit=crop',
       services: [
         {
-          title: 'Fundamentals of Nutrition',
-          desc: 'Understand macronutrients, micronutrients, digestion, and metabolism for a strong scientific foundation.',
+          title: 'Foundation Programs',
+          desc: 'Certificate in Child Care Nutrition & Certificate in Nutrition & Dietetics. Learn meal planning, food groups, energy metabolism, clinical nutrition, and disease-specific therapeutic diets.',
           img: 'https://images.pexels.com/photos/1143754/pexels-photo-1143754.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Weight Management',
-          desc: 'Learn scientifically proven strategies for healthy weight loss and weight gain without compromising immunity.',
-          img: 'https://images.pexels.com/photos/6456015/pexels-photo-6456015.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Weight Management & Slimming',
+          desc: 'Professional Course in Weight Management & Slimming Therapies. Covers obesity management, body composition analysis, lifestyle modifications, and slimming technologies.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294252/nutrion_3_narsmk.jpg'
         },
         {
-          title: 'Therapeutic Diets',
-          desc: 'Design customized diet plans for clinical conditions like Diabetes, PCOD, Hypertension, and Thyroid disorders.',
-          img: 'https://images.pexels.com/photos/5965158/pexels-photo-5965158.jpeg?auto=compress&cs=tinysrgb&w=600'
+          title: 'Holistic & Clinical Nutrition',
+          desc: 'Holistic Science in Health & Dietetics. Learn lifestyle nutrition, preventive healthcare, medical nutrition therapy, clinical assessments, and hospital diet planning.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294130/nutrion_11_cmds3f.jpg'
         },
         {
           title: 'Sports & Fitness Nutrition',
-          desc: 'Explore performance-enhancing diets, supplement knowledge, and meal timing for athletes and gym-goers.',
+          desc: 'The Science in Sports & Fitness Nutrition. Explore performance enhancement, supplement science, muscle-building diets, and advanced fitness meal planning.',
           img: 'https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
-          title: 'Diet Planning & Counseling',
-          desc: 'Master the art of client consultation, dietary assessment, and creating sustainable, personalized meal plans.',
-          img: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600&auto=format&fit=crop'
+          title: 'PCOS & Geriatric Nutrition',
+          desc: 'Specialized certifications covering hormonal health, fertility nutrition, senior citizen diet planning, healthy aging, and disease management for the elderly population.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294158/nutrion_7_ra6df5.jpg'
+        },
+        {
+          title: 'Hepatic Disorders & Diabetes',
+          desc: 'Certificate Courses in Hepatic Disorders and Diabetes Educator. Learn fatty liver management, glycemic control, patient counseling, and therapeutic diabetic meal planning.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294168/nutrion_8_xitpvw.jpg'
+        },
+        {
+          title: 'Nutritional Gynecology & Psychiatry',
+          desc: 'Learn about women\'s health nutrition, pregnancy, menopause, as well as the connection between nutrition and mental health, brain health, and mood disorders.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294203/nutrion_6_wqpawr.jpg'
+        },
+        {
+          title: 'Wellness & Lifestyle Programs',
+          desc: 'Certificate Course in Body & Slimming Therapies and FDP in Beauty & Wellness Nutrition. Master wellness education, client assessment, and advanced nutrition teaching skills.',
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294240/nutrion_5_m0evga.jpg'
         }
       ]
     },
@@ -737,3 +770,5 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
 };
 
 landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon-49'] = { ...landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'], slug: 'best-aesthetic-laser-treatment-course-in-gurgaon-49' };
+landingPagesData['skin-care-course-in-gurgaon-49'] = { ...landingPagesData['skin-care-course-in-gurgaon'], slug: 'skin-care-course-in-gurgaon-49' };
+landingPagesData['best-nutrition-course-in-gurgaon-49'] = { ...landingPagesData['best-nutrition-course-in-gurgaon'], slug: 'best-nutrition-course-in-gurgaon-49' };

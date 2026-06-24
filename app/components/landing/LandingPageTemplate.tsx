@@ -18,6 +18,8 @@ import HairFeatureBanner from '@/app/components/HairFeatureBanner';
 import LaserFeatureBanner from '@/app/components/LaserFeatureBanner';
 import NailJobOpportunities from '@/app/components/NailJobOpportunities';
 import SkinJobOpportunities from '@/app/components/SkinJobOpportunities';
+import NutritionJobOpportunities from '@/app/components/NutritionJobOpportunities';
+import NutritionFeatureBanner from '@/app/components/NutritionFeatureBanner';
 import OtherCoursesCarousel from '@/app/components/OtherCoursesCarousel';
 import ScrollReveal from '@/app/components/ScrollReveal';
 import MakeupFeatureBanner from '@/app/components/MakeupFeatureBanner';
@@ -240,6 +242,7 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
           For now, keep it conditionally. */}
       {data.slug.includes('nail') && <NailJobOpportunities />}
       {data.slug.includes('skin-care') && <SkinJobOpportunities />}
+      {data.slug.includes('nutrition') && <NutritionJobOpportunities />}
       
       <Facilities />
       
@@ -251,6 +254,8 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
         <HairFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       ) : data.slug.includes('laser') ? (
         <LaserFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
+      ) : data.slug.includes('nutrition') ? (
+        <NutritionFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       ) : (
         <StatisticsBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       )}
@@ -260,8 +265,8 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
       {/* Pass the slug to carousel so it knows what to exclude */}
       <OtherCoursesCarousel currentCourseSlug={data.slug} />
       
-      {/* Hide Student Portfolio exclusively on Laser pages as requested */}
-      {!data.slug.includes('laser') && (
+      {/* Hide Student Portfolio exclusively on Laser, Skin Care, and Nutrition pages as requested */}
+      {!data.slug.includes('laser') && !data.slug.includes('skin-care') && !data.slug.includes('nutrition') && (
         <LandingPageGallery media={data.portfolioMedia} />
       )}
       <GoogleReviews />
