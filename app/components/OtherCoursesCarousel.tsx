@@ -1,12 +1,14 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { useLandingContext } from '@/app/context/LandingContext';
 
 interface OtherCoursesCarouselProps {
   currentCourseSlug?: string;
 }
 
 export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCoursesCarouselProps) {
+  const { isLockedMode } = useLandingContext();
   const courses = [
     {
       id: 1,
@@ -157,8 +159,18 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
             className="flex overflow-x-auto snap-x snap-mandatory gap-6 md:gap-[30px] pb-12 pt-4 px-4 -mx-4 hide-scrollbar scroll-smooth"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {displayedCourses.map((course) => (
-              <Link key={course.id} href={`/${course.slug}`} className="group relative w-[280px] sm:w-[320px] md:w-[380px] shrink-0 snap-center bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col">
+            {displayedCourses.map((course) => {
+              const CardWrapper = isLockedMode ? 'div' : Link;
+              const cardProps = isLockedMode ? {
+                onClick: () => window.dispatchEvent(new Event('openEnquiryPopup')),
+                className: "cursor-pointer group relative w-[280px] sm:w-[320px] md:w-[380px] shrink-0 snap-center bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col"
+              } : {
+                href: `/${course.slug}`,
+                className: "group relative w-[280px] sm:w-[320px] md:w-[380px] shrink-0 snap-center bg-white rounded-2xl overflow-hidden shadow-sm border border-[#eaeaea] border-b-[4px] border-b-transparent hover:border-b-vlcc-orange transition-all duration-500 hover:shadow-[0_20px_50px_rgba(255,122,89,0.25)] hover:-translate-y-2 flex flex-col"
+              };
+
+              return (
+              <CardWrapper key={course.id} {...(cardProps as any)}>
                 
                 {/* Top Photo Section */}
                 <div className="relative h-[220px] md:h-[260px] overflow-hidden shrink-0">
@@ -189,8 +201,8 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
                     <p className="text-[#666] text-[14px] leading-relaxed font-body relative z-10">{course.description}</p>
                   </div>
                 </div>
-              </Link>
-            ))}
+              </CardWrapper>
+            )})}
           </div>
 
           {/* Dots Pagination */}

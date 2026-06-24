@@ -15,6 +15,7 @@ import MobileCTA from '../MobileCTA';
 import StatisticsBanner from '@/app/components/StatisticsBanner';
 import SkinFeatureBanner from '@/app/components/SkinFeatureBanner';
 import HairFeatureBanner from '@/app/components/HairFeatureBanner';
+import LaserFeatureBanner from '@/app/components/LaserFeatureBanner';
 import NailJobOpportunities from '@/app/components/NailJobOpportunities';
 import SkinJobOpportunities from '@/app/components/SkinJobOpportunities';
 import OtherCoursesCarousel from '@/app/components/OtherCoursesCarousel';
@@ -24,10 +25,12 @@ import { LandingPageData } from '@/app/data/landingPagesData';
 import Navbar from '@/app/components/Navbar';
 import GlobalSpotlight from '@/app/components/GlobalSpotlight';
 import HowToApply from '@/app/components/HowToApply';
+import { LandingProvider } from '@/app/context/LandingContext';
 
 export default function LandingPageTemplate({ data, isWebsiteMode = false }: { data: LandingPageData, isWebsiteMode?: boolean }) {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const isLockedMode = data.slug.endsWith('-49');
 
   React.useEffect(() => {
     const handleOpenPopup = () => setIsPopupOpen(true);
@@ -40,7 +43,8 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
   };
 
   return (
-    <main className="min-h-screen font-body bg-white">
+    <LandingProvider isLockedMode={isLockedMode}>
+      <main className="min-h-screen font-body bg-white">
       {/* Header Handling */}
       {isWebsiteMode ? (
         <>
@@ -125,22 +129,22 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
                 <div className="flex flex-col gap-3 md:gap-5 translate-y-4 md:translate-y-8">
                   <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border-[4px] md:border-[6px] border-white group relative">
                     <div className="absolute inset-0 bg-vlcc-orange/0 group-hover:bg-vlcc-orange/10 transition-colors z-10"></div>
-                    <img src={data.aboutImages?.[0] || data.modules.services[0]?.img || data.hero.bgImage} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="About 1" />
+                    <img src={data.aboutImages?.[0] || data.modules.services[0]?.img || data.hero.bgImage} className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${data.aboutImagePositions?.[0] || ''}`} alt="About 1" />
                   </div>
                   <div className="w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border-[4px] md:border-[6px] border-white group relative">
                     <div className="absolute inset-0 bg-vlcc-orange/0 group-hover:bg-vlcc-orange/10 transition-colors z-10"></div>
-                    <img src={data.aboutImages?.[1] || data.modules.services[1]?.img || data.hero.bgImage} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="About 2" />
+                    <img src={data.aboutImages?.[1] || data.modules.services[1]?.img || data.hero.bgImage} className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${data.aboutImagePositions?.[1] || ''}`} alt="About 2" />
                   </div>
                 </div>
                 {/* Column 2 (Shifted Up) */}
                 <div className="flex flex-col gap-3 md:gap-5 -translate-y-4 md:-translate-y-8">
                   <div className="w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border-[4px] md:border-[6px] border-white group relative">
                     <div className="absolute inset-0 bg-vlcc-orange/0 group-hover:bg-vlcc-orange/10 transition-colors z-10"></div>
-                    <img src={data.aboutImages?.[2] || data.modules.services[2]?.img || data.hero.bgImage} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="About 3" />
+                    <img src={data.aboutImages?.[2] || data.modules.services[2]?.img || data.hero.bgImage} className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${data.aboutImagePositions?.[2] || ''}`} alt="About 3" />
                   </div>
                   <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border-[4px] md:border-[6px] border-white group relative">
                     <div className="absolute inset-0 bg-vlcc-orange/0 group-hover:bg-vlcc-orange/10 transition-colors z-10"></div>
-                    <img src={data.aboutImages?.[3] || data.modules.services[3]?.img || data.hero.bgImage} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="About 4" />
+                    <img src={data.aboutImages?.[3] || data.modules.services[3]?.img || data.hero.bgImage} className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${data.aboutImagePositions?.[3] || ''}`} alt="About 4" />
                   </div>
                 </div>
               </div>
@@ -208,7 +212,10 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
                     src={service.img} 
                     alt={service.title} 
                     className={`w-full h-full ${(service as any).fit === 'contain' ? 'object-contain' : 'object-cover'}`}
-                    style={{ objectPosition: (service as any).objectPosition || 'center' }}
+                    style={{ 
+                      objectPosition: (service as any).objectPosition || 'center',
+                      transform: (service as any).transform || 'none'
+                    }}
                   />
                 </div>
                 <div className="flex flex-col flex-grow text-center">
@@ -242,6 +249,8 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
         <SkinFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       ) : data.slug.includes('hair') ? (
         <HairFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
+      ) : data.slug.includes('laser') ? (
+        <LaserFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       ) : (
         <StatisticsBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       )}
@@ -251,7 +260,10 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
       {/* Pass the slug to carousel so it knows what to exclude */}
       <OtherCoursesCarousel currentCourseSlug={data.slug} />
       
-      <LandingPageGallery media={data.portfolioMedia} />
+      {/* Hide Student Portfolio exclusively on Laser pages as requested */}
+      {!data.slug.includes('laser') && (
+        <LandingPageGallery media={data.portfolioMedia} />
+      )}
       <GoogleReviews />
       <Recruiters />
       <Testimonials />
@@ -304,5 +316,6 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
       <MobileCTA />
       <ControlledEnquiryPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </main>
+    </LandingProvider>
   );
 }

@@ -28,6 +28,7 @@ export interface LandingPageData {
     whyChooseList: string[];
   };
   aboutImages?: string[];
+  aboutImagePositions?: string[];
   statisticsImage?: string;
   modules: {
     heading: string;
@@ -264,68 +265,85 @@ export const landingPagesData: Record<string, LandingPageData> = {
         'Live Demonstrations'
       ]
     },
+    aboutImages: [
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229110/IMG_7640_jfbgrm.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229107/IMG_8544_eez1gu.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229105/IMG_9378_fzwgfb.jpg',
+      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229103/42a6ad7d-4ffa-4367-9299-93bbda00b27b_pkxglq.jpg'
+    ],
+    aboutImagePositions: ['object-top', 'object-center', 'object-center', 'object-top'],
+    statisticsImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229112/IMG_8194_yvasdi.jpg',
     modules: {
       heading: 'Everything You Need to Become a Hair Stylist',
       subheading: 'From Hair cutting and styling and chemical job,\nGet hands-on training from industry experts',
-      sideImage: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=600&auto=format&fit=crop',
+      sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229938/background-hairdresser-pr-salon-hair_1303-1315_b0acof.avif',
       services: [
         {
           title: 'Hair Terminology/Methodology',
           desc: 'From basic concepts to professional techniques, our Hair Terminology & Methodology module helps you speak the language of the salon and work with confidence.',
-          img: 'https://images.pexels.com/photos/3993311/pexels-photo-3993311.jpeg?auto=compress&cs=tinysrgb&w=600'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229106/IMG_8690_wdn1gn.jpg'
         },
         {
           title: 'Shampooing & Conditioning',
           desc: 'Understand the fundamentals of hair cleansing and nourishment with expert shampooing and conditioning practices. Build the foundation for effective hair care services.',
-          img: 'https://images.pexels.com/photos/14840842/pexels-photo-14840842.jpeg?auto=compress&cs=tinysrgb&w=600'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229105/IMG_9378_fzwgfb.jpg'
         },
         {
           title: 'Blow Dry',
           desc: 'Learn essential blow-dry techniques to achieve salon-quality finishes, from sleek looks to bouncy volume, with precision and control.',
-          img: 'https://images.pexels.com/photos/973401/pexels-photo-973401.jpeg?auto=compress&cs=tinysrgb&w=600'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229104/801301c0-e285-4e0b-b8f0-2423ba6aa634_amdxr6.jpg'
         },
         {
           title: 'Hair Trichology',
           desc: 'Explore the structure, growth cycle, and health of hair with essential trichology knowledge. Build expertise in diagnosing and addressing everyday hair and scalp issues',
-          img: 'https://images.pexels.com/photos/2068800/pexels-photo-2068800.jpeg?auto=compress&cs=tinysrgb&w=600'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229103/42a6ad7d-4ffa-4367-9299-93bbda00b27b_pkxglq.jpg',
+          objectPosition: 'center 70%'
         },
         {
           title: 'Hair & Scalp Disorders',
           desc: 'Understand the underlying factors behind hair and scalp disorders and explore professional approaches to assessment, care, and maintenance.',
-          img: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=600&auto=format&fit=crop'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229104/005c3ef8-019d-4f4d-84be-7409da39e0b3_otqfay.jpg'
         },
         {
           title: 'Hair Cuts',
           desc: 'Master professional haircutting techniques with precision, creativity, and confidence. Learn classic and contemporary styles tailored to different face shapes and hair types',
-          img: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&auto=format&fit=crop'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229107/IMG_8544_eez1gu.jpg',
+          objectPosition: 'center 40%'
         },
         {
           title: 'Thermal Setting',
           desc: 'Develop hands-on skills in thermal setting to craft smooth, curled, or voluminous styles with precision and care. Ensure beautiful results while maintaining hair health.',
-          img: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&auto=format&fit=crop'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229116/IMG_7613_kid2ps.jpg',
+          objectPosition: 'top'
         },
         {
           title: 'Hair Coloring',
           desc: 'Gain hands-on experience in professional hair coloring, from consultation to application, ensuring vibrant, long-lasting, and salon-quality finishes.',
-          img: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&auto=format&fit=crop'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229109/IMG_8500_syq1ni.jpg'
         },
         {
           title: 'Hair Chemical Texture services',
           desc: 'Gain hands-on expertise in chemical hair treatments designed to transform texture, shape, and manageability while maintaining hair health and integrity.',
-          img: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&auto=format&fit=crop'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229110/IMG_9361_l8zje5.jpg'
         },
         {
           title: 'New fashion Up-styles',
           desc: 'Learn to create elegant and trend-forward updos for weddings, parties, fashion events, and special occasions. Master modern techniques that combine creativity with precision.',
-          img: 'https://images.pexels.com/photos/3993320/pexels-photo-3993320.jpeg?auto=compress&cs=tinysrgb&w=600'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229113/IMG_8198_wjjyxw.jpg'
         }
       ]
     },
     portfolioMedia: [
-      { type: 'image', src: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&auto=format&fit=crop' },
-      { type: 'image', src: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&auto=format&fit=crop' },
-      { type: 'image', src: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&auto=format&fit=crop' },
-      { type: 'image', src: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&auto=format&fit=crop' }
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229110/IMG_7640_jfbgrm.jpg' },
+      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245158/IMG_9341_cmaonh.mov' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229107/IMG_8544_eez1gu.jpg' },
+      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245168/IMG_8401_wcdld4.mov' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229104/005c3ef8-019d-4f4d-84be-7409da39e0b3_otqfay.jpg' },
+      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245171/IMG_8773_uyha3d.mov' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229109/IMG_8500_syq1ni.jpg' },
+      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245173/IMG_8466_hbaiv1.mov' },
+      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229113/IMG_8198_wjjyxw.jpg' },
+      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245261/IMG_8490_rva6bz.mov' }
     ],
     faqs: [
       {
@@ -587,8 +605,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
 
 landingPagesData['best-makeup-academy-in-gurgaon'] = { ...landingPagesData['best-makeup-academy-in-gurgaon-49'], slug: 'best-makeup-academy-in-gurgaon' };
 landingPagesData['best-nail-extension-course-in-gurgaon'] = { ...landingPagesData['best-nail-extension-course-in-gurgaon-49'], slug: 'best-nail-extension-course-in-gurgaon' };
-
-
+landingPagesData['best-hair-course-in-gurgaon-49'] = { ...landingPagesData['best-hair-course-in-gurgaon'], slug: 'best-hair-course-in-gurgaon-49' };
 
 landingPagesData['skin-care-course-in-gurgaon'] = {
   ...landingPagesData['skin-care-course-in-gurgaon'],
@@ -597,13 +614,126 @@ landingPagesData['skin-care-course-in-gurgaon'] = {
 };
 
 landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
-  ...landingPagesData['best-makeup-academy-in-gurgaon-49'],
   slug: 'best-aesthetic-laser-treatment-course-in-gurgaon',
-  hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST AESTHETIC LASER COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Laser Treatments' }
+  hero: {
+    preHeading: 'PROFESSIONAL CERTIFICATION',
+    headingPrefix: 'Best Laser Aesthetics',
+    headingHighlight: 'Training Academy in Gurgaon',
+    paragraph: 'Learn Laser Hair Reduction, IPL, Carbon Peel, Hydra Facial, Derma Peel, MDA, Jet Peel, Derma Needling, Tattoo Removal & Laser Hair Stimulation',
+    bgImage: 'https://images.pexels.com/photos/3993314/pexels-photo-3993314.jpeg?auto=compress&cs=tinysrgb&w=2000'
+  },
+  about: {
+    heading: 'About VLCC Laser Aesthetics Training Academy',
+    paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon, we offer a wide range of Laser Aesthetics and Advanced Skin Treatment Programs for beginners, beauty professionals, and aspiring aesthetic experts. Our programs focus on advanced laser technologies, skin science, client consultation, safety protocols, and practical hands-on training.',
+    paragraph2: 'Our Professional Laser Aesthetics Training covers advanced treatments including Laser Hair Reduction, IPL Therapy, Carbon Peel, Tattoo Removal, Hydra Facial, Derma Peel, Microdermabrasion (MDA), Jet Peel, Derma Needling, and Hair Stimulation Treatments. With industry-expert trainers, live demonstrations, professional certification, and placement assistance, we help students build successful careers in the beauty and aesthetics industry.',
+    whyChooseTitle: 'Why Choose VLCC? (USP Cards)',
+    whyChooseList: [
+      'Industry Expert Trainers',
+      'Practical Hands-on Training',
+      'Professional Certification',
+      'Placement Assistance',
+      'Modern Learning Environment',
+      'Small Batch Size',
+      'Latest Technologies',
+      'Live Demonstrations'
+    ]
+  },
+  aboutImages: [
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285664/WhatsApp_Image_2026-06-23_at_20.35.02_o0e1in.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285657/WhatsApp_Image_2026-06-23_at_20.35.01_1_lnrw66.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285659/WhatsApp_Image_2026-06-23_at_20.35.02_1_rmw6p5.jpg',
+    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284996/WhatsApp_Image_2026-06-23_at_20.35.03_2_x7iryv.jpg'
+  ],
+  statisticsImage: 'https://images.pexels.com/photos/3993314/pexels-photo-3993314.jpeg?auto=compress&cs=tinysrgb&w=2000',
+  modules: {
+    heading: 'Everything You Need to Become a Laser Aesthetic Expert',
+    subheading: 'From advanced skin therapies to laser treatments and aesthetic procedures, gain hands-on training from industry experts and build a successful career in the beauty and wellness industry.',
+    sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284310/female-cosmetologist-performing-facial-laser-epilation-on-a-client-wearing-protective-eyewear-in-a-modern-treatment-room-with-a-white-background-and-medical-equipment-photo_rjgzgg.jpg',
+    services: [
+      {
+        title: 'Laser Hair Reduction (LHR)',
+        desc: 'Learn laser technology, consultation process, machine handling, treatment protocols, and post-treatment care for effective hair reduction procedures.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284899/WhatsApp_Image_2026-06-23_at_20.35.01_2_of2yry.jpg'
+      },
+      {
+        title: 'IPL (Intense Pulsed Light)',
+        desc: 'Understand IPL technology and its applications in skin rejuvenation, pigmentation reduction, acne treatment, and hair reduction.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.06_jp9oef.jpg'
+      },
+      {
+        title: 'Carbon Peel',
+        desc: 'Master advanced carbon laser peel techniques for skin brightening, acne control, pore reduction, and instant rejuvenation.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.06_1_sshy0q.jpg'
+      },
+      {
+        title: 'Tattoo Removal',
+        desc: 'Learn professional tattoo removal procedures using laser technology, treatment planning, safety measures, and client care.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284946/WhatsApp_Image_2026-06-23_at_20.35.00_axztul.jpg'
+      },
+      {
+        title: 'Hydra Facial',
+        desc: 'Gain expertise in deep cleansing, exfoliation, extraction, hydration, and skin rejuvenation using advanced Hydra Facial technology.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.08_e2vzhh.jpg'
+      },
+      {
+        title: 'Derma Peel',
+        desc: 'Learn chemical peel treatments designed to improve skin texture, pigmentation, acne scars, and overall skin health.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284975/WhatsApp_Image_2026-06-23_at_20.36.12_1_tqktcq.jpg'
+      },
+      {
+        title: 'MDA (Microdermabrasion)',
+        desc: 'Understand skin resurfacing techniques that help improve texture, reduce fine lines, and enhance skin appearance.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.07_wcquro.jpg'
+      },
+      {
+        title: 'Jet Peel',
+        desc: 'Learn non-invasive oxygen-based skin rejuvenation treatments that deeply hydrate and revitalize the skin.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284996/WhatsApp_Image_2026-06-23_at_20.35.03_2_x7iryv.jpg'
+      },
+      {
+        title: 'Derma Needling',
+        desc: 'Master collagen induction therapy techniques used for acne scars, pigmentation, enlarged pores, and anti-aging treatments.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.07_1_ccxoso.jpg'
+      },
+      {
+        title: 'Laser Hair Stimulation',
+        desc: 'Explore advanced laser therapies designed to improve scalp health and support healthy hair growth.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285013/WhatsApp_Image_2026-06-23_at_20.34.59_n5hqdh.jpg'
+      },
+      {
+        title: 'Skin Analysis & Client Consultation',
+        desc: 'Develop skills in skin assessment, treatment planning, client counseling, and professional recommendations.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285029/WhatsApp_Image_2026-06-23_at_20.35.03_1_xbwywh.jpg'
+      },
+      {
+        title: 'Laser Safety & Clinic Management',
+        desc: 'Understand laser safety standards, hygiene protocols, client record management, and aesthetic clinic operations.',
+        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285038/WhatsApp_Image_2026-06-23_at_20.34.59_2_xemcxa.jpg',
+        objectPosition: 'left center'
+      }
+    ]
+  },
+  portfolioMedia: [
+    { type: 'image', src: 'https://images.unsplash.com/photo-1512496015851-a1dc8a474642?w=800&auto=format&fit=crop' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&auto=format&fit=crop' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&auto=format&fit=crop' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop' },
+    { type: 'image', src: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&auto=format&fit=crop' }
+  ],
+  faqs: [
+    {
+      question: 'Q: Do I need a medical background to learn laser aesthetics?',
+      answer: 'While a medical or beauty background is helpful, our courses are designed from the ground up to train beginners to professional standards.'
+    },
+    {
+      question: 'Q: Will I get to operate the laser machines myself?',
+      answer: 'Yes, hands-on practical training on modern laser equipment is a core part of the curriculum.'
+    },
+    {
+      question: 'Q: Do you offer placement assistance?',
+      answer: 'Absolutely. We provide 100% placement support to help you secure a role in top clinics and med-spas.'
+    }
+  ]
 };
 
-landingPagesData['best-nutrition-course-in-gurgaon'] = {
-  ...landingPagesData['best-makeup-academy-in-gurgaon-49'],
-  slug: 'best-nutrition-course-in-gurgaon',
-  hero: { ...landingPagesData['best-makeup-academy-in-gurgaon-49'].hero, preHeading: 'BEST NUTRITION COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Nutrition' }
-};
+landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon-49'] = { ...landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'], slug: 'best-aesthetic-laser-treatment-course-in-gurgaon-49' };
