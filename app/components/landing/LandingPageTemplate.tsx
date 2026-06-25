@@ -81,12 +81,12 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
               <span className="inline-block py-1 px-3 rounded-full bg-vlcc-orange/20 text-vlcc-orange border border-vlcc-orange/30 font-bold tracking-wider uppercase text-sm mb-5">
                 Professional Certification
               </span>
-              <p className="text-xl md:text-2xl font-bold text-vlcc-orange mb-2 uppercase tracking-wide font-heading">
+              <h1 className="text-xl md:text-2xl font-bold text-vlcc-orange mb-2 uppercase tracking-wide font-heading">
                 {data.hero.preHeading}
-              </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6 text-white drop-shadow-lg">
-                {data.hero.headingPrefix} <span className="text-vlcc-orange">{data.hero.headingHighlight}</span>
               </h1>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6 text-white drop-shadow-lg">
+                {data.hero.headingPrefix} <span className="text-vlcc-orange">{data.hero.headingHighlight}</span>
+              </h2>
               <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-[600px] font-body mx-auto md:mx-0 drop-shadow-md">
                 {data.hero.paragraph}
               </p>
