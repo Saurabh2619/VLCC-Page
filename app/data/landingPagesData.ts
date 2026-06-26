@@ -363,9 +363,9 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'skin-care-course-in-gurgaon': {
     slug: 'skin-care-course-in-gurgaon',
     hero: {
-      preHeading: 'Best <span class="text-vlcc-orange">Skin Care Training Academy</span> in Gurgaon',
-      headingPrefix: 'Master ',
-      headingHighlight: 'Skin Care',
+      preHeading: 'Best <span class="text-vlcc-orange">Skin Care Course</span> in Gurgaon',
+      headingPrefix: 'Best Skin Care ',
+      headingHighlight: 'Training Academy in Gurgaon',
       paragraph: 'Learn Facials, Advanced Skin Treatments, Chemical Peels, Skin Analysis, Waxing, Bleaching, Manicure, Pedicure, Anti-Ageing Treatments & Aesthetic Therapies from industry experts.',
       bgImage: 'https://images.pexels.com/photos/3985304/pexels-photo-3985304.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
@@ -639,12 +639,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
 landingPagesData['best-makeup-academy-in-gurgaon'] = { ...landingPagesData['best-makeup-academy-in-gurgaon-49'], slug: 'best-makeup-academy-in-gurgaon' };
 landingPagesData['best-nail-extension-course-in-gurgaon'] = { ...landingPagesData['best-nail-extension-course-in-gurgaon-49'], slug: 'best-nail-extension-course-in-gurgaon' };
 landingPagesData['best-hair-course-in-gurgaon-49'] = { ...landingPagesData['best-hair-course-in-gurgaon'], slug: 'best-hair-course-in-gurgaon-49' };
-
-landingPagesData['skin-care-course-in-gurgaon'] = {
-  ...landingPagesData['skin-care-course-in-gurgaon'],
-  slug: 'skin-care-course-in-gurgaon',
-  hero: { ...landingPagesData['skin-care-course-in-gurgaon'].hero, preHeading: 'BEST SKIN CARE COURSE IN GURGAON', headingPrefix: 'Master', headingHighlight: 'Skin Care' }
-};
+// Override removed;
 
 landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
   slug: 'best-aesthetic-laser-treatment-course-in-gurgaon',
