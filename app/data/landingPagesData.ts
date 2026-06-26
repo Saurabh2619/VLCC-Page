@@ -363,9 +363,9 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'skin-care-course-in-gurgaon': {
     slug: 'skin-care-course-in-gurgaon',
     hero: {
-      preHeading: 'PROFESSIONAL CERTIFICATION',
-      headingPrefix: 'Best Skin Care',
-      headingHighlight: 'Training Academy in Gurgaon',
+      preHeading: 'Best Skin Care Training Academy in Gurgaon',
+      headingPrefix: 'Master ',
+      headingHighlight: 'Skin Care',
       paragraph: 'Learn Facials, Advanced Skin Treatments, Chemical Peels, Skin Analysis, Waxing, Bleaching, Manicure, Pedicure, Anti-Ageing Treatments & Aesthetic Therapies from industry experts.',
       bgImage: 'https://images.pexels.com/photos/3985304/pexels-photo-3985304.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
@@ -424,7 +424,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Advanced Aesthetic Treatments',
           desc: 'Chemical Peels, Medi Facials, Enzyme Therapy, Radial Peel, Peri Orbital Treatment, MLD (Manual Lymphatic Drainage).',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289393/WhatsApp_Image_2026-06-23_at_20.31.29_2_xakcfg.jpg'
+          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285664/WhatsApp_Image_2026-06-23_at_20.35.02_o0e1in.jpg'
         },
         {
           title: 'Beauty Enhancement Services',
@@ -544,9 +544,9 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-nutrition-course-in-gurgaon': {
     slug: 'best-nutrition-course-in-gurgaon',
     hero: {
-      preHeading: 'PROFESSIONAL CERTIFICATION',
-      headingPrefix: 'Best Nutrition',
-      headingHighlight: 'Training Academy in Gurgaon',
+      preHeading: 'Best Nutrition Training Academy in Gurgaon',
+      headingPrefix: 'Professional Certification in ',
+      headingHighlight: 'Dietetics & Nutrition',
       paragraph: 'Learn Clinical Nutrition, Dietetics, Child Nutrition, Sports Nutrition, Weight Management, PCOS Nutrition, Diabetes Education, Geriatric Nutrition & Wellness Coaching from industry experts.',
       bgImage: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },

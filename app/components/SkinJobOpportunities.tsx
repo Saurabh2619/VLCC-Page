@@ -18,7 +18,7 @@ export default function SkinJobOpportunities() {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[15px] mb-3">Career Paths</span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-[#1a1a1a] mb-6">
-            Career Opportunities After Skin & Aesthetics Course
+            Career Opportunities After Skin Care Course
           </h2>
           <p className="text-gray-600 font-body text-base md:text-lg">
             The demand for skilled skin and aesthetics professionals is growing rapidly. After completing this course, students can explore exciting career opportunities in beauty, wellness, and healthcare industries.
