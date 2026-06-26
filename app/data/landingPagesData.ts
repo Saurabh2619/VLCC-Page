@@ -44,7 +44,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-nail-extension-course-in-gurgaon-49': {
     slug: 'best-nail-extension-course-in-gurgaon-49',
     hero: {
-      preHeading: 'Best Nail Extension Course in Gurgaon',
+      preHeading: 'Best <span class="text-vlcc-orange">Nail Extension Course</span> in Gurgaon',
       headingPrefix: 'Master the Art of ',
       headingHighlight: 'Nail Extensions',
       paragraph: 'Become a certified nail artist with hands-on training in nail extensions, gel nails, acrylic nails, and creative nail art techniques.',
@@ -146,7 +146,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_15.40.49_3_vmdibk.jpg'
     ],
     hero: {
-      preHeading: 'PROFESSIONAL CERTIFICATION | MAKEUP ARTIST CLASSES IN GURGAON',
+      preHeading: 'Best <span class="text-vlcc-orange">Makeup Academy</span> in Gurgaon',
       headingPrefix: 'Best Makeup Academy',
       headingHighlight: 'in Gurgaon',
       paragraph: 'Learn bridal, HD, airbrush, and professional makeup techniques with hands-on training from industry experts.',
@@ -243,7 +243,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-hair-course-in-gurgaon': {
     slug: 'best-hair-course-in-gurgaon',
     hero: {
-      preHeading: 'HAIR DRESSING CLASSES IN GURGAON',
+      preHeading: 'Best <span class="text-vlcc-orange">Hair Course</span> in Gurgaon',
       headingPrefix: 'Best Hair Training Academy ',
       headingHighlight: 'in Gurgaon',
       paragraph: 'Learn Hair cutting, Thermal styling, Various hair up styling, Rebounding, Cystin, Keratin, Highlights, Ombre, Balayage',
@@ -363,7 +363,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'skin-care-course-in-gurgaon': {
     slug: 'skin-care-course-in-gurgaon',
     hero: {
-      preHeading: 'Best Skin Care Training Academy in Gurgaon',
+      preHeading: 'Best <span class="text-vlcc-orange">Skin Care Training Academy</span> in Gurgaon',
       headingPrefix: 'Master ',
       headingHighlight: 'Skin Care',
       paragraph: 'Learn Facials, Advanced Skin Treatments, Chemical Peels, Skin Analysis, Waxing, Bleaching, Manicure, Pedicure, Anti-Ageing Treatments & Aesthetic Therapies from industry experts.',
@@ -463,7 +463,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-aesthetic-laser-treatment-course-in-gurgaon': {
     slug: 'best-aesthetic-laser-treatment-course-in-gurgaon',
     hero: {
-      preHeading: 'Best Aesthetic Laser Treatment Course',
+      preHeading: 'Best <span class="text-vlcc-orange">Aesthetic Laser Treatment Course</span> in Gurgaon',
       headingPrefix: 'Advanced ',
       headingHighlight: 'Aesthetics & Laser',
       paragraph: 'Upgrade your skills with advanced clinical aesthetics. Learn Laser Hair Reduction, Chemical Peels, and Medispa treatments from clinical experts.',
@@ -544,7 +544,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-nutrition-course-in-gurgaon': {
     slug: 'best-nutrition-course-in-gurgaon',
     hero: {
-      preHeading: 'Best Nutrition Training Academy in Gurgaon',
+      preHeading: 'Best <span class="text-vlcc-orange">Nutrition Training Academy</span> in Gurgaon',
       headingPrefix: 'Professional Certification in ',
       headingHighlight: 'Dietetics & Nutrition',
       paragraph: 'Learn Clinical Nutrition, Dietetics, Child Nutrition, Sports Nutrition, Weight Management, PCOS Nutrition, Diabetes Education, Geriatric Nutrition & Wellness Coaching from industry experts.',

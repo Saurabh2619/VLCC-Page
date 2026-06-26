@@ -81,9 +81,10 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
               <span className="inline-block py-1 px-3 rounded-full bg-vlcc-orange/20 text-vlcc-orange border border-vlcc-orange/30 font-bold tracking-wider uppercase text-sm mb-5">
                 Professional Certification
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-4 text-vlcc-orange drop-shadow-lg uppercase">
-                {data.hero.preHeading}
-              </h1>
+              <h1 
+                className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-4 text-white drop-shadow-lg uppercase"
+                dangerouslySetInnerHTML={{ __html: data.hero.preHeading }}
+              />
               <h4 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-wide font-heading">
                 {data.hero.headingPrefix} <span className="text-vlcc-orange">{data.hero.headingHighlight}</span>
               </h4>
