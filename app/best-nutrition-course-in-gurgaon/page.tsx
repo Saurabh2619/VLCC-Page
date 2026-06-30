@@ -2,8 +2,8 @@ import { landingPagesData } from '@/app/data/landingPagesData';
 import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 
 export const metadata = {
-  title: 'VLCC Institute - best-nutrition-course-in-gurgaon',
-  description: 'Join VLCC Institute for the best courses in Gurgaon.',
+  title: "Nutrition Training Academy in Gurgaon | Nutrition Certification",
+  description: "Build a career in nutrition with Gurgaon’s leading nutrition training academy. Get practical learning, expert guidance & certification at VLCC.",
 };
 
 export default function CoursePage() {

@@ -1,9 +1,10 @@
+import { Metadata } from 'next';
 import { landingPagesData } from '@/app/data/landingPagesData';
 import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 
-export const metadata = {
-  title: 'VLCC Institute - skin-care-course-in-gurgaon',
-  description: 'Join VLCC Institute for skin care and wellness training with industry-focused certification programs.',
+export const metadata: Metadata = {
+  title: "Best Skin Care Course in Gurgaon | Skincare Training",
+  description: "Enroll in the best skin care course in Gurgaon. Master facials, skincare therapies, advanced beauty treatments & earn industry-recognized certification.",
 };
 
 export default function SkinCareLandingPage() {

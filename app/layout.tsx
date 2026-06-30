@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VLCC Institute | Beauty & Makeup Courses, Cosmetology Training",
-  description: "Join VLCC Institute for Beauty & Makeup Courses, cosmetology, nutrition and wellness training with industry-focused certification programs.",
+  title: "Beauty, Makeup, Hair & Wellness Academy | VLCC Education",
+  description: "India's leading beauty academy offering makeup, hair, skincare, nail, nutrition & wellness courses with certification and placement assistance.",
   keywords: "VLCC Institute, Beauty & Makeup Courses, Cosmetology Course, Nutrition Course, Wellness Training, Beauty Academy, Makeup Training",
   icons: {
     icon: "/vlcc-logo.png"

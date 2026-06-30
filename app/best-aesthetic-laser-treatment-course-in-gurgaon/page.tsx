@@ -2,8 +2,8 @@ import { landingPagesData } from '@/app/data/landingPagesData';
 import LandingPageTemplate from '@/app/components/landing/LandingPageTemplate';
 
 export const metadata = {
-  title: 'VLCC Institute - best-aesthetic-laser-treatment-course-in-gurgaon',
-  description: 'Join VLCC Institute for the best courses in Gurgaon.',
+  title: "Best Laser Aesthetics Training Academy | VLCC Gurgaon",
+  description: "Join the best laser aesthetics training academy in Gurgaon. Learn advanced laser treatments, skin aesthetics & earn certification with VLCC.",
 };
 
 export default function CoursePage() {
