@@ -18,8 +18,8 @@ import CareerCTA from './components/CareerCTA';
 import YoutubeSection from './components/YoutubeSection';
 
 export const metadata = {
-  title: 'VLCC School of Beauty | Diploma in Makeup & Styling',
-  description: 'Join VLCC School of Beauty, the leader in Makeup, Skin, and Hair education. Enroll now for our NSDC approved diploma courses and get 100% placement assistance.',
+  title: "Beauty, Makeup, Hair & Wellness Academy | VLCC Education",
+  description: "India's leading beauty academy offering makeup, hair, skincare, nail, nutrition & wellness courses with certification and placement assistance.",
 };
 
 import GlobalSpotlight from './components/GlobalSpotlight';
