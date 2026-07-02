@@ -11,6 +11,10 @@ export default function EnquiryForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (formData.phone.length < 10) {
+      alert("Please enter a valid 10-digit phone number.");
+      return;
+    }
     setStatus('loading');
 
     try {
@@ -75,6 +79,9 @@ export default function EnquiryForm() {
           placeholder="Contact Number*" 
           required 
           maxLength={10}
+          minLength={10}
+          pattern="[0-9]{10}"
+          title="Please enter a valid 10-digit phone number"
           value={formData.phone}
           onChange={(e) => setFormData({...formData, phone: e.target.value.replace(/\D/g, '')})}
           className="w-full h-[45px] md:h-[50px] bg-white/5 border border-white/10 rounded-lg px-4 md:px-5 text-white font-body text-[14px] md:text-[15px] transition-all duration-300 focus:outline-none focus:border-vlcc-orange focus:bg-white/10 placeholder:text-gray-300 placeholder:opacity-100" 
