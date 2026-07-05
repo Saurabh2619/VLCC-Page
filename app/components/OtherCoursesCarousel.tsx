@@ -131,7 +131,7 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
       <div className="max-w-[1200px] mx-auto px-5 relative">
         <div className="text-center mb-[40px] md:mb-[60px]">
           <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5 font-heading">Explore More</span>
-          <h2 className="text-[2rem] md:text-[2.5rem] text-white font-heading font-bold">Our Other Courses</h2>
+          <h2 className="text-[2rem] md:text-[2.5rem] text-white font-heading font-bold">Our Other <span className="text-vlcc-orange">Courses</span></h2>
         </div>
 
         {/* Carousel Container */}

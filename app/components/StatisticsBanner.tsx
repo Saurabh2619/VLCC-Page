@@ -40,7 +40,7 @@ export default function StatisticsBanner({ imageSrc = "https://images.pexels.com
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex flex-col justify-center text-center lg:text-left h-full">
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-[#1a1a1a] mb-12 leading-[1.2] max-w-[500px] mx-auto lg:mx-0">
-              Transforming Passion into a Professional Career
+              Transforming Careers With <span className="text-vlcc-orange">VLCC</span>
             </h2>
             <div className="flex flex-row justify-center lg:justify-start gap-8 md:gap-14">
               <div className="flex flex-col items-center lg:items-start">

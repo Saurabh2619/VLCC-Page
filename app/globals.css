@@ -3,8 +3,10 @@
 @theme {
   --color-vlcc-orange: #f37021;
   --color-vlcc-orange-hover: #d95e16;
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Roboto', sans-serif;
+  --color-vlcc-blue: #00509d;
+  --color-vlcc-blue-hover: #003f7a;
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 @layer base {

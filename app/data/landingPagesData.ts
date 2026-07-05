@@ -51,7 +51,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       bgImage: 'https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Nail Artistry Course',
+      heading: 'About VLCC <span class="text-vlcc-orange">Nail Artistry</span> Course',
       paragraph1: 'Located in Sector 49, Gurgaon, VLCC School of Beauty is an Authorized Franchise of VLCC offering professional nail training for aspiring beauty experts. If you are looking for the Best Nail Extension Course in Gurgaon, our Nail Artistry Course is the perfect place to start.',
       paragraph2: 'Students learn nail extensions, gel nails, acrylic nails, nail art designs, and salon hygiene through practical sessions guided by industry expert trainers. Recognized as one of the choices for the Best Nail Art Course in Gurgaon, we focus on hands-on learning, professional certification, and career growth. With modern facilities, placement assistance, and small batch sizes, VLCC helps students gain the skills and confidence to succeed in the beauty industry.',
       whyChooseTitle: 'Why Choose VLCC?',
@@ -73,7 +73,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
     ],
     statisticsImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603323/WhatsApp_Image_2026-06-16_at_14.12.45_2_hquaoq.jpg',
     modules: {
-      heading: 'To Professional Nail Art Training Modules',
+      heading: 'To Professional <span class="text-vlcc-orange">Nail Art Training</span> Modules',
       sideImage: '/landing-page/fallen_nail.jpg',
       services: [
         {
@@ -153,7 +153,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       bgImage: '/images/hero_makeup_vlcc.png'
     },
     about: {
-      heading: 'About VLCC Makeup Academy',
+      heading: 'About VLCC <span class="text-vlcc-orange">Makeup Academy</span>',
       paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon, we believe makeup is more than a skill—it\'s an art that helps people express their confidence and creativity. If you are looking for the Best Makeup Academy in Gurgaon, our courses are designed to give you the right blend of creativity, practical learning, and industry exposure.',
       paragraph2: 'Our Professional Makeup Training in Gurgaon covers everything from basic to advanced makeup techniques, including bridal, HD, and airbrush makeup. With industry expert trainers, hands-on practice, professional certification, and placement assistance, we help students turn their passion into a successful career in the beauty industry.',
       whyChooseTitle: 'Why Choose VLCC?',
@@ -169,7 +169,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       ]
     },
     modules: {
-      heading: 'Explore Our Professional Makeup Modules',
+      heading: 'Explore Our Professional <span class="text-vlcc-orange">Makeup Modules</span>',
       sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685272/istockphoto-1161219638-612x612_vjyvrc.jpg',
       services: [
         {
@@ -250,7 +250,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       bgImage: 'https://images.pexels.com/photos/3993320/pexels-photo-3993320.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Hair Training Academy',
+      heading: 'About VLCC <span class="text-vlcc-orange">Hair Training</span> Academy',
       paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon,We offer variety of hair dressing programs ranging from beginner to advance and professional levels, focusing on technical skills, salon management and creative styling, we believe hair dressing is an art that helps people express their confidence and creativity as it is said “Good Hair Day”!!. If you are looking for the Best hair training Academy in Gurgaon, our courses are designed to give you the right blend of creativity, practical learning, and industry exposure.',
       paragraph2: 'Our Professional hair Training Academy in Gurgaon covers everything from basic to advanced such as professional grooming, hair cutting, hair trichology, coloring, rebounding salon managemant and various advance treatments like Botox, ballayage, cycstine, keratine and hair extension With industry expert trainers, hands-on practice, professional certification, and placement assistance, we help students turn their passion into a successful career in the beauty/ salon industry.',
       whyChooseTitle: 'Why Choose VLCC? (USP Cards)',
@@ -274,7 +274,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
     aboutImagePositions: ['object-top', 'object-center', 'object-center', 'object-top'],
     statisticsImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229112/IMG_8194_yvasdi.jpg',
     modules: {
-      heading: 'Everything You Need to Become a Hair Stylist',
+      heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Hair Stylist</span>',
       subheading: 'From Hair cutting and styling and chemical job,\nGet hands-on training from industry experts',
       sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782295812/professional-hairdresser-tools-photo_dlupyv.jpg',
       services: [
@@ -370,7 +370,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       bgImage: 'https://images.pexels.com/photos/3985304/pexels-photo-3985304.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Skin Care Training Academy',
+      heading: 'About VLCC <span class="text-vlcc-orange">Skin Care Training</span> Academy',
       paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon, we offer professional Skin Care Training Programs designed for beginners and beauty professionals who want to build a successful career in the beauty and wellness industry. Our courses focus on skin science, facial therapies, advanced skincare treatments, client consultation, hygiene standards, and practical hands-on learning.',
       paragraph2: 'We believe skincare is both a science and an art that helps people achieve healthy, glowing skin while building confidence. If you are looking for the Best Skin Care Training Academy in Gurgaon, our courses provide the perfect combination of technical knowledge, practical experience, and industry exposure. With expert trainers, professional certification, and placement assistance, we help students transform their passion into a successful career.',
       whyChooseTitle: 'Why Choose VLCC?',
@@ -392,7 +392,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290079/WhatsApp_Image_2026-06-23_at_20.31.29_uurste.jpg'
     ],
     modules: {
-      heading: 'Everything You Need to Become a Skin Care Expert',
+      heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Skin Care Expert</span>',
       subheading: 'From basic skincare services to advanced aesthetic treatments, gain hands-on training from industry professionals and build a rewarding career in beauty and wellness.',
       sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289206/BANNER-IMG-3-3_r4zszj.webp',
       services: [
@@ -470,7 +470,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       bgImage: 'https://images.pexels.com/photos/6532454/pexels-photo-6532454.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Laser & Aesthetics Course',
+      heading: 'About VLCC <span class="text-vlcc-orange">Laser & Aesthetics</span> Course',
       paragraph1: 'Located in Sector 49, Gurgaon, VLCC School of Beauty provides cutting-edge training in Clinical Aesthetics. If you are looking for the Best Aesthetic Laser Treatment Course in Gurgaon, this is the ultimate program for clinical precision.',
       paragraph2: 'Students learn Laser Hair Reduction (LHR), intense pulsed light (IPL), chemical peels, and advanced derma treatments. We focus on clinical safety, hands-on learning with real machines, and professional certification to ensure your success in dermatological clinics.',
       whyChooseTitle: 'Why Choose VLCC?',
@@ -485,7 +485,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       ]
     },
     modules: {
-      heading: 'Clinical Aesthetics & Laser Modules',
+      heading: 'Clinical Aesthetics <span class="text-vlcc-orange">& Laser Modules</span>',
       sideImage: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=600&auto=format&fit=crop',
       services: [
         {
@@ -551,7 +551,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       bgImage: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=2000'
     },
     about: {
-      heading: 'About VLCC Nutrition Training Academy',
+      heading: 'About VLCC <span class="text-vlcc-orange">Nutrition Training</span> Academy',
       paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon, we offer comprehensive Nutrition & Dietetics Programs designed for students, healthcare professionals, fitness enthusiasts, and aspiring nutritionists. Our courses focus on nutrition science, therapeutic diets, lifestyle management, disease-specific nutrition, wellness coaching, and practical diet planning.',
       paragraph2: 'With a strong emphasis on evidence-based learning and real-world applications, we prepare students for rewarding careers in the health and wellness industry. If you are looking for the Best Nutrition Training Academy in Gurgaon, our programs provide the perfect blend of theoretical knowledge, practical learning, and industry exposure. Our Professional Nutrition Courses cover everything from basic nutrition principles to advanced clinical nutrition, sports nutrition, child nutrition, weight management, diabetes education, PCOS management, geriatric nutrition, and holistic wellness.',
       whyChooseTitle: 'Why Choose VLCC?',
@@ -567,7 +567,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
       ]
     },
     modules: {
-      heading: 'Everything You Need to Become a Nutrition Expert',
+      heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Nutrition Expert</span>',
       subheading: 'From nutrition fundamentals to clinical diet planning and wellness coaching, gain hands-on knowledge and industry-relevant skills to build a successful career in nutrition and healthcare.',
       sideImage: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=600&auto=format&fit=crop',
       services: [
@@ -651,7 +651,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
     bgImage: 'https://images.pexels.com/photos/3993314/pexels-photo-3993314.jpeg?auto=compress&cs=tinysrgb&w=2000'
   },
   about: {
-    heading: 'About VLCC Laser Aesthetics Training Academy',
+    heading: 'About VLCC <span class="text-vlcc-orange">Laser Aesthetics</span> Training Academy',
     paragraph1: 'At VLCC School of Beauty, Sector 49, Gurgaon, we offer a wide range of Laser Aesthetics and Advanced Skin Treatment Programs for beginners, beauty professionals, and aspiring aesthetic experts. Our programs focus on advanced laser technologies, skin science, client consultation, safety protocols, and practical hands-on training.',
     paragraph2: 'Our Professional Laser Aesthetics Training covers advanced treatments including Laser Hair Reduction, IPL Therapy, Carbon Peel, Tattoo Removal, Hydra Facial, Derma Peel, Microdermabrasion (MDA), Jet Peel, Derma Needling, and Hair Stimulation Treatments. With industry-expert trainers, live demonstrations, professional certification, and placement assistance, we help students build successful careers in the beauty and aesthetics industry.',
     whyChooseTitle: 'Why Choose VLCC? (USP Cards)',
@@ -674,7 +674,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
   ],
   statisticsImage: 'https://images.pexels.com/photos/3993314/pexels-photo-3993314.jpeg?auto=compress&cs=tinysrgb&w=2000',
   modules: {
-    heading: 'Everything You Need to Become a Laser Aesthetic Expert',
+    heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Laser Aesthetic</span> Expert',
     subheading: 'From advanced skin therapies to laser treatments and aesthetic procedures, gain hands-on training from industry experts and build a successful career in the beauty and wellness industry.',
     sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284310/female-cosmetologist-performing-facial-laser-epilation-on-a-client-wearing-protective-eyewear-in-a-modern-treatment-room-with-a-white-background-and-medical-equipment-photo_rjgzgg.jpg',
     services: [

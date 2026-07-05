@@ -21,7 +21,7 @@ export default function Testimonials() {
     <section id="testimonials" className="py-10 md:py-[70px] bg-white/50 backdrop-blur-md relative">
       <div className="max-w-[1200px] mx-auto px-5 text-center">
         <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5">Success Stories</span>
-        <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[50px] font-heading font-bold">Placements & Testimonials</h2>
+        <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[50px] font-heading font-bold">Placements & <span className="text-vlcc-orange">Testimonials</span></h2>
         
         <div className="mx-auto w-full max-w-[1000px]">
           <InfiniteSlider 

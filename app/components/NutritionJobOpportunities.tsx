@@ -18,7 +18,7 @@ export default function NutritionJobOpportunities() {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="block text-[#e65c00] font-bold uppercase tracking-[2px] text-[15px] mb-3">Career Paths</span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-[#1a1a1a] mb-6">
-            Career Opportunities After Nutrition Course
+            Global <span className="text-vlcc-orange">Career Opportunities</span>
           </h2>
           <p className="text-gray-600 font-body text-base md:text-lg">
             The wellness and preventive healthcare industry is booming. After completing this course, you can explore exciting career opportunities as a certified nutrition and dietetics professional.

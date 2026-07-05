@@ -68,7 +68,7 @@ export default function Facilities() {
       <div className="max-w-[1200px] mx-auto px-5">
         <div className="text-center mb-[40px] md:mb-[60px]">
           <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5">Why Train With Us</span>
-          <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Centre Facilities</h2>
+          <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Centre <span className="text-vlcc-orange">Facilities</span></h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mb-12">

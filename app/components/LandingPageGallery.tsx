@@ -20,7 +20,7 @@ export default function LandingPageGallery({ media }: LandingPageGalleryProps) {
       <div className="max-w-[1200px] mx-auto px-5 relative z-10">
         <div className="text-center mb-[40px]">
           <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5">Transformations</span>
-          <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Student Portfolio</h2>
+          <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[15px] font-heading font-bold">Student <span className="text-vlcc-orange">Portfolio</span></h2>
         </div>
 
         <div className="max-w-[1200px] mx-auto pb-10">

@@ -18,7 +18,7 @@ export default function Recruiters() {
           Our Partners
         </span>
         <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] mb-[10px] font-heading font-bold">
-          Placement Partners
+          Top <span className="text-vlcc-orange">Recruiters</span>
         </h2>
         <h3 className="text-[1.2rem] md:text-[1.5rem] text-[#666] font-heading font-semibold">
           200+ Organizations And Still Counting

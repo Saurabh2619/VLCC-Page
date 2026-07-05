@@ -155,7 +155,10 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
             
             {/* Right Content */}
             <div className="w-full lg:w-1/2 text-[#333]">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-[#1a1a1a]">{data.about.heading}</h2>
+              <h2 
+                className="text-4xl md:text-5xl font-heading font-bold mb-6 text-[#1a1a1a]"
+                dangerouslySetInnerHTML={{ __html: data.about.heading }}
+              />
               <p className="mb-4 text-gray-600 leading-relaxed text-sm md:text-base font-body">{data.about.paragraph1}</p>
               <p className="mb-8 text-gray-600 leading-relaxed text-sm md:text-base font-body">{data.about.paragraph2}</p>
               
@@ -187,9 +190,10 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
         <div className="max-w-[1200px] mx-auto px-5">
           <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-10">
             <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[600px] lg:max-w-[700px] leading-tight text-center lg:text-left">
-                {data.modules.heading}
-              </h2>
+              <h2 
+                className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#1a1a1a] max-w-[600px] lg:max-w-[700px] leading-tight text-center lg:text-left"
+                dangerouslySetInnerHTML={{ __html: data.modules.heading }}
+              />
               {data.modules.subheading && (
                 <p className="mt-4 text-gray-600 font-body text-base md:text-lg max-w-[600px] text-center lg:text-left whitespace-pre-line">
                   {data.modules.subheading}
@@ -279,7 +283,7 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
         <div className="max-w-[800px] mx-auto px-5">
           <div className="text-center mb-[50px]">
             <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[17px] mb-2.5 font-heading">Got Questions?</span>
-            <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] font-heading font-bold">Frequently Asked Questions</h2>
+            <h2 className="text-[2rem] md:text-[2.5rem] text-[#1a1a1a] font-heading font-bold">Frequently Asked <span className="text-vlcc-orange">Questions</span></h2>
           </div>
 
           <div className="flex flex-col gap-4">

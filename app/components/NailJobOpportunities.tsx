@@ -16,7 +16,7 @@ export default function NailJobOpportunities() {
         <div className="text-center mb-16">
           <span className="block text-vlcc-orange font-bold uppercase tracking-[2px] text-[15px] mb-3">Career Paths</span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-[#1a1a1a]">
-            Job Opportunities after Nail Artistry
+            Global <span className="text-vlcc-orange">Career Opportunities</span> after Nail Artistry
           </h2>
         </div>
         
