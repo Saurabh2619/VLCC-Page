@@ -4,7 +4,7 @@ export default function FloatingSocials() {
   return (
     <div className="fixed bottom-[85px] md:bottom-6 right-4 md:right-6 z-[100] flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
       <Link
-        href="https://wa.me/919999999999" // TODO: Add real WhatsApp number
+        href="https://wa.me/917428238777"
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-[#25D366] rounded-full shadow-2xl flex items-center justify-center border-2 border-white animate-bounce-slow"
