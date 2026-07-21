@@ -5,7 +5,7 @@ export async function processWordDoc(buffer: Buffer): Promise<{ html: string; im
   const uploadedImageIds: string[] = [];
 
   const options = {
-    convertImage: mammoth.images.inline(function(element) {
+    convertImage: (mammoth.images as any).inline(function(element: any) {
       return element.read("nodebuffer").then(async (imageBuffer: Buffer) => {
         try {
           // Upload the image buffer to ImageKit
