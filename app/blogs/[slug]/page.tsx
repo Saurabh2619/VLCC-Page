@@ -130,7 +130,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                       return match;
                     }
                   )
-                  // 2. Wrap tables in a responsive scrolling div!
+                  // 3. Merge consecutive tables (often caused by pasting from Word where headers separate from body)
+                  .replace(/<\/table>\s*<table[^>]*>/gi, '')
+                  .replace(/<\/tbody>\s*<tbody[^>]*>/gi, '')
+                  // 4. Wrap tables in a responsive scrolling div!
                   .replace(
                     /<table/gi,
                     '<div class="w-full overflow-x-auto my-8 border border-gray-200 rounded-xl shadow-sm"><table'
