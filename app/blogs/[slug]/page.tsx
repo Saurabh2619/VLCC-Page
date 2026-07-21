@@ -35,8 +35,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// ISR Revalidation
-export const revalidate = 3600;
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
