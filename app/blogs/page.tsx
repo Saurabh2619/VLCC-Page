@@ -8,8 +8,8 @@ export const metadata = {
   description: 'Read the latest beauty tips, makeup tutorials, hair care guides, and industry trends from VLCC School of Beauty experts.',
 };
 
-// Revalidate this page every 1 hour (ISR)
-export const revalidate = 3600;
+// Force the page to always fetch fresh data instantly (no cache delay)
+export const revalidate = 0;
 
 export default async function BlogsIndex() {
   const { data: blogs, error } = await supabase

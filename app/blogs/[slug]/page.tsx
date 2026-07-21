@@ -5,6 +5,9 @@ import Footer from '@/app/components/Footer';
 import Link from 'next/link';
 import BlogSidebar from '@/app/components/BlogSidebar';
 
+// Force the page to always fetch fresh data instantly
+export const revalidate = 0;
+
 // Generate SEO Metadata dynamically based on the blog post
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
