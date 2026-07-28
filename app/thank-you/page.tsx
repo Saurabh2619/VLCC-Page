@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FloatingSocials from '../components/FloatingSocials';
 import MobileCTA from '../components/MobileCTA';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Thank You | VLCC School of Beauty',
@@ -12,6 +13,16 @@ export const metadata = {
 export default function ThankYou() {
   return (
     <main className="min-h-screen font-body flex flex-col pb-[50px] md:pb-0 bg-[#f5f5f5]">
+      {/* Google Ads Lead Conversion Tracking */}
+      <Script
+        id="google-ads-conversion"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            gtag('event', 'conversion', {'send_to': 'AW-16558118479/6H82CI2iqM0ZEM-sw9c9'});
+          `,
+        }}
+      />
       <Navbar />
       
       {/* Spacer for fixed navbar */}
