@@ -34,6 +34,7 @@ export const metadata: Metadata = {
 };
 
 import FloatingSocials from "./components/FloatingSocials";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -42,6 +43,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} antialiased`}>
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16558118479"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'AW-16558118479');
+            `,
+          }}
+        />
+      </head>
       <body className="bg-white text-[#1a1a1a] font-body">
         <FloatingSocials />
         {children}
