@@ -3,6 +3,34 @@ import { supabase } from '@/lib/supabase';
 import { processWordDoc } from '@/lib/wordParser';
 import { imagekit } from '@/lib/imagekit';
 
+const cleanExcerptText = (html: string) => {
+  if (!html) return '';
+  return html
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&#160;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&rsquo;/gi, "'")
+    .replace(/&lsquo;/gi, "'")
+    .replace(/&ldquo;/gi, '"')
+    .replace(/&rdquo;/gi, '"')
+    .replace(/&mdash;/gi, '—')
+    .replace(/&ndash;/gi, '–')
+    .replace(/&#[0-9]+;/gi, ' ')
+    .replace(/&#x[a-f0-9]+;/gi, ' ')
+    .replace(/&[a-z0-9]+;/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .substring(0, 150) + '...';
+};
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET() {
   try {
     const { data, error } = await supabase
@@ -24,6 +52,8 @@ export async function POST(request: Request) {
     const meta_description = formData.get('meta_description') as string;
     const is_published = formData.get('is_published') === 'true';
     const keywords = formData.get('keywords') as string || '';
+    const category = formData.get('category') as string || null;
+    const sub_category = formData.get('sub_category') as string || null;
     
     const htmlContent = formData.get('html_content') as string | null;
     const editorImageIds = formData.get('editor_image_ids') as string | null;
@@ -38,13 +68,16 @@ export async function POST(request: Request) {
        return NextResponse.json({ success: false, message: 'Content is required' }, { status: 400 });
     }
 
-    // 1. Generate Slug
-    let slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+    // 1. Generate or Use Custom Slug
+    const customSlug = formData.get('slug') as string | null;
+    let slug = (customSlug && customSlug.trim() !== '') 
+      ? customSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')
+      : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
     
     // Check if slug exists
     const { data: existing } = await supabase.from('blogs').select('id').eq('slug', slug);
     if (existing && existing.length > 0) {
-      slug = `${slug}-${Date.now()}`; // Make unique
+      slug = `${slug}-${Date.now()}`; // Make unique if collision occurs
     }
 
     // 2. Upload Cover Image (if provided)
@@ -85,14 +118,16 @@ export async function POST(request: Request) {
       }
     }
 
-    // Create excerpt from HTML (strip tags, take first 150 chars)
-    excerpt = finalHtml.replace(/<[^>]+>/g, '').substring(0, 150) + '...';
+    // Create excerpt from HTML (strip tags and entities, take first 150 chars)
+    excerpt = cleanExcerptText(finalHtml);
 
     // 4. Save to Supabase
     const { data, error } = await supabase.from('blogs').insert([
       {
         title,
         slug,
+        category,
+        sub_category,
         excerpt,
         content: finalHtml,
         keywords: keywords,

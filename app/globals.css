@@ -122,3 +122,27 @@
   background-size: 200% auto;
   animation: shimmer 5s linear infinite;
 }
+
+/* Custom Quill Editor Styles - Big, spacious, never overflowing */
+.ql-container.ql-snow {
+  min-height: 550px !important;
+  max-height: 750px !important;
+  overflow-y: auto !important;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+.ql-toolbar.ql-snow {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  background-color: #f8fafc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.ql-editor {
+  min-height: 530px !important;
+  font-size: 1rem;
+  line-height: 1.75;
+}

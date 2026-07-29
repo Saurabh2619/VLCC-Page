@@ -9,6 +9,9 @@ type Blog = {
   slug: string;
   is_published: boolean;
   created_at: string;
+  updated_at?: string;
+  category?: string;
+  sub_category?: string;
 };
 
 export default function AdminBlogsPage() {
@@ -21,7 +24,7 @@ export default function AdminBlogsPage() {
 
   const fetchBlogs = async () => {
     try {
-      const res = await fetch('/api/admin/blogs');
+      const res = await fetch('/api/admin/blogs', { cache: 'no-store' });
       const data = await res.json();
       if (data.success) {
         setBlogs(data.blogs);
@@ -30,6 +33,29 @@ export default function AdminBlogsPage() {
       console.error("Failed to fetch blogs", error);
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const handleTogglePublish = async (id: string, currentStatus: boolean) => {
+    try {
+      const res = await fetch(`/api/admin/blogs/${id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ is_published: !currentStatus }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setBlogs(blogs.map(b => b.id === id ? {
+          ...b,
+          is_published: !currentStatus,
+          updated_at: new Date().toISOString()
+        } : b));
+      } else {
+        alert(data.message || 'Failed to update status');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Something went wrong');
     }
   };
 
@@ -98,25 +124,48 @@ export default function AdminBlogsPage() {
                     <Link href={`/blogs/${blog.slug}`} target="_blank" className="text-sm text-gray-500 hover:text-vlcc-orange font-body truncate max-w-[200px] block">
                       /{blog.slug}
                     </Link>
+                    {(blog.category || blog.sub_category) && (
+                      <span className="inline-block mt-1.5 px-2 py-0.5 rounded text-[11px] font-bold bg-orange-50 text-vlcc-orange border border-vlcc-orange/20">
+                        {blog.category}{blog.category && blog.sub_category ? ' > ' : ''}{blog.sub_category}
+                      </span>
+                    )}
                   </td>
                   <td className="p-4">
-                    <span className={`inline-flex px-2.5 py-1 rounded-full text-xs font-bold font-body ${blog.is_published ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-700'}`}>
+                    <span className={`inline-flex px-2.5 py-1 rounded-md text-xs font-bold font-body border ${
+                      blog.is_published 
+                        ? 'bg-green-100 text-green-800 border-green-200' 
+                        : 'bg-yellow-100 text-yellow-800 border-yellow-200'
+                    }`}>
                       {blog.is_published ? 'Published' : 'Draft'}
                     </span>
                   </td>
-                  <td className="p-4 text-sm text-gray-600 font-body">
-                    {new Date(blog.created_at).toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' })}
+                  <td className="p-4">
+                    <span className={`inline-flex px-2.5 py-1 rounded-md text-xs font-semibold font-body border ${
+                      blog.is_published 
+                        ? 'bg-green-50 text-green-700 border-green-200' 
+                        : 'bg-yellow-50 text-yellow-800 border-yellow-200'
+                    }`}>
+                      {new Date(blog.updated_at || blog.created_at).toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' })}
+                    </span>
                   </td>
                   <td className="p-4 text-right space-x-3">
+                    <button
+                      onClick={() => handleTogglePublish(blog.id, blog.is_published)}
+                      className={`font-semibold font-body text-sm hover:underline ${
+                        blog.is_published ? 'text-yellow-700 hover:text-yellow-900' : 'text-green-600 hover:text-green-800'
+                      }`}
+                    >
+                      {blog.is_published ? 'Draft' : 'Publish'}
+                    </button>
                     <Link 
                       href={`/admin/blogs/edit/${blog.id}`}
-                      className="text-blue-600 hover:text-blue-800 font-semibold font-body text-sm"
+                      className="text-blue-600 hover:text-blue-800 font-semibold font-body text-sm hover:underline"
                     >
                       Edit
                     </Link>
                     <button 
                       onClick={() => handleDelete(blog.id, blog.title)}
-                      className="text-red-600 hover:text-red-800 font-semibold font-body text-sm"
+                      className="text-red-600 hover:text-red-800 font-semibold font-body text-sm hover:underline"
                     >
                       Delete
                     </button>
