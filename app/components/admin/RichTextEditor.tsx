@@ -5,9 +5,9 @@ import ReactQuill, { Quill } from 'react-quill-new';
 import 'react-quill-new/dist/quill.snow.css';
 
 if (typeof window !== 'undefined' && Quill) {
-  const BaseImage = Quill.import('formats/image');
+  const BaseImage: any = Quill.import('formats/image');
 
-  class CustomImage extends BaseImage {
+  class CustomImage extends (BaseImage as any) {
     static create(value: any) {
       const node = super.create(typeof value === 'string' ? value : value?.src || '');
       if (typeof value === 'object' && value !== null) {
