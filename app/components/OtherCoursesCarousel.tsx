@@ -15,28 +15,28 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
       slug: "best-makeup-academy-in-gurgaon",
       title: "Makeup Artistry",
       description: "Comprehensive training from basics to advanced airbrush and bridal makeup.",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508533/WhatsApp_Image_2026-06-02_at_22.30.08_uklh0e.jpg"
+      image: "/courses/WhatsApp Image 2026-06-02 at 22.30.08.jpeg"
     },
     {
       id: 2,
       slug: "best-hair-course-in-gurgaon",
       title: "Hair Dressing",
       description: "Master modern haircuts, coloring techniques, and advanced styling.",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508689/WhatsApp_Image_2026-06-02_at_22.37.09_iakueq.jpg"
+      image: "/courses/WhatsApp Image 2026-06-02 at 22.37.09.jpeg"
     },
     {
       id: 3,
       slug: "skin-care-course-in-gurgaon",
       title: "Skin Care",
       description: "In-depth training in skin analysis, facial treatments, and modern aesthetics.",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587793/WhatsApp_Image_2026-06-04_at_12.41.15_sl4olz.jpg"
+      image: "/courses/WhatsApp Image 2026-06-04 at 12.41.15.jpeg"
     },
     {
       id: 4,
       slug: "best-aesthetic-laser-treatment-course-in-gurgaon",
       title: "Aesthetic Laser Treatments",
       description: "Advanced cosmetic procedures and non-invasive aesthetic treatments.",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587755/WhatsApp_Image_2026-06-04_at_12.40.19_yhwssy.jpg"
+      image: "/courses/WhatsApp Image 2026-06-04 at 12.40.19.jpeg"
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ export default function OtherCoursesCarousel({ currentCourseSlug }: OtherCourses
       slug: "best-nail-extension-course-in-gurgaon",
       title: "Nail Extension & Art",
       description: "Master professional nail extensions, gel polish, and creative nail art designs.",
-      image: "https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/courses/WhatsApp Image 2026-06-02 at 22.40.31.jpeg"
     }
   ];
 
