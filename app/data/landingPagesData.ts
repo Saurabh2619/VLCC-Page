@@ -140,10 +140,10 @@ export const landingPagesData: Record<string, LandingPageData> = {
   'best-makeup-academy-in-gurgaon-49': {
     slug: 'best-makeup-academy-in-gurgaon-49',
     aboutImages: [
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.05_hlhntu.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685457/WhatsApp_Image_2026-06-16_at_4.15.32_PM_2_wr9hld.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.48_1_ktdgok.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_15.40.49_3_vmdibk.jpg'
+      '/face makeup/WhatsApp Image 2026-06-17 at 16.14.05.jpeg',
+      '/face makeup/WhatsApp Image 2026-06-16 at 4.15.32 PM.jpeg',
+      '/face makeup/WhatsApp Image 2026-06-17 at 16.14.48.jpeg',
+      '/face makeup/WhatsApp Image 2026-06-17 at 15.40.49 (3).jpeg'
     ],
     hero: {
       preHeading: 'Best <span class="text-vlcc-orange">Makeup Academy</span> in Gurgaon',
@@ -170,60 +170,60 @@ export const landingPagesData: Record<string, LandingPageData> = {
     },
     modules: {
       heading: 'Explore Our Professional <span class="text-vlcc-orange">Makeup Modules</span>',
-      sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781685272/istockphoto-1161219638-612x612_vjyvrc.jpg',
+      sideImage: '/face makeup/makeup photos.avif',
       services: [
         {
           title: 'Basic Makeup',
           desc: 'Learn makeup fundamentals, skin preparation, colour correction, and everyday looks through practical training designed for beginners starting their beauty journey.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781684705/WhatsApp_Image_2026-06-02_at_22.23.51_frcqiw.jpg',
+          img: '/face makeup/WhatsApp Image 2026-06-02 at 22.23.51.jpeg',
           objectPosition: 'center 15%'
         },
         {
           title: 'Professional Makeup',
           desc: 'Master advanced contouring, highlighting, eye makeup, and looks for photography and events.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.05_hlhntu.jpg?q=80&w=600&auto=format&fit=crop',
+          img: '/face makeup/WhatsApp Image 2026-06-17 at 16.14.05.jpeg',
           objectPosition: 'center 20%'
         },
         {
           title: 'Bridal Makeup',
           desc: 'Specialized training for traditional and modern bridal looks, focusing on longevity and flawless finish.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693701/WhatsApp_Image_2026-06-17_at_15.40.50_2_wqwuyj.jpg?auto=compress&cs=tinysrgb&w=600',
+          img: '/face makeup/WhatsApp Image 2026-06-17 at 15.40.50 (2).jpeg',
           objectPosition: 'center 15%'
         },
         {
           title: 'HD Makeup',
           desc: 'Techniques for High-Definition cameras using specialized products for a seamless, natural appearance.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693475/WhatsApp_Image_2026-06-17_at_15.40.49_2_mahpxh.jpg',
+          img: '/face makeup/WhatsApp Image 2026-06-17 at 15.40.49 (2).jpeg',
           objectPosition: 'center 50%'
         }, 
         {
           title: 'Airbrush Makeup',
           desc: 'Learn the art of airbrushing for a lightweight, long-lasting, and picture-perfect makeup application.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_16.14.48_1_ktdgok.jpg?auto=compress&cs=tinysrgb&w=600',
+          img: '/face makeup/WhatsApp Image 2026-06-17 at 16.14.48 (1).jpeg',
           objectPosition: 'center 15%'
         },
         {
           title: 'Party Makeup',
           desc: 'Create trendy and glamorous party looks by learning the latest makeup styles, blending techniques, and finishing touches for every celebration.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781693476/WhatsApp_Image_2026-06-17_at_15.40.49_3_vmdibk.jpg',
+          img: '/face makeup/WhatsApp Image 2026-06-17 at 15.40.49 (3).jpeg',
           objectPosition: 'center 20%'
         },
         {
           title: 'Skin Preparation & Client Consultation',
           desc: 'Understand skin analysis, product selection, and client consultation techniques to deliver personalised makeup services and build lasting client relationships.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508479/WhatsApp_Image_2026-06-02_at_22.34.16_mkfqyt.jpg',
+          img: '/face makeup/WhatsApp Image 2026-06-02 at 22.34.16.jpeg',
           fit: 'contain'
         }
       ]
     },
     portfolioMedia: [
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496054/WhatsApp_Image_2026-06-02_at_22.24.20_bvf5cd.jpg' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496580/WhatsApp_Image_2026-06-02_at_22.31.55_ibmxp1.jpg' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496054/WhatsApp_Image_2026-06-02_at_22.33.19_ktmsou.jpg' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496060/WhatsApp_Image_2026-06-02_at_22.30.18_kikdgr.jpg' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496580/WhatsApp_Image_2026-06-02_at_22.30.52_qxsf0s.jpg' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781684704/WhatsApp_Image_2026-06-02_at_22.24.01_nyyc7r.jpg' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781684705/WhatsApp_Image_2026-06-02_at_22.23.51_frcqiw.jpg' }
+      { type: 'image', src: '/WhatsApp Image 2026-06-02 at 22.24.20.jpeg' },
+      { type: 'image', src: '/gallery/WhatsApp Image 2026-06-02 at 22.31.55.jpeg' },
+      { type: 'image', src: '/gallery/WhatsApp Image 2026-06-02 at 22.33.19.jpeg' },
+      { type: 'image', src: '/gallery/WhatsApp Image 2026-06-02 at 22.30.18.jpeg' },
+      { type: 'image', src: '/gallery/WhatsApp Image 2026-06-02 at 22.30.52.jpeg' },
+      { type: 'image', src: '/face makeup/WhatsApp Image 2026-06-02 at 22.24.01.jpeg' },
+      { type: 'image', src: '/face makeup/WhatsApp Image 2026-06-02 at 22.23.51.jpeg' }
     ],
     faqs: [
       {
@@ -496,7 +496,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Basic Makeup',
           desc: 'Learn the fundamentals of skin types, color theory, product knowledge, and day-to-day makeup looks.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781684705/WhatsApp_Image_2026-06-02_at_22.23.51_frcqiw.jpg?auto=compress&cs=tinysrgb&w=600'
+          img: '/face makeup/WhatsApp Image 2026-06-02 at 22.23.51.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           title: 'Chemical Peels',

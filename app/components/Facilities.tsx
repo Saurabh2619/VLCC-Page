@@ -53,14 +53,13 @@ export default function Facilities() {
   ];
 
   const campusImages = [
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.27.57_k5sipg.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.28.29_mbpcgo.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496458/WhatsApp_Image_2026-06-02_at_22.29.33_jvwast.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.27.39_e7j3f3.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496222/WhatsApp_Image_2026-06-02_at_22.26.52_ysqecv.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496221/WhatsApp_Image_2026-06-02_at_22.28.42_rzarcv.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496222/WhatsApp_Image_2026-06-02_at_22.27.31_ujjbk1.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496222/WhatsApp_Image_2026-06-02_at_22.27.50_qilsov.jpg'
+    '/our campus/WhatsApp Image 2026-06-02 at 22.26.52.jpeg',
+    '/our campus/WhatsApp Image 2026-06-02 at 22.27.31.jpeg',
+    '/our campus/WhatsApp Image 2026-06-02 at 22.27.50.jpeg',
+    '/our campus/WhatsApp Image 2026-06-02 at 22.27.57.jpeg',
+    '/our campus/WhatsApp Image 2026-06-02 at 22.28.29.jpeg',
+    '/our campus/WhatsApp Image 2026-06-02 at 22.28.42.jpeg',
+    '/our campus/WhatsApp Image 2026-06-02 at 22.29.33.jpeg'
   ];
 
   return (

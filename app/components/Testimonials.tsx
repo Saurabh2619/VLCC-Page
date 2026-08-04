@@ -4,17 +4,17 @@ import InfiniteSlider from './InfiniteSlider';
 export default function Testimonials() {
   const visualTestimonials = [
     // Placements
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496337/WhatsApp_Image_2026-06-02_at_22.22.42_pnpnuc.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496336/WhatsApp_Image_2026-06-02_at_22.22.27_jvo1hk.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496331/WhatsApp_Image_2026-06-02_at_22.23.06_qlucuw.jpg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.22.42.jpeg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.22.27.jpeg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.23.06.jpeg',
     // Testimonials
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496335/WhatsApp_Image_2026-06-02_at_22.39.33_rqhcmt.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496334/WhatsApp_Image_2026-06-02_at_22.39.09_ywonua.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496334/WhatsApp_Image_2026-06-02_at_22.39.15_apukzf.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496333/WhatsApp_Image_2026-06-02_at_22.39.00_ulsjbc.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496332/WhatsApp_Image_2026-06-02_at_22.38.47_c5m1vn.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496333/WhatsApp_Image_2026-06-02_at_22.38.53_xncqtw.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496332/WhatsApp_Image_2026-06-02_at_22.40.12_tpqhub.jpg'
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.39.33.jpeg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.39.09.jpeg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.39.15.jpeg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.39.00.jpeg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.38.47.jpeg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.38.53.jpeg',
+    '/testimonials/WhatsApp Image 2026-06-02 at 22.40.12.jpeg'
   ];
 
   return (

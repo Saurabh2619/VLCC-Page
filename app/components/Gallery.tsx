@@ -7,19 +7,19 @@ interface GalleryProps {
 export default function Gallery({ images }: GalleryProps) {
   const defaultImages = [
     // Before/Afters
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496582/WhatsApp_Image_2026-06-02_at_22.31.08_zw7ywr.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496581/WhatsApp_Image_2026-06-02_at_22.30.58_wznec6.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496581/WhatsApp_Image_2026-06-02_at_22.31.04_ux7t9r.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496580/WhatsApp_Image_2026-06-02_at_22.30.52_qxsf0s.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496579/WhatsApp_Image_2026-06-02_at_22.31.13_bd5bm4.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496580/WhatsApp_Image_2026-06-02_at_22.31.55_ibmxp1.jpg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.31.08.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.30.58.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.31.04.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.30.52.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.31.13.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.31.55.jpeg',
     // Models
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496054/WhatsApp_Image_2026-06-02_at_22.30.40_pbx33y.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496054/WhatsApp_Image_2026-06-02_at_22.24.20_bvf5cd.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496053/WhatsApp_Image_2026-06-02_at_22.31.49_xnnrol.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496054/WhatsApp_Image_2026-06-02_at_22.33.19_ktmsou.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496060/WhatsApp_Image_2026-06-02_at_22.30.18_kikdgr.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496053/WhatsApp_Image_2026-06-02_at_22.33.40_qlmfcs.jpg'
+    '/gallery/WhatsApp Image 2026-06-02 at 22.30.40.jpeg',
+    '/WhatsApp Image 2026-06-02 at 22.24.20.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.31.49.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.33.19.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.30.18.jpeg',
+    '/gallery/WhatsApp Image 2026-06-02 at 22.33.40.jpeg'
   ];
 
   return (

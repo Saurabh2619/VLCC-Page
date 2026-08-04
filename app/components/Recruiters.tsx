@@ -4,11 +4,11 @@ import InfiniteSlider from './InfiniteSlider';
 
 export default function Recruiters() {
   const logos = [
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780505927/rich_fgsa2d.png',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780505926/tog_fglrcp.png',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780505926/loreal_pytgd8.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780505926/uc_e3rkxo.png',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780505925/lakme_skztcw.jpg'
+    '/brand logo/rich.png',
+    '/brand logo/tog.png',
+    '/brand logo/loreal.jpeg',
+    '/brand logo/uc.png',
+    '/brand logo/lakme.jpeg'
   ];
 
   return (

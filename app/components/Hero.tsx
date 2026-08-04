@@ -6,7 +6,7 @@ import EnquiryForm from './EnquiryForm';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-[100dvh] md:min-h-screen flex items-center bg-[url('https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496054/WhatsApp_Image_2026-06-02_at_22.24.20_bvf5cd.jpg')] bg-cover bg-[center_15%] pt-[110px] pb-[70px] md:pt-[160px] md:pb-[100px] overflow-hidden text-white">
+    <section id="hero" className="relative min-h-[100dvh] md:min-h-screen flex items-center bg-[url('/WhatsApp%20Image%202026-06-02%20at%2022.24.20.jpeg')] bg-cover bg-[center_15%] pt-[110px] pb-[70px] md:pt-[160px] md:pb-[100px] overflow-hidden text-white">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black/80 to-[#141414]/60 z-[1]"></div>
       <div className="max-w-[1200px] mx-auto px-5 w-full z-[2] relative">
         <div className="flex justify-between items-center flex-wrap gap-6 md:gap-10 md:text-left text-center flex-col md:flex-row">

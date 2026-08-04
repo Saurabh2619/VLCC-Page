@@ -252,7 +252,7 @@ export default function LandingPageTemplate({ data, isWebsiteMode = false }: { d
       <Facilities />
       
       {data.slug.includes('makeup') ? (
-        <MakeupFeatureBanner imageSrc="https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781680810/makeup_section_a19yre.png" />
+        <MakeupFeatureBanner imageSrc="/face makeup/makeup photos.avif" />
       ) : data.slug.includes('skin-care') ? (
         <SkinFeatureBanner imageSrc={data.statisticsImage || data.hero.bgImage} />
       ) : data.slug.includes('hair') ? (

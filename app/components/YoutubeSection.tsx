@@ -21,12 +21,12 @@ export default function YoutubeSection() {
           {/* Left Side: Video */}
           <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl bg-black group">
             <video 
-              src="https://res.cloudinary.com/dkzpgmd4a/video/upload/v1780497744/WhatsApp_Video_2026-06-02_at_22.25.44_woruox.mp4" 
+              src="/WhatsApp Video 2026-06-02 at 22.25.44.mp4" 
               controls 
               controlsList="nodownload"
               playsInline
               className="w-full h-full object-cover"
-              poster="https://res.cloudinary.com/dkzpgmd4a/image/upload/q_auto/f_auto/v1780496222/WhatsApp_Image_2026-06-02_at_22.27.31_ujjbk1.jpg"
+              poster="/our campus/WhatsApp Image 2026-06-02 at 22.27.31.jpeg"
             >
               Your browser does not support the video tag.
             </video>

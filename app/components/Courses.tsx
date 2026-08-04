@@ -10,7 +10,7 @@ export default function Courses() {
       slug: "best-makeup-academy-in-gurgaon",
       title: "Makeup Artistry",
       duration: "6 Months",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508533/WhatsApp_Image_2026-06-02_at_22.30.08_uklh0e.jpg",
+      image: "/courses/WhatsApp Image 2026-06-02 at 22.30.08.jpeg",
       description: "Comprehensive training from basics to advanced airbrush and bridal makeup."
     },
     {
@@ -18,7 +18,7 @@ export default function Courses() {
       slug: "best-hair-course-in-gurgaon",
       title: "Hair Dressing",
       duration: "4 Months",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508689/WhatsApp_Image_2026-06-02_at_22.37.09_iakueq.jpg",
+      image: "/courses/WhatsApp Image 2026-06-02 at 22.37.09.jpeg",
       description: "Master modern haircuts, coloring techniques, and advanced styling."
     },
     {
@@ -26,7 +26,7 @@ export default function Courses() {
       slug: "skin-care-course-in-gurgaon",
       title: "Skin Care",
       duration: "3 Months",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587793/WhatsApp_Image_2026-06-04_at_12.41.15_sl4olz.jpg",
+      image: "/courses/WhatsApp Image 2026-06-04 at 12.41.15.jpeg",
       description: "In-depth training in skin analysis, facial treatments, and modern aesthetics."
     },
     {
@@ -34,7 +34,7 @@ export default function Courses() {
       slug: "best-nail-extension-course-in-gurgaon",
       title: "Nail Artistry",
       duration: "2 Months",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780508538/WhatsApp_Image_2026-06-02_at_22.40.31_sfaboy.jpg",
+      image: "/courses/WhatsApp Image 2026-06-02 at 22.40.31.jpeg",
       description: "Learn acrylic extensions, gel polish, and intricate 3D nail art designs."
     },
     {
@@ -42,7 +42,7 @@ export default function Courses() {
       slug: "best-aesthetic-laser-treatment-course-in-gurgaon",
       title: "Aesthetic Laser Treatments",
       duration: "5 Months",
-      image: "https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780587755/WhatsApp_Image_2026-06-04_at_12.40.19_yhwssy.jpg",
+      image: "/courses/WhatsApp Image 2026-06-04 at 12.40.19.jpeg",
       description: "Advanced cosmetic procedures and non-invasive aesthetic treatments."
     },
     {

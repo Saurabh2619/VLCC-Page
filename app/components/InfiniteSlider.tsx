@@ -158,6 +158,7 @@ export default function InfiniteSlider({
                 src={src} 
                 alt={`Slide ${idx}`} 
                 fill 
+                unoptimized={true}
                 className={`transition-transform duration-500 group-hover:scale-105 ${imageClassName || "object-cover object-top"}`}
                 draggable={false} // Prevent default image drag to allow custom swipe
               />
