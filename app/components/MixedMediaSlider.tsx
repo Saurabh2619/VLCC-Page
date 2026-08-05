@@ -201,7 +201,7 @@ export default function MixedMediaSlider({
                 <Image 
                   src={item.src} 
                   alt={`Slide ${idx}`} 
-                  fill 
+                  fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
                   className={`transition-transform duration-500 group-hover:scale-105 ${imageClassName || "object-cover object-top"}`}
                   draggable={false}
                 />

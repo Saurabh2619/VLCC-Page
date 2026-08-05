@@ -276,7 +276,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
     modules: {
       heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Hair Stylist</span>',
       subheading: 'From Hair cutting and styling and chemical job,\nGet hands-on training from industry experts',
-      sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782295812/professional-hairdresser-tools-photo_dlupyv.jpg',
+      sideImage: '/hair/hairheading.jpg',
       services: [
         {
           title: 'Hair Terminology/Methodology',
@@ -394,7 +394,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
     modules: {
       heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Skin Care Expert</span>',
       subheading: 'From basic skincare services to advanced aesthetic treatments, gain hands-on training from industry professionals and build a rewarding career in beauty and wellness.',
-      sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289206/BANNER-IMG-3-3_r4zszj.webp',
+      sideImage: '/skin/skincareheading.avif',
       services: [
         {
           title: 'Skin Fundamentals & Consultation',
@@ -676,7 +676,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
   modules: {
     heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Laser Aesthetic</span> Expert',
     subheading: 'From advanced skin therapies to laser treatments and aesthetic procedures, gain hands-on training from industry experts and build a successful career in the beauty and wellness industry.',
-    sideImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284310/female-cosmetologist-performing-facial-laser-epilation-on-a-client-wearing-protective-eyewear-in-a-modern-treatment-room-with-a-white-background-and-medical-equipment-photo_rjgzgg.jpg',
+    sideImage: '/laser/LaserAestheticheading.png',
     services: [
       {
         title: 'Laser Hair Reduction (LHR)',
@@ -686,12 +686,12 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'IPL (Intense Pulsed Light)',
         desc: 'Understand IPL technology and its applications in skin rejuvenation, pigmentation reduction, acne treatment, and hair reduction.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.06_jp9oef.jpg'
+        img: '/laser/ipl.avif'
       },
       {
         title: 'Carbon Peel',
         desc: 'Master advanced carbon laser peel techniques for skin brightening, acne control, pore reduction, and instant rejuvenation.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.06_1_sshy0q.jpg'
+        img: '/laser/carbon peel.webp'
       },
       {
         title: 'Tattoo Removal',
@@ -701,7 +701,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'Hydra Facial',
         desc: 'Gain expertise in deep cleansing, exfoliation, extraction, hydration, and skin rejuvenation using advanced Hydra Facial technology.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.08_e2vzhh.jpg'
+        img: '/laser/hydra facial.webp'
       },
       {
         title: 'Derma Peel',
@@ -711,7 +711,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'MDA (Microdermabrasion)',
         desc: 'Understand skin resurfacing techniques that help improve texture, reduce fine lines, and enhance skin appearance.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.07_wcquro.jpg'
+        img: '/laser/MDA.jpg'
       },
       {
         title: 'Jet Peel',
@@ -721,7 +721,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'Derma Needling',
         desc: 'Master collagen induction therapy techniques used for acne scars, pigmentation, enlarged pores, and anti-aging treatments.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782283139/WhatsApp_Image_2026-06-23_at_20.12.07_1_ccxoso.jpg'
+        img: '/laser/Derma Needling.avif'
       },
       {
         title: 'Laser Hair Stimulation',
