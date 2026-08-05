@@ -66,12 +66,12 @@ export const landingPagesData: Record<string, LandingPageData> = {
       ]
     },
     aboutImages: [
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609127/WhatsApp_Image_2026-06-16_at_4.15.30_PM_1_ghzfwi.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609282/WhatsApp_Image_2026-06-16_at_4.15.30_PM_3_rxnis1.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609125/WhatsApp_Image_2026-06-16_at_4.15.25_PM_2_p5gscp.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609126/WhatsApp_Image_2026-06-16_at_4.15.29_PM_2_klfdnz.jpg'
+      '/nail/WhatsApp Image 2026-06-16 at 4.15.30 PM (1).jpeg',
+      '/nail/WhatsApp Image 2026-06-16 at 4.15.30 PM (3).jpeg',
+      '/nail/WhatsApp Image 2026-06-16 at 4.15.25 PM (2).jpeg',
+      '/nail/WhatsApp Image 2026-06-16 at 4.15.29 PM (2).jpeg'
     ],
-    statisticsImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603323/WhatsApp_Image_2026-06-16_at_14.12.45_2_hquaoq.jpg',
+    statisticsImage: '/nail/WhatsApp Image 2026-06-16 at 14.12.45 (2).jpeg',
     modules: {
       heading: 'To Professional <span class="text-vlcc-orange">Nail Art Training</span> Modules',
       sideImage: '/landing-page/fallen_nail.jpg',
@@ -79,40 +79,40 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Nail Extension',
           desc: 'Learn gel, acrylic, and extension techniques through practical training to create beautiful, durable nails and become a skilled nail artist.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603323/WhatsApp_Image_2026-06-16_at_14.12.45_2_hquaoq.jpg'
+          img: '/nail/WhatsApp Image 2026-06-16 at 14.12.45 (2).jpeg'
         },
         {
           title: 'Nail Removal',
           desc: 'Master safe nail removal methods, proper tools, and hygiene practices to protect natural nails and provide a comfortable client experience.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609413/WhatsApp_Image_2026-06-16_at_4.15.26_PM_1_rw1wyu.jpg'
+          img: '/nail/WhatsApp Image 2026-06-16 at 4.15.26 PM (1).jpeg'
         },
         {
           title: 'Nail Art & Accessories',
           desc: 'Explore creative nail art, trendy designs, 3D art, and stylish accessories to express creativity and stay ahead in the beauty industry.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.47_1_btwtn8.jpg'
+          img: '/nail/WhatsApp Image 2026-06-16 at 14.12.47 (1).jpeg'
         },
         {
           title: 'Advanced Nail Techniques',
           desc: 'Learn advanced shaping, finishing, and salon-ready techniques through hands-on practice to build confidence and become a professional nail artist.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609470/WhatsApp_Image_2026-06-16_at_4.15.27_PM_3_j5j0hm.jpg'
+          img: '/nail/WhatsApp Image 2026-06-16 at 4.15.27 PM (3).jpeg'
         },
         {
           title: 'Professional Nail Care',
           desc: 'Understand nail care, hygiene, and client consultation skills to provide quality services and build a successful career in the beauty industry.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.46_1_nb1c6p.jpg'
+          img: '/nail/WhatsApp Image 2026-06-16 at 14.12.46 (1).jpeg'
         }
       ]
     },
     portfolioMedia: [
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609413/WhatsApp_Image_2026-06-16_at_4.15.26_PM_1_rw1wyu.jpg' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.47_1_btwtn8.jpg' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1781603352/WhatsApp_Video_2026-06-16_at_14.12.50_oam3pw.mp4' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.49_2_xlqnko.jpg' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1781603354/WhatsApp_Video_2026-06-16_at_14.12.51_1_ifhcng.mp4' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1781603364/WhatsApp_Video_2026-06-16_at_15.06.21_zamdrd.mp4' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781609926/WhatsApp_Image_2026-06-16_at_4.15.27_PM_2_aswfux.jpg' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1781603366/WhatsApp_Video_2026-06-16_at_15.06.20_1_diiabf.mp4' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1781603298/WhatsApp_Image_2026-06-16_at_14.12.49_1_kg8aec.jpg' }
+      { type: 'image', src: '/nail/WhatsApp Image 2026-06-16 at 4.15.26 PM (1).jpeg' },
+      { type: 'image', src: '/nail/WhatsApp Image 2026-06-16 at 14.12.47 (1).jpeg' },
+      { type: 'video', src: '/nail/WhatsApp Video 2026-06-16 at 14.12.50.mp4' },
+      { type: 'image', src: '/nail/WhatsApp Image 2026-06-16 at 14.12.49 (2).jpeg' },
+      { type: 'video', src: '/nail/WhatsApp Video 2026-06-16 at 14.12.51 (1).mp4' },
+      { type: 'video', src: '/nail/WhatsApp Video 2026-06-16 at 15.06.21.mp4' },
+      { type: 'image', src: '/nail/WhatsApp Image 2026-06-16 at 4.15.27 PM (2).jpeg' },
+      { type: 'video', src: '/nail/WhatsApp Video 2026-06-16 at 15.06.20 (1).mp4' },
+      { type: 'image', src: '/nail/WhatsApp Image 2026-06-16 at 14.12.49 (1).jpeg' }
     ],
     faqs: [
       {
@@ -266,13 +266,13 @@ export const landingPagesData: Record<string, LandingPageData> = {
       ]
     },
     aboutImages: [
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229110/IMG_7640_jfbgrm.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229107/IMG_8544_eez1gu.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229105/IMG_9378_fzwgfb.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229103/42a6ad7d-4ffa-4367-9299-93bbda00b27b_pkxglq.jpg'
+      '/hair/IMG_7640.jpeg',
+      '/hair/IMG_8544.jpeg',
+      '/hair/IMG_9378.jpeg',
+      '/hair/42a6ad7d-4ffa-4367-9299-93bbda00b27b.jpg'
     ],
     aboutImagePositions: ['object-top', 'object-center', 'object-center', 'object-top'],
-    statisticsImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229112/IMG_8194_yvasdi.jpg',
+    statisticsImage: '/hair/IMG_8194.jpeg',
     modules: {
       heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Hair Stylist</span>',
       subheading: 'From Hair cutting and styling and chemical job,\nGet hands-on training from industry experts',
@@ -281,69 +281,69 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Hair Terminology/Methodology',
           desc: 'From basic concepts to professional techniques, our Hair Terminology & Methodology module helps you speak the language of the salon and work with confidence.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229106/IMG_8690_wdn1gn.jpg'
+          img: '/hair/IMG_8690.jpeg'
         },
         {
           title: 'Shampooing & Conditioning',
           desc: 'Understand the fundamentals of hair cleansing and nourishment with expert shampooing and conditioning practices. Build the foundation for effective hair care services.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229105/IMG_9378_fzwgfb.jpg'
+          img: '/hair/IMG_9378.jpeg'
         },
         {
           title: 'Blow Dry',
           desc: 'Learn essential blow-dry techniques to achieve salon-quality finishes, from sleek looks to bouncy volume, with precision and control.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229104/801301c0-e285-4e0b-b8f0-2423ba6aa634_amdxr6.jpg'
+          img: '/hair/801301c0-e285-4e0b-b8f0-2423ba6aa634.jpg'
         },
         {
           title: 'Hair Trichology',
           desc: 'Explore the structure, growth cycle, and health of hair with essential trichology knowledge. Build expertise in diagnosing and addressing everyday hair and scalp issues',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229103/42a6ad7d-4ffa-4367-9299-93bbda00b27b_pkxglq.jpg',
+          img: '/hair/42a6ad7d-4ffa-4367-9299-93bbda00b27b.jpg',
           objectPosition: 'center 70%'
         },
         {
           title: 'Hair & Scalp Disorders',
           desc: 'Understand the underlying factors behind hair and scalp disorders and explore professional approaches to assessment, care, and maintenance.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229104/005c3ef8-019d-4f4d-84be-7409da39e0b3_otqfay.jpg'
+          img: '/hair/005c3ef8-019d-4f4d-84be-7409da39e0b3.jpg'
         },
         {
           title: 'Hair Cuts',
           desc: 'Master professional haircutting techniques with precision, creativity, and confidence. Learn classic and contemporary styles tailored to different face shapes and hair types',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229107/IMG_8544_eez1gu.jpg',
+          img: '/hair/IMG_8544.jpeg',
           objectPosition: 'center 40%'
         },
         {
           title: 'Thermal Setting',
           desc: 'Develop hands-on skills in thermal setting to craft smooth, curled, or voluminous styles with precision and care. Ensure beautiful results while maintaining hair health.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229116/IMG_7613_kid2ps.jpg',
+          img: '/hair/IMG_7613.jpeg',
           objectPosition: 'top'
         },
         {
           title: 'Hair Coloring',
           desc: 'Gain hands-on experience in professional hair coloring, from consultation to application, ensuring vibrant, long-lasting, and salon-quality finishes.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229109/IMG_8500_syq1ni.jpg'
+          img: '/hair/IMG_8500.jpeg'
         },
         {
           title: 'Hair Chemical Texture services',
           desc: 'Gain hands-on expertise in chemical hair treatments designed to transform texture, shape, and manageability while maintaining hair health and integrity.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229110/IMG_9361_l8zje5.jpg'
+          img: '/hair/IMG_9361.jpeg'
         },
         {
           title: 'New fashion Up-styles',
           desc: 'Learn to create elegant and trend-forward updos for weddings, parties, fashion events, and special occasions. Master modern techniques that combine creativity with precision.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229113/IMG_8198_wjjyxw.jpg'
+          img: '/hair/IMG_8198.jpeg'
         }
       ]
     },
     portfolioMedia: [
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229110/IMG_7640_jfbgrm.jpg' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245158/IMG_9341_cmaonh.mov' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229107/IMG_8544_eez1gu.jpg' },
+      { type: 'image', src: '/hair/IMG_7640.jpeg' },
+      { type: 'video', src: '/hair/IMG_9341.MOV' },
+      { type: 'image', src: '/hair/IMG_8544.jpeg' },
       { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245168/IMG_8401_wcdld4.mov' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229104/005c3ef8-019d-4f4d-84be-7409da39e0b3_otqfay.jpg' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245171/IMG_8773_uyha3d.mov' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229109/IMG_8500_syq1ni.jpg' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245173/IMG_8466_hbaiv1.mov' },
-      { type: 'image', src: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782229113/IMG_8198_wjjyxw.jpg' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245261/IMG_8490_rva6bz.mov' }
+      { type: 'image', src: '/hair/005c3ef8-019d-4f4d-84be-7409da39e0b3.jpg' },
+      { type: 'video', src: '/hair/IMG_8773.MOV' },
+      { type: 'image', src: '/hair/IMG_8500.jpeg' },
+      { type: 'video', src: '/hair/IMG_8466.MOV' },
+      { type: 'image', src: '/hair/IMG_8198.jpeg' },
+      { type: 'video', src: '/hair/IMG_8490.MOV' }
     ],
     faqs: [
       {
@@ -386,10 +386,10 @@ export const landingPagesData: Record<string, LandingPageData> = {
       ]
     },
     aboutImages: [
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290069/images_5_-_Copy_liuppb.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289046/images_10_q6koto.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290059/images_-_Copy_ssxjy9.jpg',
-      'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290079/WhatsApp_Image_2026-06-23_at_20.31.29_uurste.jpg'
+      '/skin/images (5) - Copy.jpeg',
+      '/skin/images (10).jpeg',
+      '/skin/images - Copy.jpeg',
+      '/skin/WhatsApp Image 2026-06-23 at 20.31.29.jpeg'
     ],
     modules: {
       heading: 'Everything You Need to Become a <span class="text-vlcc-orange">Skin Care Expert</span>',
@@ -399,37 +399,37 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Skin Fundamentals & Consultation',
           desc: 'Skin Analysis, Skin Types & Conditions, Client Consultation, Hygiene & Safety Standards.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289516/WhatsApp_Image_2026-06-23_at_20.31.28_f3lqcm.jpg'
+          img: '/skin/WhatsApp Image 2026-06-23 at 20.31.28.jpeg'
         },
         {
           title: 'Hair Removal & Bleaching',
           desc: 'Threading, Tweezing, Protein Bleach, Cream Bleach, Lather Bleach, Full Body Waxing.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289660/images_8_g2txjl.jpg'
+          img: '/skin/images (8).jpeg'
         },
         {
           title: 'Basic Facials',
           desc: 'Face Clean-Up, Basic Facial, Deep Cleansing Facial, Thermal Facial, Biotic Facial, Metallic Facial.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289050/images_11_-_Copy_nyy0xg.jpg'
+          img: '/skin/images (11) - Copy.jpeg'
         },
         {
           title: 'Advanced Facials',
           desc: 'Intense Moisturizing Facial, Derma Lightening Facial, Aroma Facial Therapy, Hydrating Facial Treatment, Face Firming Treatment, Collagen Treatment Facial.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289055/WhatsApp_Image_2026-06-23_at_20.31.58_1_zpkox2.jpg'
+          img: '/skin/WhatsApp Image 2026-06-23 at 20.31.58 (1).jpeg'
         },
         {
           title: 'Skin Treatments',
           desc: 'D-Tan Treatment, Hyper Pigmentation Treatment, Skin Purifying Treatment, Anti-Ageing Treatment, Crust Removal Treatment, Paraffin Wax Mask Treatment.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289609/WhatsApp_Image_2026-06-23_at_20.31.27_gp1uta.jpg'
+          img: '/skin/WhatsApp Image 2026-06-23 at 20.31.27.jpeg'
         },
         {
           title: 'Advanced Aesthetic Treatments',
           desc: 'Chemical Peels, Medi Facials, Enzyme Therapy, Radial Peel, Peri Orbital Treatment, MLD (Manual Lymphatic Drainage).',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285664/WhatsApp_Image_2026-06-23_at_20.35.02_o0e1in.jpg'
+          img: '/laser/WhatsApp Image 2026-06-23 at 20.35.02.jpeg'
         },
         {
           title: 'Beauty Enhancement Services',
           desc: 'Eye Lash Lifting, Eye Lash & Brow Tinting, Professional Mask Application.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782289080/WhatsApp_Image_2026-06-23_at_20.31.27_1_pc5iot.jpg'
+          img: '/skin/WhatsApp Image 2026-06-23 at 20.31.27 (1).jpeg'
         },
         {
           title: 'Hand & Foot Care',
@@ -438,7 +438,7 @@ export const landingPagesData: Record<string, LandingPageData> = {
         }
       ]
     },
-    statisticsImage: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782290269/images_13_vh4pkp.jpg',
+    statisticsImage: '/skin/images (13).jpeg',
     portfolioMedia: [
       { type: 'image', src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&auto=format&fit=crop' },
       { type: 'image', src: 'https://images.unsplash.com/photo-1570172619644-defd70cb36a7?w=600&auto=format&fit=crop' },
@@ -579,12 +579,12 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'Weight Management & Slimming',
           desc: 'Professional Course in Weight Management & Slimming Therapies. Covers obesity management, body composition analysis, lifestyle modifications, and slimming technologies.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294252/nutrion_3_narsmk.jpg'
+          img: '/nutrition/nutrion 3.jpeg'
         },
         {
           title: 'Holistic & Clinical Nutrition',
           desc: 'Holistic Science in Health & Dietetics. Learn lifestyle nutrition, preventive healthcare, medical nutrition therapy, clinical assessments, and hospital diet planning.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294130/nutrion_11_cmds3f.jpg'
+          img: '/nutrition/nutrion 11.jpeg'
         },
         {
           title: 'Sports & Fitness Nutrition',
@@ -594,22 +594,22 @@ export const landingPagesData: Record<string, LandingPageData> = {
         {
           title: 'PCOS & Geriatric Nutrition',
           desc: 'Specialized certifications covering hormonal health, fertility nutrition, senior citizen diet planning, healthy aging, and disease management for the elderly population.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294158/nutrion_7_ra6df5.jpg'
+          img: '/nutrition/nutrion 7.jpeg'
         },
         {
           title: 'Hepatic Disorders & Diabetes',
           desc: 'Certificate Courses in Hepatic Disorders and Diabetes Educator. Learn fatty liver management, glycemic control, patient counseling, and therapeutic diabetic meal planning.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294168/nutrion_8_xitpvw.jpg'
+          img: '/nutrition/nutrion 8.jpeg'
         },
         {
           title: 'Nutritional Gynecology & Psychiatry',
           desc: 'Learn about women\'s health nutrition, pregnancy, menopause, as well as the connection between nutrition and mental health, brain health, and mood disorders.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294203/nutrion_6_wqpawr.jpg'
+          img: '/nutrition/nutrion 6.jpeg'
         },
         {
           title: 'Wellness & Lifestyle Programs',
           desc: 'Certificate Course in Body & Slimming Therapies and FDP in Beauty & Wellness Nutrition. Master wellness education, client assessment, and advanced nutrition teaching skills.',
-          img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782294240/nutrion_5_m0evga.jpg'
+          img: '/nutrition/nutrion 5.jpeg'
         }
       ]
     },
@@ -667,10 +667,10 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
     ]
   },
   aboutImages: [
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285664/WhatsApp_Image_2026-06-23_at_20.35.02_o0e1in.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285657/WhatsApp_Image_2026-06-23_at_20.35.01_1_lnrw66.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285659/WhatsApp_Image_2026-06-23_at_20.35.02_1_rmw6p5.jpg',
-    'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284996/WhatsApp_Image_2026-06-23_at_20.35.03_2_x7iryv.jpg'
+    '/laser/WhatsApp Image 2026-06-23 at 20.35.02.jpeg',
+    '/laser/WhatsApp Image 2026-06-23 at 20.35.01 (1).jpeg',
+    '/laser/WhatsApp Image 2026-06-23 at 20.35.02 (1).jpeg',
+    '/laser/WhatsApp Image 2026-06-23 at 20.35.03 (2).jpeg'
   ],
   statisticsImage: 'https://images.pexels.com/photos/3993314/pexels-photo-3993314.jpeg?auto=compress&cs=tinysrgb&w=2000',
   modules: {
@@ -681,7 +681,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'Laser Hair Reduction (LHR)',
         desc: 'Learn laser technology, consultation process, machine handling, treatment protocols, and post-treatment care for effective hair reduction procedures.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284899/WhatsApp_Image_2026-06-23_at_20.35.01_2_of2yry.jpg'
+        img: '/laser/WhatsApp Image 2026-06-23 at 20.35.01 (2).jpeg'
       },
       {
         title: 'IPL (Intense Pulsed Light)',
@@ -696,7 +696,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'Tattoo Removal',
         desc: 'Learn professional tattoo removal procedures using laser technology, treatment planning, safety measures, and client care.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284946/WhatsApp_Image_2026-06-23_at_20.35.00_axztul.jpg'
+        img: '/laser/WhatsApp Image 2026-06-23 at 20.35.00.jpeg'
       },
       {
         title: 'Hydra Facial',
@@ -706,7 +706,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'Derma Peel',
         desc: 'Learn chemical peel treatments designed to improve skin texture, pigmentation, acne scars, and overall skin health.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284975/WhatsApp_Image_2026-06-23_at_20.36.12_1_tqktcq.jpg'
+        img: '/laser/WhatsApp Image 2026-06-23 at 20.36.12 (1).jpeg'
       },
       {
         title: 'MDA (Microdermabrasion)',
@@ -716,7 +716,7 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'Jet Peel',
         desc: 'Learn non-invasive oxygen-based skin rejuvenation treatments that deeply hydrate and revitalize the skin.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782284996/WhatsApp_Image_2026-06-23_at_20.35.03_2_x7iryv.jpg'
+        img: '/laser/WhatsApp Image 2026-06-23 at 20.35.03 (2).jpeg'
       },
       {
         title: 'Derma Needling',
@@ -726,17 +726,17 @@ landingPagesData['best-aesthetic-laser-treatment-course-in-gurgaon'] = {
       {
         title: 'Laser Hair Stimulation',
         desc: 'Explore advanced laser therapies designed to improve scalp health and support healthy hair growth.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285013/WhatsApp_Image_2026-06-23_at_20.34.59_n5hqdh.jpg'
+        img: '/laser/WhatsApp Image 2026-06-23 at 20.34.59.jpeg'
       },
       {
         title: 'Skin Analysis & Client Consultation',
         desc: 'Develop skills in skin assessment, treatment planning, client counseling, and professional recommendations.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285029/WhatsApp_Image_2026-06-23_at_20.35.03_1_xbwywh.jpg'
+        img: '/laser/WhatsApp Image 2026-06-23 at 20.35.03 (1).jpeg'
       },
       {
         title: 'Laser Safety & Clinic Management',
         desc: 'Understand laser safety standards, hygiene protocols, client record management, and aesthetic clinic operations.',
-        img: 'https://res.cloudinary.com/dkzpgmd4a/image/upload/v1782285038/WhatsApp_Image_2026-06-23_at_20.34.59_2_xemcxa.jpg',
+        img: '/laser/WhatsApp Image 2026-06-23 at 20.34.59 (2).jpeg',
         objectPosition: 'left center'
       }
     ]
