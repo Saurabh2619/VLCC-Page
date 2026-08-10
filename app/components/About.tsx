@@ -20,7 +20,7 @@ export default function About() {
             <div className="relative text-center lg:text-left">
               <div className="relative inline-block w-full lg:w-auto">
                 <Image 
-                  src="https://res.cloudinary.com/dkzpgmd4a/image/upload/v1780496054/WhatsApp_Image_2026-06-02_at_22.24.20_bvf5cd.jpg"
+                  src="/WhatsApp Image 2026-06-02 at 22.24.20.jpeg"
                   alt="Makeup Artistry"
                   width={500}
                   height={600}

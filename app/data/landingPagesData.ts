@@ -335,15 +335,10 @@ export const landingPagesData: Record<string, LandingPageData> = {
     },
     portfolioMedia: [
       { type: 'image', src: '/hair/IMG_7640.jpeg' },
-      { type: 'video', src: '/hair/IMG_9341.MOV' },
       { type: 'image', src: '/hair/IMG_8544.jpeg' },
-      { type: 'video', src: 'https://res.cloudinary.com/dkzpgmd4a/video/upload/v1782245168/IMG_8401_wcdld4.mov' },
       { type: 'image', src: '/hair/005c3ef8-019d-4f4d-84be-7409da39e0b3.jpg' },
-      { type: 'video', src: '/hair/IMG_8773.MOV' },
       { type: 'image', src: '/hair/IMG_8500.jpeg' },
-      { type: 'video', src: '/hair/IMG_8466.MOV' },
-      { type: 'image', src: '/hair/IMG_8198.jpeg' },
-      { type: 'video', src: '/hair/IMG_8490.MOV' }
+      { type: 'image', src: '/hair/IMG_8198.jpeg' }
     ],
     faqs: [
       {
