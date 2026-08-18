@@ -98,7 +98,7 @@ export default function RootLayout({
                     "longitude": "77.0490439"
                   },
                   "sameAs": [
-                    "https://www.facebook.com/vlccschoolofbeauty/",
+                    "https://www.facebook.com/vlccschoolofbeautyggn49/",
                     "https://www.instagram.com/vlcc_school_of_beautyggn49",
                     "https://www.youtube.com/@institute2.gurugram",
                     "https://maps.app.goo.gl/VVQaYg7HStsr4ek56"

@@ -55,7 +55,7 @@ export default function Footer() {
           <div className="flex-1 min-w-[200px] w-full md:w-auto">
             <h4 className="text-white text-lg mb-5 font-heading font-semibold">Connect With Us</h4>
             <div className="flex gap-[15px]">
-              <a href="https://www.facebook.com/vlccschoolofbeauty/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:bg-[#1877F2] hover:-translate-y-[3px]" aria-label="Facebook">
+              <a href="https://www.facebook.com/vlccschoolofbeautyggn49/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:bg-[#1877F2] hover:-translate-y-[3px]" aria-label="Facebook">
                 <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
               </a>
               <a href="https://www.instagram.com/vlcc_schoolof_beautyggn49?igsh=a3RqNDUyZDV2eWQy" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:bg-[#bc1888] hover:-translate-y-[3px]" aria-label="Instagram">
